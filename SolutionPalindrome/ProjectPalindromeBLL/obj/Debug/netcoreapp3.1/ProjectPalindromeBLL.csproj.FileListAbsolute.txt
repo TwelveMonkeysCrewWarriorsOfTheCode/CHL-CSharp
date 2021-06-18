@@ -1,0 +1,8 @@
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.deps.json
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
