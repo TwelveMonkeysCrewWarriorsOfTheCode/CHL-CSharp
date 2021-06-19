@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "ConsolePalindrome/1.0.0": {
         "dependencies": {
-          "ProjectPalindromeBLL": "1.0.0"
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibrary": "1.0.0"
         },
         "runtime": {
           "ConsolePalindrome.dll": {}
@@ -17,6 +18,11 @@
       "ProjectPalindromeBLL/1.0.0": {
         "runtime": {
           "ProjectPalindromeBLL.dll": {}
+        }
+      },
+      "UtilsClassLibrary/1.0.0": {
+        "runtime": {
+          "UtilsClassLibrary.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "ProjectPalindromeBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtilsClassLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

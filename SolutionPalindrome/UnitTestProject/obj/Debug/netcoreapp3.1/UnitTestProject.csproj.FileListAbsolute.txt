@@ -97,3 +97,5 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\obj\Debug\net
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\bin\Debug\netcoreapp3.1\UtilsClassLibrary.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\UnitTestProject\bin\Debug\netcoreapp3.1\UtilsClassLibrary.pdb

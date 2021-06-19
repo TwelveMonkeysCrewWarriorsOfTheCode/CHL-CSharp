@@ -1670,6 +1670,16 @@
         "runtime": {
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
         }
+      },
+      "UtilsClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/UtilsClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UtilsClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -6118,6 +6128,11 @@
       "type": "project",
       "path": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj",
       "msbuildProject": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj"
+    },
+    "UtilsClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../UtilsClassLibrary/UtilsClassLibrary.csproj",
+      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6126,6 +6141,7 @@
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "ProjectPalindromeBLL >= 1.0.0",
+      "UtilsClassLibrary >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -6166,6 +6182,9 @@
           "projectReferences": {
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+            },
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj"
             }
           }
         }
