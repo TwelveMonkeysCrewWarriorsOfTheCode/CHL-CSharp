@@ -1,0 +1,16 @@
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.exe
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.deps.json
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.runtimeconfig.json
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.dll
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ConsoleApplication.pdb
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.dll
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.pdb
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ProjectMathematiqueBLL.dll
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\bin\Debug\netcoreapp3.1\ProjectMathematiqueBLL.pdb
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ConsoleApplication\obj\Debug\netcoreapp3.1\ConsoleApplication.csproj.CopyComplete

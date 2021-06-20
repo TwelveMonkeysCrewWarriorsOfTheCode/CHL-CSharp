@@ -6,3 +6,4 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debu
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.CoreCompileInputs.cache
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.AssemblyReference.cache

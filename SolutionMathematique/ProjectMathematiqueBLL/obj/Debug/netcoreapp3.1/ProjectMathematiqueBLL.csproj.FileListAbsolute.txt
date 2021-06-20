@@ -1,0 +1,9 @@
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\bin\Debug\netcoreapp3.1\ProjectMathematiqueBLL.deps.json
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\bin\Debug\netcoreapp3.1\ProjectMathematiqueBLL.dll
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\bin\Debug\netcoreapp3.1\ProjectMathematiqueBLL.pdb
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.dll
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.pdb
+C:\Technifutur\VusualStudio\Source\SolutionMathematique\ProjectMathematiqueBLL\obj\Debug\netcoreapp3.1\ProjectMathematiqueBLL.csproj.AssemblyReference.cache

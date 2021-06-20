@@ -1,0 +1,12 @@
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\bin\Debug\net5.0\ClassLibraryMathematique.deps.json
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\bin\Debug\net5.0\ClassLibraryMathematique.dll
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\bin\Debug\net5.0\ref\ClassLibraryMathematique.dll
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\bin\Debug\net5.0\ClassLibraryMathematique.pdb
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.csproj.AssemblyReference.cache
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.AssemblyInfoInputs.cache
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.AssemblyInfo.cs
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.csproj.CoreCompileInputs.cache
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.dll
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ref\ClassLibraryMathematique.dll
+C:\Users\mogwa\source\repos\SolutionMathematique\ClassLibraryMathematique\obj\Debug\net5.0\ClassLibraryMathematique.pdb
