@@ -5,6 +5,9 @@
       "ProjectPalindromeBLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "UtilsClassLibrary": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
         },

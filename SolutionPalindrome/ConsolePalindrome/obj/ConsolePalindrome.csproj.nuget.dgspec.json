@@ -100,7 +100,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

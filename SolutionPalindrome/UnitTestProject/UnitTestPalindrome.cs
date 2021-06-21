@@ -43,7 +43,7 @@ namespace UnitTestProject
             string strtotest = Utils.RemoveSpace(ptesttextlow); // Delete spaces
             string laststrtotest = Palindrome.RemoveSpecificChar(strtotest); // Delete specific char
 
-            bool result = Palindrome.IsPalindrome(laststrtotest);
+            bool result = Palindrome.IsPalindrome(laststrtotest); // Test if a palindrom
             Assert.AreEqual(pExpectedValue, result);
         }
     }

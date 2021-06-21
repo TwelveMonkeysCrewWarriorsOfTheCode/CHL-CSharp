@@ -16,6 +16,9 @@
         }
       },
       "ProjectPalindromeBLL/1.0.0": {
+        "dependencies": {
+          "UtilsClassLibrary": "1.0.0"
+        },
         "runtime": {
           "ProjectPalindromeBLL.dll": {}
         }
