@@ -7,7 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProjectPalindromeBLL\ProjectPalindromeBLL.csproj" />
-    <ProjectReference Include="..\UtilsClassLibrary\UtilsClassLibrary.csproj" />
+    <ProjectReference Include="..\ProjectPalindromeDAL\ProjectPalindromeDAL.csproj" />
+    <ProjectReference Include="..\UtilsClassLibrary\UtilsClassLibraryHelper.csproj" />
   </ItemGroup>
 
 </Project>

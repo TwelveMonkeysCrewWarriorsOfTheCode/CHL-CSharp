@@ -14,5 +14,7 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\obj\Debug\n
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\obj\Debug\netcoreapp3.1\ConsolePalindrome.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\obj\Debug\netcoreapp3.1\ConsolePalindrome.pdb
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\obj\Debug\netcoreapp3.1\ConsolePalindrome.genruntimeconfig.cache
-D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\UtilsClassLibrary.dll
-D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\UtilsClassLibrary.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome\ConsolePalindrome\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.pdb

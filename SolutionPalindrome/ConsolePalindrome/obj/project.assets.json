@@ -6,7 +6,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "UtilsClassLibrary": "1.0.0"
+          "UtilsClassLibraryHelper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
@@ -15,14 +15,28 @@
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
         }
       },
-      "UtilsClassLibrary/1.0.0": {
+      "ProjectPalindromeDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectPalindromeDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectPalindromeDAL.dll": {}
+        }
+      },
+      "UtilsClassLibraryHelper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/UtilsClassLibrary.dll": {}
+          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
         },
         "runtime": {
-          "bin/placeholder/UtilsClassLibrary.dll": {}
+          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
         }
       }
     }
@@ -33,16 +47,22 @@
       "path": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj",
       "msbuildProject": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj"
     },
-    "UtilsClassLibrary/1.0.0": {
+    "ProjectPalindromeDAL/1.0.0": {
       "type": "project",
-      "path": "../UtilsClassLibrary/UtilsClassLibrary.csproj",
-      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibrary.csproj"
+      "path": "../ProjectPalindromeDAL/ProjectPalindromeDAL.csproj",
+      "msbuildProject": "../ProjectPalindromeDAL/ProjectPalindromeDAL.csproj"
+    },
+    "UtilsClassLibraryHelper/1.0.0": {
+      "type": "project",
+      "path": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj",
+      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ProjectPalindromeBLL >= 1.0.0",
-      "UtilsClassLibrary >= 1.0.0"
+      "ProjectPalindromeDAL >= 1.0.0",
+      "UtilsClassLibraryHelper >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -83,8 +103,11 @@
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj"
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
+            },
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
             }
           }
         }

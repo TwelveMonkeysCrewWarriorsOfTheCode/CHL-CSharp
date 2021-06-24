@@ -1665,7 +1665,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "UtilsClassLibrary": "1.0.0"
+          "UtilsClassLibraryHelper": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
@@ -1674,14 +1674,14 @@
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
         }
       },
-      "UtilsClassLibrary/1.0.0": {
+      "UtilsClassLibraryHelper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/UtilsClassLibrary.dll": {}
+          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
         },
         "runtime": {
-          "bin/placeholder/UtilsClassLibrary.dll": {}
+          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
         }
       }
     }
@@ -6132,10 +6132,10 @@
       "path": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj",
       "msbuildProject": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj"
     },
-    "UtilsClassLibrary/1.0.0": {
+    "UtilsClassLibraryHelper/1.0.0": {
       "type": "project",
-      "path": "../UtilsClassLibrary/UtilsClassLibrary.csproj",
-      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibrary.csproj"
+      "path": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj",
+      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6144,7 +6144,7 @@
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "ProjectPalindromeBLL >= 1.0.0",
-      "UtilsClassLibrary >= 1.0.0",
+      "UtilsClassLibraryHelper >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -6156,9 +6156,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\UnitTestProject.csproj",
-      "projectName": "UnitTestProject",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\UnitTestProject.csproj",
+      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
+      "projectName": "UnitTestProjectPalindrome",
+      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
       "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
       "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\obj\\",
       "projectStyle": "PackageReference",
@@ -6186,8 +6186,8 @@
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj"
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
             }
           }
         }

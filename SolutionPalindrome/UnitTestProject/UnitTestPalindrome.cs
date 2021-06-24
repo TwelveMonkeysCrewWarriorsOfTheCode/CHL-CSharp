@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProjectPalindromeBLL;
-using UtilsClassLibrary;
+using UtilsClassLibraryHelper;
 
 namespace UnitTestProject
 {
@@ -9,6 +9,7 @@ namespace UnitTestProject
     {
         [TestMethod]
         [DataRow("radar", true, DisplayName = "radar (palindrome)")]
+        //[DataRow("a", false, DisplayName = "a (pas palindrome)")]
         [DataRow("palindrome", false, DisplayName = "palindrome (pas palindrome)")]
         [DataRow("rotor", true, DisplayName = "rotor (palindrome)")]
         [DataRow("kayak", true, DisplayName = "kayak (palindrome)")]
@@ -40,11 +41,14 @@ namespace UnitTestProject
         public void TestMethodPalindrome(string ptesttext, bool pExpectedValue)
         {
             string ptesttextlow = ptesttext.ToLower();
-            string strtotest = Utils.RemoveSpace(ptesttextlow); // Delete spaces
-            string laststrtotest = Palindrome.RemoveSpecificChar(strtotest); // Delete specific char
+            string strtotest = UtilsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
+            string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
 
-            bool result = Palindrome.IsPalindrome(laststrtotest); // Test if a palindrom
+            bool result = PalindromeBLL.IsPalindrome(laststrtotest); // Test if a palindrom
             Assert.AreEqual(pExpectedValue, result);
         }
+
+        //[DataRow(true, "palindrome.txt", DisplayName = "Test fichier palindrome.txt")]
+
     }
 }

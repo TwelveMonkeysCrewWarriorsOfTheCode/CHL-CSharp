@@ -1,0 +1,13 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\bin\Debug\netcoreapp3.1\UsingString.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingString\UsingString\obj\Debug\netcoreapp3.1\UsingString.csproj.AssemblyReference.cache

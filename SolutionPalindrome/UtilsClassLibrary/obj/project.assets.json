@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj",
-      "projectName": "UtilsClassLibrary",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj",
+      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
+      "projectName": "UtilsClassLibraryHelper",
+      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
       "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
       "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\obj\\",
       "projectStyle": "PackageReference",

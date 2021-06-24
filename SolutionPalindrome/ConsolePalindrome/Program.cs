@@ -1,6 +1,6 @@
 ﻿using System;
 using ProjectPalindromeBLL;
-using UtilsClassLibrary;
+using UtilsClassLibraryHelper;
 
 namespace ConsolePalindrome
 {

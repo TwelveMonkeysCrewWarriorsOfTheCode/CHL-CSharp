@@ -9,7 +9,8 @@
       "ConsolePalindrome/1.0.0": {
         "dependencies": {
           "ProjectPalindromeBLL": "1.0.0",
-          "UtilsClassLibrary": "1.0.0"
+          "ProjectPalindromeDAL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
         },
         "runtime": {
           "ConsolePalindrome.dll": {}
@@ -17,15 +18,24 @@
       },
       "ProjectPalindromeBLL/1.0.0": {
         "dependencies": {
-          "UtilsClassLibrary": "1.0.0"
+          "UtilsClassLibraryHelper": "1.0.0"
         },
         "runtime": {
           "ProjectPalindromeBLL.dll": {}
         }
       },
-      "UtilsClassLibrary/1.0.0": {
+      "ProjectPalindromeDAL/1.0.0": {
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
         "runtime": {
-          "UtilsClassLibrary.dll": {}
+          "ProjectPalindromeDAL.dll": {}
+        }
+      },
+      "UtilsClassLibraryHelper/1.0.0": {
+        "runtime": {
+          "UtilsClassLibraryHelper.dll": {}
         }
       }
     }
@@ -41,7 +51,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UtilsClassLibrary/1.0.0": {
+    "ProjectPalindromeDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtilsClassLibraryHelper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
