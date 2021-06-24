@@ -36,11 +36,6 @@ namespace UsingEnumeration
             {
                 Console.WriteLine(item);
             }
-
-            for (int i = 0; i < noms.Length; i++)
-            {
-                Console.WriteLine(noms[i]);
-            }
         }
     }
 }

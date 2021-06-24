@@ -2,50 +2,50 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "UtilsClassLibraryHelper/1.0.0": {
+      "UtilsClassLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
+          "bin/placeholder/UtilsClassLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/UtilsClassLibraryHelper.dll": {}
+          "bin/placeholder/UtilsClassLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "UtilsClassLibraryHelper/1.0.0": {
+    "UtilsClassLibrary/1.0.0": {
       "type": "project",
-      "path": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj",
-      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj"
+      "path": "../UtilsClassLibrary/UtilsClassLibrary.csproj",
+      "msbuildProject": "../UtilsClassLibrary/UtilsClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "UtilsClassLibraryHelper >= 1.0.0"
+      "UtilsClassLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mogwa\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\studentdev12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
+      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
       "projectName": "ProjectPalindromeBLL",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
-      "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
-      "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\obj\\",
+      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
+      "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
+      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -61,8 +61,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibrary.csproj"
             }
           }
         }
