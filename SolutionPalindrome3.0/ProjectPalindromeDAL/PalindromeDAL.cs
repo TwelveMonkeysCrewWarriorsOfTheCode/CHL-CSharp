@@ -56,7 +56,7 @@ namespace ProjectPalindromeDAL
             }
         }
 
-        public static void ReadFile(ref string filename) // Read all line in the file and test if palindrome
+        public static void ReadFile(string filename) // Read all line in the file and test if palindrome
         {
             // Test if file exist
             if (!File.Exists(filename))
@@ -80,7 +80,21 @@ namespace ProjectPalindromeDAL
                             if (!string.IsNullOrWhiteSpace(line)) // We don't accept null text or only spaces text
                             {
                                 bool result = PalindromeBLL.IsPalindrome(line); // Palindrome test
-                                                                                //Display.Result(result, line, false); // Call Result method to diplay result
+                                if (result)
+                                {
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.ForegroundColor = ConsoleColor.Yellow;
+                                    Console.WriteLine($"\n    {line} est un palindrome");
+
+                                }
+                                else
+                                {
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine($"\n    {line} n'est pas un palindrome !!!");
+                                }
+                                Console.ResetColor();
+                                //Display.Result(result, line, false); // Call Result method to diplay result
                             }
                             else
                             {
@@ -105,7 +119,6 @@ namespace ProjectPalindromeDAL
                     Console.ReadKey();
                 }
             }
-            //Display.MenuReturn(); // Call method to display message
         }
     }
 }

@@ -12,6 +12,7 @@ namespace ConsolePalindrome
     {
         public static void Menu()
         {
+            const string version = "3.0";
             bool result = false;
             bool choiceDone = false;
             string input = "";
@@ -25,7 +26,7 @@ namespace ConsolePalindrome
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("  =======================================================================================");
-                Console.WriteLine("  | Palindrome 2.1                                                                      |");
+                Console.WriteLine($"  | Palindrome {version}                                                                      |");
                 Console.WriteLine("  =======================================================================================");
                 Console.WriteLine("  | Ce programme teste si le texte est un palindrome                                    |");
                 Console.WriteLine("  =======================================================================================");
@@ -57,10 +58,7 @@ namespace ConsolePalindrome
                         }
                         else
                         {
-                            Console.BackgroundColor = ConsoleColor.Black;
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!");
-                            Console.ResetColor();
+                            DisplayMessage("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", ConsoleColor.Red);
                             Console.ReadKey();
                         }
                         choiceDone = true;
@@ -82,10 +80,7 @@ namespace ConsolePalindrome
                         }
                         else
                         {
-                            Console.BackgroundColor = ConsoleColor.Black;
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!");
-                            Console.ResetColor();
+                            DisplayMessage("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", ConsoleColor.Red);
                             Console.ReadKey();
                         }
                         choiceDone = true;
@@ -94,19 +89,16 @@ namespace ConsolePalindrome
                         DisplayFilesList(); // Display files list in the current directory
                         Console.Write("\n    Entrez le nom du fichier à lire : ");
                          filename = Console.ReadLine();
-                        if (ValidFilename(ref filename))
+                        if (ValidFilename(filename))
                         {
-                            PalindromeDAL.ReadFile(ref filename);
+                            PalindromeDAL.ReadFile(filename);
                             Display.MenuReturn(); // Call method to display message
                         }
                         choiceDone = true;
                         break;
 
                     default:
-                        Console.BackgroundColor = ConsoleColor.Black;
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\n    Votre choix n'est pas valide !!!");
-                        Console.ResetColor();
+                        DisplayMessage("\n    Votre choix n'est pas valide !!!", ConsoleColor.Red);
                         Console.ReadKey();
                         break;
                 }
@@ -118,16 +110,11 @@ namespace ConsolePalindrome
             
             if (result)
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"\n    {strresult} est un palindrome");
-
+                DisplayMessage($"\n    {strresult} est un palindrome", ConsoleColor.Yellow);
             }
             else
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"\n    {strresult} n'est pas un palindrome !!!");
+                DisplayMessage($"\n    {strresult} n'est pas un palindrome !!!", ConsoleColor.Red);
             }
             Console.ResetColor();
             if (opt) MenuReturn(); // Call method to display message
@@ -136,11 +123,7 @@ namespace ConsolePalindrome
         
         public static void MenuReturn()
         {
-           
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("\n    Appuyez sur enter pour continuer\n");
-            Console.ResetColor();
+            DisplayMessage("\n    Appuyez sur enter pour continuer\n", ConsoleColor.Cyan);
             while (Console.ReadKey().Key != ConsoleKey.Enter) { }
             Menu(); // Re-call menu method
         }
@@ -178,16 +161,13 @@ namespace ConsolePalindrome
             }
             else
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!");
-                Console.ResetColor();
+                DisplayMessage("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!", ConsoleColor.Red);
                 Console.ReadKey();
                 return false;
             }
         }
 
-        static bool ValidFilename(ref string filename)
+        static bool ValidFilename(string filename)
         {
 
             if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
@@ -196,31 +176,18 @@ namespace ConsolePalindrome
             }
             else
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!");
-                Console.ResetColor();
+                DisplayMessage("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!", ConsoleColor.Red);
                 Console.ReadKey();
                 return false;
             }
         }
 
-        public static void SetForegroundColor()
+        public static void DisplayMessage(string msg, ConsoleColor color)
         {
-
-            /*
-            ConsoleColor[] colors = (ConsoleColor[])ConsoleColor.GetValues(typeof(ConsoleColor));
-            foreach (var color in colors)
-            {
-                if (color == (ConsoleColor)"Cyan")
-                {
-
-                }
-            }
-            */
-            ConsoleColor[] colors = (ConsoleColor[])ConsoleColor.GetValues(typeof(ConsoleColor));
             Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = color;
+            Console.WriteLine(msg);
+            Console.ResetColor();            
         }
     }
 }

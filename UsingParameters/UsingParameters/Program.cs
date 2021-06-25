@@ -7,7 +7,7 @@ namespace UsingParameters
         static void Main(string[] args)
         {
             // Exemple de passage de paramètres avec des variables de type valeurs
-            int value1, value2;
+            int value1, value2, multiplicator, divisor;
             value1 = 8;
             value2 = 2;
             int result = Add(ref value1, ref value2);
@@ -37,19 +37,17 @@ namespace UsingParameters
             Console.WriteLine($"(Sub)timeresult={timeResult}");
             time1.Hour = 18;
             time1.Minute = 10;
-            time2.Hour = 4;
-            time2.Minute = 59;
+            multiplicator = 6;
             Console.WriteLine($"(Mul)time1={time1.ToString()}");
-            Console.WriteLine($"(Mul)time2={time2.ToString()}");
-            timeResult = Time.MulTime(time1, time2);
+            Console.WriteLine($"(Mul)multiplicateur={multiplicator}");
+            timeResult = Time.MulTime(time1, multiplicator);
             Console.WriteLine($"(Mul)timeresult={timeResult}");
             time1.Hour = 27;
             time1.Minute = 10;
-            time2.Hour = 6;
-            time2.Minute = 59;
+            divisor = 2;
             Console.WriteLine($"(Div)time1={time1.ToString()}");
-            Console.WriteLine($"(Div)time2={time2.ToString()}");
-            timeResult = Time.DivTime(time1, time2);
+            Console.WriteLine($"(Div)diviseur={divisor}");
+            timeResult = Time.DivTime(time1, divisor);
             Console.WriteLine($"(Div)timeresult={timeResult}");
         }
 

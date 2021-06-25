@@ -14,3 +14,11 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\UtilsClassLibrar
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.csproj.CoreCompileInputs.cache
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb

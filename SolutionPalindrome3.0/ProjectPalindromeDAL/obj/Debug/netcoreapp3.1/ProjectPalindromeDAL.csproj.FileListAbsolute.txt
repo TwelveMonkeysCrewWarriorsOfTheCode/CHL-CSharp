@@ -26,3 +26,17 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\ProjectPalindrom
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.csproj.CopyComplete
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.csproj.CopyComplete
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.0\ProjectPalindromeDAL\obj\Debug\netcoreapp3.1\ProjectPalindromeDAL.pdb

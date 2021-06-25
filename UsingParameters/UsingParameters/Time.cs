@@ -11,8 +11,27 @@ namespace UsingParameters
 
         public override string ToString()
         {
-            string s = $"{Hour}:{Minute} min.";
+            string s = $"Heure={Hour}:{Minute}";
             return s;
+        }
+
+        private void AdjustTime()
+        {
+            if (this.Minute > 59)
+            {
+                this.Hour = this.Hour + (this.Minute / 60);
+                this.Minute = this.Minute % 60;
+            }
+            else if (this.Minute < 0)
+            {
+                this.Hour = this.Hour + (this.Minute / 60) - 1;
+                this.Minute = 60 + (this.Minute % 60);
+            }
+            if (this.Hour < 0)
+            {
+                this.Hour = 0;
+                this.Minute = 0;
+            }
         }
 
         public static Time AddTime(Time pLeftTime, Time pRightTime)
@@ -20,11 +39,7 @@ namespace UsingParameters
             Time result = new Time();
             result.Hour = pLeftTime.Hour + pRightTime.Hour;
             result.Minute = pLeftTime.Minute + pRightTime.Minute;
-            while (result.Minute > 60)
-            {
-                result.Hour++;
-                result.Minute = result.Minute -60;
-            }
+            result.AdjustTime();
             return result;
         }
 
@@ -32,48 +47,25 @@ namespace UsingParameters
         {
             Time result = new Time();
             result.Hour = pLeftTime.Hour - pRightTime.Hour;
-            if (pLeftTime.Minute >= pRightTime.Minute)
-            {
-                result.Minute = pLeftTime.Minute - pRightTime.Minute;
-            }
-            else
-            {
-                result.Minute = pRightTime.Minute - pLeftTime.Minute;
-            }
+            result.Minute = pLeftTime.Minute - pRightTime.Minute;
+            result.AdjustTime();
             return result;
         }
 
-        public static Time MulTime(Time pLeftTime, Time pRightTime)
+        public static Time MulTime(Time pTime, int pMultiplicator)
         {
             Time result = new Time();
-            result.Hour = pLeftTime.Hour * pRightTime.Hour;
-            result.Minute = pLeftTime.Minute * pRightTime.Minute;
-            while (result.Minute > 60)
-            {
-                result.Hour++;
-                result.Minute = result.Minute - 60;
-            }
+            result.Hour = pTime.Hour * pMultiplicator;
+            result.Minute = pTime.Minute * pMultiplicator;
+            result.AdjustTime();
             return result;
         }
-        public static Time DivTime(Time pLeftTime, Time pRightTime)
+        public static Time DivTime(Time pTime, int pDivisor)
         {
             Time result = new Time();
-            int secres=0;
-            int sec1 = (pLeftTime.Hour * 3600) + (pLeftTime.Minute * 60);
-            int sec2 = (pRightTime.Hour * 3600) + (pRightTime.Minute * 60);
-            if (sec1 >= sec2)
-            {
-                secres = sec1 / sec2;
-            }
-            else
-            {
-                secres = sec2 / sec1;
-            }
-            Console.WriteLine("secres:{0}",secres);
-            result.Hour = secres / 3600;
-            Console.WriteLine("h:{0}", result.Hour);
-            secres = secres % 3600;
-            result.Minute = secres / 60;
+            result.Hour = 0;
+            result.Minute = (pTime.Hour * 60 + pTime.Minute) / pDivisor;
+            result.AdjustTime();
             return result;
         }
     }

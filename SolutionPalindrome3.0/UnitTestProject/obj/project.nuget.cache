@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JPED5vOsPTP8RwH8wJEe3lcS/yUXzeYTi675nJ4UUTjmacxQhdBmZSy/5Q8q+jZQJAHgL0H9XShacSKFX8+a4Q==",
+  "dgSpecHash": "XAWHPWkKzw3mcG+L9FgIxGqR6ztlMhAmMPpOsCALrcQvBjKfNZvatfTXsN4AZWMaVR3fOgzvwq+gjRCMqyPxig==",
   "success": true,
-  "projectFilePath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
+  "projectFilePath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\studentdev12\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\studentdev12\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

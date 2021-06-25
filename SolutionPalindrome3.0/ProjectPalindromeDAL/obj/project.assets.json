@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
+      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
       "projectName": "ProjectPalindromeDAL",
-      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
+      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
       "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
-      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeDAL\\obj\\",
+      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -80,11 +80,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
-              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
             },
-            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
-              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
             }
           }
         }
