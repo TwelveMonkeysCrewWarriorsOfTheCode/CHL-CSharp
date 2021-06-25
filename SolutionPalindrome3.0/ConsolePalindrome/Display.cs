@@ -10,9 +10,10 @@ namespace ConsolePalindrome
 {
     public class Display
     {
+        const string VERSION = "3.0";
+
         public static void Menu()
         {
-            const string version = "3.0";
             bool result = false;
             bool choiceDone = false;
             string input = "";
@@ -26,7 +27,7 @@ namespace ConsolePalindrome
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("  =======================================================================================");
-                Console.WriteLine($"  | Palindrome {version}                                                                      |");
+                Console.WriteLine($"  | Palindrome {VERSION}                                                                      |");
                 Console.WriteLine("  =======================================================================================");
                 Console.WriteLine("  | Ce programme teste si le texte est un palindrome                                    |");
                 Console.WriteLine("  =======================================================================================");
@@ -74,8 +75,17 @@ namespace ConsolePalindrome
                             filename = Console.ReadLine();
                             if (ValidAndSetExtensionFilename(ref filename))
                             {
-                                PalindromeDAL.SaveFile(input, filename); // Save to file
-                                Display.Result(result, input, true); // Call Result method to diplay result
+                                Result valid = PalindromeDAL.SaveRecords(input, filename); // Save to file
+                                if (valid.status)
+                                {
+                                    Display.Result(result, input, true); // Call Result method to diplay result
+                                }
+                                else
+                                {
+                                    DisplayMessage(valid.message1, ConsoleColor.Red);
+                                    DisplayMessage(valid.message2, ConsoleColor.Red);
+                                    Console.ReadKey();
+                                }
                             }
                         }
                         else
@@ -91,7 +101,11 @@ namespace ConsolePalindrome
                          filename = Console.ReadLine();
                         if (ValidFilename(filename))
                         {
-                            PalindromeDAL.ReadFile(filename);
+                            Result valid = PalindromeDAL.ReadRecords(filename);
+                            if (valid.status)
+                            {
+                                // Afficher resultat
+                            }
                             Display.MenuReturn(); // Call method to display message
                         }
                         choiceDone = true;

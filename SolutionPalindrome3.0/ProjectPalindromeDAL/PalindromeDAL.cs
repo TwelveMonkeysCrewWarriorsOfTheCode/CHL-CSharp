@@ -8,9 +8,9 @@ namespace ProjectPalindromeDAL
 {
     public class PalindromeDAL
     {
-        public static void SaveFile(string texttosave, string filename) // Save Text into file
+        public static Result SaveRecords(string texttosave, string filename)
         {
-
+            Result result = new Result();
             // Test if file exist
             if (!File.Exists(filename))
             {
@@ -25,12 +25,10 @@ namespace ProjectPalindromeDAL
                 }
                 catch (Exception e)
                 {
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\n    Le fichier n'a pas pu être écrit.");
-                    Console.WriteLine("\n    Exception: " + e.Message);
-                    Console.ReadKey();
-                    Console.ResetColor();
+                    result.status = false;
+                    result.message1 = "\n    Le fichier n'a pas pu être écrit.";
+                    result.message2 = "\n    Exception: " + e.Message;
+                    return result;
                 }
             }
             else
@@ -46,26 +44,25 @@ namespace ProjectPalindromeDAL
                 }
                 catch (Exception e)
                 {
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\n    Le fichier n'a pas pu être écrit.");
-                    Console.WriteLine("\n    Exception: " + e.Message);
-                    Console.ReadKey();
-                    Console.ResetColor();
+                    result.status = false;
+                    result.message1 = "\n    Le fichier n'a pas pu être écrit.";
+                    result.message2 = "\n    Exception: " + e.Message;
+                    return result;
                 }
             }
+            result.status = true;
+            return result;
         }
 
-        public static void ReadFile(string filename) // Read all line in the file and test if palindrome
+        public static Result ReadRecords(string filename) // Read all line in the file and test if palindrome
         {
+            Result result = new Result();
             // Test if file exist
             if (!File.Exists(filename))
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n    Le fichier n'existe pas.");
-                Console.ResetColor();
-                Console.ReadKey();
+                result.status = false;
+                result.message1 = "\n    Le fichier n'existe pas.";
+                return result;
             }
             else
             {
@@ -79,8 +76,8 @@ namespace ProjectPalindromeDAL
                         {
                             if (!string.IsNullOrWhiteSpace(line)) // We don't accept null text or only spaces text
                             {
-                                bool result = PalindromeBLL.IsPalindrome(line); // Palindrome test
-                                if (result)
+                                bool result1 = PalindromeBLL.IsPalindrome(line); // Palindrome test
+                                if (result1)
                                 {
                                     Console.BackgroundColor = ConsoleColor.Black;
                                     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -94,15 +91,12 @@ namespace ProjectPalindromeDAL
                                     Console.WriteLine($"\n    {line} n'est pas un palindrome !!!");
                                 }
                                 Console.ResetColor();
-                                //Display.Result(result, line, false); // Call Result method to diplay result
                             }
                             else
                             {
-                                Console.BackgroundColor = ConsoleColor.Black;
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("\n    Un texte ne peut pas être null ou ne contenir que des espaces !!!");
-                                Console.ResetColor();
-                                Console.ReadKey();
+                                result.status = false;
+                                result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces !!!";
+                                return result;
                             }
                             //Console.WriteLine(line);
                         }
@@ -111,13 +105,13 @@ namespace ProjectPalindromeDAL
                 }
                 catch (Exception e)
                 {
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\n    Le fichier n'a pas pu être lu.");
-                    Console.WriteLine("\n    Exception: " + e.Message);
-                    Console.ResetColor();
-                    Console.ReadKey();
+                    result.status = false;
+                    result.message1 = "\n    Le fichier n'a pas pu être lu.";
+                    result.message2 = "\n    Exception: " + e.Message;
+                    return result;
                 }
+                result.status = true;
+                return result;
             }
         }
     }

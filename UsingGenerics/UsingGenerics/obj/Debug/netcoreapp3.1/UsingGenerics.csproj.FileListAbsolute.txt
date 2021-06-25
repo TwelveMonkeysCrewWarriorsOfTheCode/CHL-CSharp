@@ -1,0 +1,13 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingGenerics\UsingGenerics\obj\Debug\netcoreapp3.1\UsingGenerics.csproj.AssemblyReference.cache
