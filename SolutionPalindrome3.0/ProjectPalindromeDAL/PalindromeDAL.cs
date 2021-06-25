@@ -12,9 +12,10 @@ namespace ProjectPalindromeDAL
         {
             Result result = new Result();
             // Test if file exist
-            if (!File.Exists(filename))
+            try
             {
-                try
+
+                if (!FilesTxt.IsFileExist(filename))
                 {
                     // Create a file to write to.
                     using (StreamWriter sw = File.CreateText(filename))
@@ -23,17 +24,7 @@ namespace ProjectPalindromeDAL
                         sw.Close(); // Close stream
                     }
                 }
-                catch (Exception e)
-                {
-                    result.status = false;
-                    result.message1 = "\n    Le fichier n'a pas pu être écrit.";
-                    result.message2 = "\n    Exception: " + e.Message;
-                    return result;
-                }
-            }
-            else
-            {
-                try
+                else
                 {
                     // The file exist , append to
                     using (StreamWriter sw = File.AppendText(filename))
@@ -42,77 +33,36 @@ namespace ProjectPalindromeDAL
                         sw.Close(); // Close stream
                     }
                 }
-                catch (Exception e)
-                {
-                    result.status = false;
-                    result.message1 = "\n    Le fichier n'a pas pu être écrit.";
-                    result.message2 = "\n    Exception: " + e.Message;
-                    return result;
-                }
+            }
+            catch (Exception e)
+            {
+                result.status = false;
+                result.message1 = "\n    Le fichier n'a pas pu être écrit.";
+                result.message2 = "\n    Exception: " + e.Message;
+                return result;
             }
             result.status = true;
             return result;
         }
 
-        public static Result ReadRecords(string filename) // Read all line in the file and test if palindrome
+        public static Records ReadRecords(string filename) // Read all line in the file and test if palindrome
         {
-            Result result = new Result();
-            // Test if file exist
-            if (!File.Exists(filename))
-            {
-                result.status = false;
-                result.message1 = "\n    Le fichier n'existe pas.";
-                return result;
-            }
-            else
-            {
-                try
-                {
-                    using (StreamReader sr = new StreamReader(filename))
-                    {
-                        string line;
-                        // Lire les lignes du fichier jusqu'à la fin.
-                        while ((line = sr.ReadLine()) != null)
-                        {
-                            if (!string.IsNullOrWhiteSpace(line)) // We don't accept null text or only spaces text
-                            {
-                                bool result1 = PalindromeBLL.IsPalindrome(line); // Palindrome test
-                                if (result1)
-                                {
-                                    Console.BackgroundColor = ConsoleColor.Black;
-                                    Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Console.WriteLine($"\n    {line} est un palindrome");
+            Records records = new Records();
 
-                                }
-                                else
-                                {
-                                    Console.BackgroundColor = ConsoleColor.Black;
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine($"\n    {line} n'est pas un palindrome !!!");
-                                }
-                                Console.ResetColor();
-                            }
-                            else
-                            {
-                                result.status = false;
-                                result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces !!!";
-                                return result;
-                            }
-                            //Console.WriteLine(line);
-                        }
-                        sr.Close(); // Close stream
-                    }
-                }
-                catch (Exception e)
-                {
-                    result.status = false;
-                    result.message1 = "\n    Le fichier n'a pas pu être lu.";
-                    result.message2 = "\n    Exception: " + e.Message;
-                    return result;
-                }
-                result.status = true;
-                return result;
+            try
+            {
+                records.records = System.IO.File.ReadAllLines(filename);
+
             }
+            catch (Exception e)
+            {
+                records.status = false;
+                records.message1 = "\n    Le fichier n'a pas pu être lu.";
+                records.message2 = "\n    Exception: " + e.Message;
+                return records;
+            }
+            records.status = true;
+            return records;
         }
     }
 }

@@ -14,6 +14,12 @@ namespace ProjectPalindromeDAL
             string[] fileList = Directory.GetFiles(path, "*.txt");
             return fileList;
         }
+
+        public static bool IsFileExist(string filename) // Test if a file exist in the current directory
+        {
+            if (!File.Exists(filename)) return false;
+            return true;            
+        }
     }
 }
 
