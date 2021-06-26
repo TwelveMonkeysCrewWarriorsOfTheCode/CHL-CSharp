@@ -45,11 +45,24 @@ namespace UsingParameters
                     
 				}
 			}
-
-			Time timeResult = Time.AddTime(tempsTravFormate[0], tempsTravFormate[1]);
-			Console.WriteLine(timeResult.ToString());
-		}
-	}
+            Console.Write("Entrez un multiplicateur : ");
+            string multiplicateur = Console.ReadLine();
+            int multi;
+            if (!int.TryParse(multiplicateur, out multi)) multi = 1;
+            Console.Write("Entrez un diviseur : ");
+            string diviseur = Console.ReadLine();
+            int divi;
+            if (!int.TryParse(diviseur, out divi)) divi = 1;
+            Time timeResult = Time.AddTime(tempsTravFormate[0], tempsTravFormate[1]);
+			Console.WriteLine($"Add:{timeResult.ToString()}");
+            timeResult = Time.SubTime(tempsTravFormate[0], tempsTravFormate[1]);
+            Console.WriteLine($"Sub:{timeResult.ToString()}");
+            timeResult = Time.MulTime(tempsTravFormate[0], multi);
+            Console.WriteLine($"Mul:{timeResult.ToString()}");
+            timeResult = Time.DivTime(tempsTravFormate[0], divi);
+            Console.WriteLine($"Div:{timeResult.ToString()}");
+        }
+    }
 }
 /* exercices :
  * Poser la question à User

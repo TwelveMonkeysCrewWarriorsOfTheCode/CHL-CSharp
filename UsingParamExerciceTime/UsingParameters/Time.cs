@@ -92,11 +92,12 @@ namespace UsingParameters
             Time mResult = new Time();
             mResult.Hour = pLeftTime.Hour + pRightTime.Hour;
             mResult.Minute = pLeftTime.Minute + pRightTime.Minute;
-            mResultCorrige = ChangerMinutesEnHeures(mResult);
+            mResultCorrige = AdjustTime(mResult);
+            //mResultCorrige = ChangerMinutesEnHeures(mResult);
             return mResultCorrige;
         }
 
-        public static Time ChangerMinutesEnHeures(Time pTemps)
+        /*public static Time ChangerMinutesEnHeures(Time pTemps)
         {
             Time mResult = new Time();
             int minutes = pTemps.Minute;
@@ -109,7 +110,62 @@ namespace UsingParameters
             mResult.Hour = heures;
             mResult.Minute = minutes;
             return mResult;
+        }*/
+
+        public static Time AdjustTime(Time pTemps)
+        {
+            Time mResult = new Time();
+            int minutes = pTemps.Minute;
+            int heures = pTemps.Hour;
+
+            if (minutes > 59)
+            {
+                heures = heures + (minutes / 60);
+                minutes = minutes % 60;
+            }
+            else if (minutes < 0)
+            {
+                heures = heures + (minutes / 60) - 1;
+                minutes = 60 + (minutes % 60);
+            }
+            if (heures < 0)
+            {
+                heures = 0;
+                minutes = 0;
+            }
+            mResult.Hour = heures;
+            mResult.Minute = minutes;
+            return mResult;
+        }
+
+        public static Time SubTime(Time pLeftTime, Time pRightTime)
+        {
+            Time mResultCorrige = new Time();
+            Time mResult = new Time();
+            mResult.Hour = pLeftTime.Hour - pRightTime.Hour;
+            mResult.Minute = pLeftTime.Minute - pRightTime.Minute;
+            mResultCorrige = AdjustTime(mResult);
+            return mResultCorrige;
+        }
+
+        public static Time MulTime(Time pTime, int pMultiplicator)
+        {
+            Time mResultCorrige = new Time();
+            Time mResult = new Time();
+            mResult.Hour = pTime.Hour * pMultiplicator;
+            mResult.Minute = pTime.Minute * pMultiplicator;
+            mResultCorrige = AdjustTime(mResult);
+            return mResultCorrige;
+        }
+
+        public static Time DivTime(Time pTime, int pDivisor)
+        {
+            Time mResultCorrige = new Time();
+            Time mResult = new Time();
+            mResult.Hour = 0;
+            mResult.Minute = (pTime.Hour * 60 + pTime.Minute) / pDivisor;
+            mResultCorrige = AdjustTime(mResult);
+            return mResultCorrige;
         }
     }
-
 }

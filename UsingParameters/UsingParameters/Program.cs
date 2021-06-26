@@ -42,7 +42,7 @@ namespace UsingParameters
             Console.WriteLine($"(Mul)multiplicateur={multiplicator}");
             timeResult = Time.MulTime(time1, multiplicator);
             Console.WriteLine($"(Mul)timeresult={timeResult}");
-            time1.Hour = 27;
+            time1.Hour = 20;
             time1.Minute = 10;
             divisor = 2;
             Console.WriteLine($"(Div)time1={time1.ToString()}");
