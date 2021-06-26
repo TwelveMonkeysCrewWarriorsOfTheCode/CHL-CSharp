@@ -8,9 +8,9 @@ namespace ProjectPalindromeDAL
 {
     public class PalindromeDAL
     {
-        public static Result SaveRecords(string texttosave, string filename)
+        public static ResultDAL SaveRecords(string texttosave, string filename)
         {
-            Result result = new Result();
+            ResultDAL result = new ResultDAL();
             // Test if file exist
             try
             {
