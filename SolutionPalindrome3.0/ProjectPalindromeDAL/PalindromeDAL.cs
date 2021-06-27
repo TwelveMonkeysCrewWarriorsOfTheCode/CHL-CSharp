@@ -8,26 +8,24 @@ namespace ProjectPalindromeDAL
 {
     public class PalindromeDAL
     {
-        public static ResultDAL SaveRecords(string texttosave, string filename)
+        public static ResultDAL SaveRecords(string texttosave, string filename) // Save a text to file in append mode
         {
             ResultDAL result = new ResultDAL();
             // Test if file exist
             try
             {
 
-                if (!FilesTxt.IsFileExist(filename))
-                {
-                    // Create a file to write to.
-                    using (StreamWriter sw = File.CreateText(filename))
+                if (!FilesTxt.IsFileExist(filename)) // File Exist ?
+                {                   
+                    using (StreamWriter sw = File.CreateText(filename)) // Create a file to write to.
                     {
                         sw.WriteLine(texttosave); // Write to file
                         sw.Close(); // Close stream
                     }
                 }
                 else
-                {
-                    // The file exist , append to
-                    using (StreamWriter sw = File.AppendText(filename))
+                {                
+                    using (StreamWriter sw = File.AppendText(filename)) // The file exist , append to
                     {
                         sw.WriteLine(texttosave); // Write to file
                         sw.Close(); // Close stream
@@ -51,7 +49,7 @@ namespace ProjectPalindromeDAL
 
             try
             {
-                records.records = System.IO.File.ReadAllLines(filename);
+                records.records = System.IO.File.ReadAllLines(filename); // Read the text file by line and return a array of strings
 
             }
             catch (Exception e)

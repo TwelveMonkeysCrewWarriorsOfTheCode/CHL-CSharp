@@ -9,6 +9,7 @@ namespace ProjectPalindromeBLL
 
         public static bool IsPalindrome(String texttotest) // A voir la méthode Array.Reverse et comparer les deux
         {
+            if (texttotest.Length < 2) return false;
             string inputlow = texttotest.ToLower(); // Convert minus
             string strtotest = UtilsHelper.RemoveAllSpaceFromString(inputlow); // Delete spaces
             string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
@@ -56,7 +57,7 @@ namespace ProjectPalindromeBLL
             return cleanText;
         }
 
-        public static ResultBLL ValidEntryTextAndCheckPalindrome(string texttocheck)
+        public static ResultBLL ValidEntryTextAndCheckPalindrome(string texttocheck) // Check the text validity and palindrome
         {
             ResultBLL result = new ResultBLL();
             if (!string.IsNullOrWhiteSpace(texttocheck) && texttocheck.Length > 1) // We don't accept null text or only spaces text or 1 char

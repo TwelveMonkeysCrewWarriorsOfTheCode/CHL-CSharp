@@ -12,6 +12,7 @@
           "MSTest.TestFramework": "2.2.3",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "ProjectPalindromeBLL": "1.0.0",
+          "ProjectPalindromeDAL": "1.0.0",
           "UtilsClassLibraryHelper": "1.0.0",
           "coverlet.collector": "3.0.2"
         },
@@ -1086,6 +1087,15 @@
           "ProjectPalindromeBLL.dll": {}
         }
       },
+      "ProjectPalindromeDAL/1.0.0": {
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "runtime": {
+          "ProjectPalindromeDAL.dll": {}
+        }
+      },
       "UtilsClassLibraryHelper/1.0.0": {
         "runtime": {
           "UtilsClassLibraryHelper.dll": {}
@@ -1716,6 +1726,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "ProjectPalindromeBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectPalindromeDAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

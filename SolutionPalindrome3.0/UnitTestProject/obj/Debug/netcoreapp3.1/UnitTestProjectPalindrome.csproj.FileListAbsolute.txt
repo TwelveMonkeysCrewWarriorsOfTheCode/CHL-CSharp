@@ -402,3 +402,5 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\obj\Debug\
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProjectPalindrome.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProjectPalindrome.pdb
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\obj\Debug\netcoreapp3.1\UnitTestProjectPalindrome.genruntimeconfig.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UnitTestProject\bin\Debug\netcoreapp3.1\ProjectPalindromeDAL.pdb

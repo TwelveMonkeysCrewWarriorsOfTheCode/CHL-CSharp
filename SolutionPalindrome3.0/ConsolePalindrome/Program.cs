@@ -14,12 +14,8 @@ namespace ConsolePalindrome
             }
             catch (Exception Exceptiontype)
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"\n    Il y a une Erreur de type {Exceptiontype}, appelez le help desk");
-                Console.ResetColor();
+                Display.DisplayMessage($"\n    Il y a une Erreur de type {Exceptiontype}, appelez le help desk", ConsoleColor.Red);
             }
-            //Console.ReadKey();
         }
     }
 }

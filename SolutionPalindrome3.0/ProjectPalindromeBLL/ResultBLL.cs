@@ -6,9 +6,10 @@ namespace ProjectPalindromeBLL
 {
     public class ResultBLL
     {
-        public bool status;
-        public string message1;
-        public string message2;
-        public bool result;
+        // Object to return a result
+        public bool status; // Status of method
+        public string message1; // Error message from developper
+        public string message2; // Error message from exception
+        public bool result; // Status of palindrome check
     }
 }

@@ -21,7 +21,7 @@ namespace ProjectPalindromeDAL
             return true;            
         }
 
-        public static ResultDAL ValidAndSetExtensionFilename(string filename)
+        public static ResultDAL ValidAndSetExtensionFilename(string filename) // Check the filename validity and add .txt if need
         {
             ResultDAL result = new ResultDAL();
             if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
@@ -48,6 +48,22 @@ namespace ProjectPalindromeDAL
                 result.message1 = "\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!";
                 return result;
             }
+        }
+
+        public static ResultDAL ValidFilename(string filename) // Check if filename is not null and doesn't contains only spaces
+        {
+            ResultDAL result = new ResultDAL();
+            if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
+            {
+                result.status = true;
+                return result;
+            }
+            else
+            {
+                result.status = false;
+                result.message1 = "\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!";
+                return result;
+             }
         }
     }
 }

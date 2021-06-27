@@ -1674,6 +1674,20 @@
           "bin/placeholder/ProjectPalindromeBLL.dll": {}
         }
       },
+      "ProjectPalindromeDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectPalindromeDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectPalindromeDAL.dll": {}
+        }
+      },
       "UtilsClassLibraryHelper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6132,6 +6146,11 @@
       "path": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj",
       "msbuildProject": "../ProjectPalindromeBLL/ProjectPalindromeBLL.csproj"
     },
+    "ProjectPalindromeDAL/1.0.0": {
+      "type": "project",
+      "path": "../ProjectPalindromeDAL/ProjectPalindromeDAL.csproj",
+      "msbuildProject": "../ProjectPalindromeDAL/ProjectPalindromeDAL.csproj"
+    },
     "UtilsClassLibraryHelper/1.0.0": {
       "type": "project",
       "path": "../UtilsClassLibrary/UtilsClassLibraryHelper.csproj",
@@ -6144,6 +6163,7 @@
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "ProjectPalindromeBLL >= 1.0.0",
+      "ProjectPalindromeDAL >= 1.0.0",
       "UtilsClassLibraryHelper >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
@@ -6185,6 +6205,9 @@
           "projectReferences": {
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+            },
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
             },
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
