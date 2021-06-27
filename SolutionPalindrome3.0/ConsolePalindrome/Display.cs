@@ -50,8 +50,8 @@ namespace ConsolePalindrome
                             DisplayFilesList(); // Display Files list in the current directory
                             Console.Write("\n    Entrez le nom du fichier à enregistrer : ");
                             filename = Console.ReadLine();
-                            ResultDAL resext = ValidAndSetExtensionFilename(filename);
-                            if (ValidAndSetExtensionFilename(ref filename))
+                            ResultDAL resext = FilesTxt.ValidAndSetExtensionFilename(filename);
+                            if (resext.status)
                             {
                                 ResultDAL valid = PalindromeDAL.SaveRecords(input, filename); // Save to file
                                 if (valid.status)
@@ -65,6 +65,11 @@ namespace ConsolePalindrome
                                     Console.ReadKey();
                                 }
                             } 
+                            else
+                            {
+                                DisplayMessage(resext.message1, ConsoleColor.Red);
+                                Console.ReadKey();
+                            }
                         }
                         else
                         {

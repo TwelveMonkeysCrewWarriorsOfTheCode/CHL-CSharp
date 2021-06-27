@@ -21,7 +21,7 @@ namespace ProjectPalindromeDAL
             return true;            
         }
 
-        static ResultDAL ValidAndSetExtensionFilename(string filename)
+        public static ResultDAL ValidAndSetExtensionFilename(string filename)
         {
             ResultDAL result = new ResultDAL();
             if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
