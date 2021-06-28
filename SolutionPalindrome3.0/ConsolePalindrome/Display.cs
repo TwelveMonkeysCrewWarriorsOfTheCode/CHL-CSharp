@@ -12,36 +12,15 @@ namespace ConsolePalindrome
     {
         const string VERSION = "3.0";
 
-        public static void Menu()
+        public static void Menu() // Display Menu
         {
-            bool result = false;
             bool choiceDone = false;
             string input = "";
             string filename = "";
 
-            Console.Clear();
-
             while (!choiceDone)
             {
-                Console.Clear();
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("  =======================================================================================");
-                Console.WriteLine($"  | Palindrome {VERSION}                                                                      |");
-                Console.WriteLine("  =======================================================================================");
-                Console.WriteLine("  | Ce programme teste si le texte est un palindrome                                    |");
-                Console.WriteLine("  =======================================================================================");
-                Console.WriteLine("  | 1 : Tester en entrant un texte au clavier                                           |");
-                Console.WriteLine("  | 2 : Tester en entrant un texte au clavier avec sauvegarde dans un fichier .txt      |");
-                Console.WriteLine("  | 3 : Tester à partir d'un fichier .txt                                               |");
-                Console.WriteLine("  |                                                                                     |");
-                Console.WriteLine("  | Q : Quitter                                                                         |");
-                Console.WriteLine("  =======================================================================================");
-                Console.ResetColor();
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("\n    Faites votre choix : ");
-                Console.ResetColor();
+                MenuHead();
                 string choice = Console.ReadLine();
                 choice = choice.ToLower(); // Convert minus
                 switch (choice)
@@ -50,78 +29,116 @@ namespace ConsolePalindrome
                         Environment.Exit(0); // Exit Program
                         break;
                     case "1":
-                        Console.Write("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : ");
-                        input = Console.ReadLine();
-                        if (!string.IsNullOrWhiteSpace(input) && input.Length > 1) // We don't accept null text or only spaces text or 1 char
-                        {
-                            result = PalindromeBLL.IsPalindrome(input); // Palindrome test
-                            Display.Result(result, input, true); // Call Result method to diplay result
+                        input = EntryKeyboard("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : "); // Get text from keyboard
+                        ResultBLL resultpalindrome = PalindromeBLL.ValidEntryTextAndCheckPalindrome(input); // Check the text validity and palindrome
+                        if (resultpalindrome.status) // ok
+                        { 
+                            Display.Result(resultpalindrome.result, input, true); // Call Result method to diplay result
+                            choiceDone = true;
                         }
                         else
                         {
                             DisplayMessage("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", ConsoleColor.Red);
-                            Console.ReadKey();
-                        }
-                        choiceDone = true;
+                        }                        
                         break;
                     case "2":
-                        Console.Write("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : ");
-                        input = Console.ReadLine();
-                        if (!string.IsNullOrWhiteSpace(input) && input.Length > 1) // We don't accept null text or only spaces text or 1 char
+                        input = EntryKeyboard("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : "); // Get text from keyboard
+                        resultpalindrome = PalindromeBLL.ValidEntryTextAndCheckPalindrome(input); // Check the text validity and palindrome
+                        if (resultpalindrome.status)
                         {
-                            result = PalindromeBLL.IsPalindrome(input); // Palindrome test
                             DisplayFilesList(); // Display Files list in the current directory
-                            Console.Write("\n    Entrez le nom du fichier à enregistrer : ");
-                            filename = Console.ReadLine();
-                            if (ValidAndSetExtensionFilename(ref filename))
+                            filename = EntryKeyboard("\n    Entrez le nom du fichier à enregistrer : "); // Get filename from keyboard
+                            ResultDAL resultfilenameextension = FilesTxt.ValidAndSetExtensionFilename(filename); // Check the filename validity and add .txt if need
+                            if (resultfilenameextension.status)
                             {
-                                Result valid = PalindromeDAL.SaveRecords(input, filename); // Save to file
+                                ResultDAL valid = PalindromeDAL.SaveRecords(input, resultfilenameextension.filename); // Save record to file in append mode
                                 if (valid.status)
                                 {
-                                    Display.Result(result, input, true); // Call Result method to diplay result
+                                    Display.Result(resultpalindrome.result, input, true); // Call Result method to diplay result
+                                    choiceDone = true;
                                 }
                                 else
                                 {
                                     DisplayMessage(valid.message1, ConsoleColor.Red);
                                     DisplayMessage(valid.message2, ConsoleColor.Red);
-                                    Console.ReadKey();
                                 }
+                            } 
+                            else
+                            {
+                                DisplayMessage(resultfilenameextension.message1, ConsoleColor.Red);
                             }
                         }
                         else
                         {
                             DisplayMessage("\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", ConsoleColor.Red);
-                            Console.ReadKey();
                         }
-                        choiceDone = true;
                         break;
                     case "3":
                         DisplayFilesList(); // Display files list in the current directory
-                        Console.Write("\n    Entrez le nom du fichier à lire : ");
-                         filename = Console.ReadLine();
-                        if (ValidFilename(filename))
+                        filename = EntryKeyboard("\n    Entrez le nom du fichier à lire : "); // Get filename from keyboard
+                        ResultDAL resultfilename = FilesTxt.ValidFilename(filename); // Check if filename is not null and doesn't contains only spaces
+                        if (resultfilename.status)
                         {
-                            Result valid = PalindromeDAL.ReadRecords(filename);
-                            if (valid.status)
+                            if (FilesTxt.IsFileExist(filename)) // File Exist ?
                             {
-                                // Afficher resultat
+                                Records records = PalindromeDAL.ReadRecords(filename); // Read all lines (records) from file
+                                if (records.status)
+                                {
+                                    // Afficher resultat
+                                    DisplayRecordsAndCheckPalindrome(records); // Display Palindrome results
+                                    choiceDone = true;
+                                }
+                                else
+                                {
+                                    DisplayMessage(records.message1, ConsoleColor.Red);
+                                    DisplayMessage(records.message2, ConsoleColor.Red);
+                                }
                             }
-                            Display.MenuReturn(); // Call method to display message
+                            else
+                            {
+                                DisplayMessage("\n    Le fichier n'existe pas.", ConsoleColor.Red);
+                            }
                         }
-                        choiceDone = true;
+                        else
+                        {
+                            DisplayMessage(resultfilename.message1, ConsoleColor.Red);
+                        }
                         break;
 
                     default:
                         DisplayMessage("\n    Votre choix n'est pas valide !!!", ConsoleColor.Red);
-                        Console.ReadKey();
                         break;
                 }
+                Display.MenuReturn(); // Call method to display message
             }
         }
 
-        public static void Result(bool result, string strresult, bool opt) // Display result
+        private static void MenuHead() // Header of the menu
         {
-            
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("  =======================================================================================");
+            Console.WriteLine($"  | Palindrome {VERSION}                                                                      |");
+            Console.WriteLine("  =======================================================================================");
+            Console.WriteLine("  | Ce programme teste si le texte est un palindrome                                    |");
+            Console.WriteLine("  =======================================================================================");
+            Console.WriteLine("  | 1 : Tester en entrant un texte au clavier                                           |");
+            Console.WriteLine("  | 2 : Tester en entrant un texte au clavier avec sauvegarde dans un fichier .txt      |");
+            Console.WriteLine("  | 3 : Tester à partir d'un fichier .txt                                               |");
+            Console.WriteLine("  |                                                                                     |");
+            Console.WriteLine("  | Q : Quitter                                                                         |");
+            Console.WriteLine("  =======================================================================================");
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("\n    Faites votre choix : ");
+            Console.ResetColor();
+        }
+
+        private static void Result(bool result, string strresult, bool opt) // Display result
+        {
+
             if (result)
             {
                 DisplayMessage($"\n    {strresult} est un palindrome", ConsoleColor.Yellow);
@@ -134,15 +151,15 @@ namespace ConsolePalindrome
             if (opt) MenuReturn(); // Call method to display message
         }
 
-        
-        public static void MenuReturn()
+
+        private static void MenuReturn() // Display message and wait enter key
         {
             DisplayMessage("\n    Appuyez sur enter pour continuer\n", ConsoleColor.Cyan);
             while (Console.ReadKey().Key != ConsoleKey.Enter) { }
             Menu(); // Re-call menu method
         }
 
-        static void DisplayFilesList() // Display files list in the current directory
+        private static void DisplayFilesList() // Display files list in the current directory
         {
             string[] fileList = FilesTxt.CreateFileList(@".\");
 
@@ -154,54 +171,50 @@ namespace ConsolePalindrome
             }
         }
 
-        static bool ValidAndSetExtensionFilename(ref string filename)
-        { 
-
-            if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
-            {
-                if (filename.Length< 5) // Add .txt to filename id don't exist
-                {
-                    filename += ".txt";
-                }
-                else
-                {
-                    string ext = filename.Substring(filename.Length - 4);
-                    if (ext != ".txt")
-                    {
-                        filename += ".txt";
-                    }
-                }
-                return true;
-            }
-            else
-            {
-                DisplayMessage("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!", ConsoleColor.Red);
-                Console.ReadKey();
-                return false;
-            }
-        }
-
-        static bool ValidFilename(string filename)
-        {
-
-            if (!string.IsNullOrWhiteSpace(filename)) // We don't accept null text or only spaces text
-            {
-                return true;
-            }
-            else
-            {
-                DisplayMessage("\n    Un nom de fichier ne peut pas être null ou ne contenir que des espaces !!!", ConsoleColor.Red);
-                Console.ReadKey();
-                return false;
-            }
-        }
-
-        public static void DisplayMessage(string msg, ConsoleColor color)
+        public static void DisplayMessage(string msg, ConsoleColor color) // Display a message to the console
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = color;
             Console.WriteLine(msg);
-            Console.ResetColor();            
+            Console.ResetColor();
         }
+
+        private static void DisplayRecordsAndCheckPalindrome(Records records) // Display all lines (records) and palindrome result
+        {
+            foreach (string line in records.records)
+            {
+                if (!string.IsNullOrWhiteSpace(line)) // We don't accept null text or only spaces text
+                {
+                    bool result = PalindromeBLL.IsPalindrome(line); // Palindrome test
+                    if (result)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"\n    {line} est un palindrome");
+
+                    }
+                    else
+                    {
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"\n    {line} n'est pas un palindrome !!!");
+                    }
+                    Console.ResetColor();
+                }
+                else
+                {
+                    DisplayMessage("\n    Un texte ne peut pas être null ou ne contenir que des espaces!!!", ConsoleColor.Red);
+                }
+            }
+        }
+
+        private static string EntryKeyboard(string Message) // Get text from keyboard
+        {
+            Console.Write(Message);
+            return Console.ReadLine();
+        }
+
+
     }
 }
+

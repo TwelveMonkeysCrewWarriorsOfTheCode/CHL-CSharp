@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProjectPalindromeBLL;
+using ProjectPalindromeDAL;
 using UtilsClassLibraryHelper;
 
 namespace UnitTestProject
@@ -9,7 +10,7 @@ namespace UnitTestProject
     {
         [TestMethod]
         [DataRow("radar", true, DisplayName = "radar (palindrome)")]
-        //[DataRow("a", false, DisplayName = "a (pas palindrome)")]
+        [DataRow("a", false, DisplayName = "a (pas palindrome)")]
         [DataRow("palindrome", false, DisplayName = "palindrome (pas palindrome)")]
         [DataRow("rotor", true, DisplayName = "rotor (palindrome)")]
         [DataRow("kayak", true, DisplayName = "kayak (palindrome)")]
@@ -38,7 +39,7 @@ namespace UnitTestProject
         [DataRow("Et la marine va venir à Malte", true, DisplayName = "Et la marine va venir à Malte (palindrome)")]
         [DataRow("caser vite ce palindrome ne mord ni lape cet ivre sac", true, DisplayName = "caser vite ce palindrome ne mord ni lape cet ivre sac (palindrome)")]
         [DataRow("ni palindrome ne mord ni lapin", true, DisplayName = "ni palindrome ne mord ni lapin (palindrome)")]
-        public void TestMethodPalindrome(string ptesttext, bool pExpectedValue)
+        public void TestMethodPalindrome(string ptesttext, bool pExpectedValue) // Check palindrome from string
         {
             string ptesttextlow = ptesttext.ToLower();
             string strtotest = UtilsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
@@ -48,7 +49,30 @@ namespace UnitTestProject
             Assert.AreEqual(pExpectedValue, result);
         }
 
-        //[DataRow(true, "palindrome.txt", DisplayName = "Test fichier palindrome.txt")]
+        [TestMethod]
+        [DataRow("palindrome.txt",true, DisplayName = "Test fichier palindrome.txt")]
+        public void TestMethodPalindromeFromFile(string pfilename, bool pExpectedValue) // Check palindrome from file
+        {
+            Records records = PalindromeDAL.ReadRecords(pfilename);
+            if (records.status)
+            {
+                foreach (string line in records.records)
+                {
+                    string ptesttextlow = line.ToLower();
+                    string strtotest = UtilsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
+                    string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
+                    bool result = PalindromeBLL.IsPalindrome(laststrtotest); // Palindrome test
+                    if (result)
+                    {
+                        Assert.AreEqual(pExpectedValue, result);
+                    }
+                    else
+                    {
+                        Assert.AreEqual(false, result);
+                    }
+                }
+            }
+        }
 
     }
 }

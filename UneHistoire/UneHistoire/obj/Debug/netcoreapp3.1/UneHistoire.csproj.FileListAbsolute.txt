@@ -1,0 +1,13 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\bin\Debug\netcoreapp3.1\UneHistoire.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.genruntimeconfig.cache

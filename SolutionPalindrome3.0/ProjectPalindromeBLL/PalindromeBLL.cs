@@ -6,8 +6,10 @@ namespace ProjectPalindromeBLL
 {
     public class PalindromeBLL
     {
+
         public static bool IsPalindrome(String texttotest) // A voir la méthode Array.Reverse et comparer les deux
         {
+            if (texttotest.Length < 2) return false;
             string inputlow = texttotest.ToLower(); // Convert minus
             string strtotest = UtilsHelper.RemoveAllSpaceFromString(inputlow); // Delete spaces
             string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
@@ -53,6 +55,22 @@ namespace ProjectPalindromeBLL
                 }
             }
             return cleanText;
+        }
+
+        public static ResultBLL ValidEntryTextAndCheckPalindrome(string texttocheck) // Check the text validity and palindrome
+        {
+            ResultBLL result = new ResultBLL();
+            if (!string.IsNullOrWhiteSpace(texttocheck) && texttocheck.Length > 1) // We don't accept null text or only spaces text or 1 char
+            {
+                result.result = PalindromeBLL.IsPalindrome(texttocheck); // Palindrome test
+                result.status = true;
+            }
+            else
+            {
+                result.status = false;
+                result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!";                
+            }
+            return result;
         }
     }
 }
