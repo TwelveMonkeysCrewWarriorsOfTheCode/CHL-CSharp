@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsolePalindrome/1.0.0": {
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "ProjectPalindromeDAL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "runtime": {
+          "ConsolePalindrome.dll": {}
+        }
+      },
+      "ProjectPalindromeBLL/1.0.0": {
+        "dependencies": {
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "runtime": {
+          "ProjectPalindromeBLL.dll": {}
+        }
+      },
+      "ProjectPalindromeDAL/1.0.0": {
+        "dependencies": {
+          "ProjectPalindromeBLL": "1.0.0",
+          "UtilsClassLibraryHelper": "1.0.0"
+        },
+        "runtime": {
+          "ProjectPalindromeDAL.dll": {}
+        }
+      },
+      "UtilsClassLibraryHelper/1.0.0": {
+        "runtime": {
+          "UtilsClassLibraryHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsolePalindrome/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectPalindromeBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectPalindromeDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtilsClassLibraryHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
