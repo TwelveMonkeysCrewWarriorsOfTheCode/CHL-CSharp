@@ -8,25 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\studentdev12\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\mogwa\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
+      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
       "projectName": "UtilsClassLibraryHelper",
-      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
-      "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
-      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\obj\\",
+      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj",
+      "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+      "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.0\\UtilsClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
