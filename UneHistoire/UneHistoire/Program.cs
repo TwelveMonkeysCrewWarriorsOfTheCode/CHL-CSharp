@@ -8,6 +8,7 @@ namespace UneHistoire
         {
             Console.WriteLine("Début du programme");
             //Personne b = new Boss("     Vador     ");
+            //Boss b = new Boss("     Vador     ");
             //Personne b = new Ami("     Skywalker     ");
             //Personne b = new Wife("     Leia     ");
             IAvertissable b = new Wife("     Leia     ");

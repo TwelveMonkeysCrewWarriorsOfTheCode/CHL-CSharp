@@ -10,3 +10,4 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\n
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.pdb
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UneHistoire\UneHistoire\obj\Debug\netcoreapp3.1\UneHistoire.csproj.AssemblyReference.cache
