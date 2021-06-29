@@ -29,15 +29,18 @@ namespace ConsolePalindrome
                         Environment.Exit(0); // Exit Program
                         break;
                     case "1":
-                        ResultBLL res = new ResultBLL();
-                        Console.WriteLine("{0}",res.Message);
-                        res.SetMessage("tata");
-                        Console.WriteLine("{0}", res.Message);
-                        input = EntryKeyboard("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : "); // Get text from keyboard
+                         input = EntryKeyboard("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : "); // Get text from keyboard
                         ResultBLL resultpalindrome = PalindromeBLL.ValidEntryTextAndCheckPalindrome(input); // Check the text validity and palindrome
-                        if (resultpalindrome.status) // ok
-                        { 
-                            Display.Result(resultpalindrome.result, input); // Call Result method to diplay result
+                        if (resultpalindrome.PStatus != Status.error ) // Not Error
+                        {
+                            if (resultpalindrome.PStatus == Status.ispalindrome)
+                            {
+                                Display.Result(true, input); // Call Result method to diplay result
+                            }
+                            else
+                            {
+                                Display.Result(false, input); // Call Result method to diplay result
+                            }
                             choiceDone = true;
                         }
                         else
@@ -48,29 +51,35 @@ namespace ConsolePalindrome
                     case "2":
                         input = EntryKeyboard("\n    Entrez un  mot ou un texte pour tester si c'est un palindrome : "); // Get text from keyboard
                         resultpalindrome = PalindromeBLL.ValidEntryTextAndCheckPalindrome(input); // Check the text validity and palindrome
-                        if (resultpalindrome.status)
+                        if (resultpalindrome.PStatus != Status.error) // Not Error
                         {
                             DisplayFilesList(); // Display Files list in the current directory
                             filename = EntryKeyboard("\n    Entrez le nom du fichier à enregistrer : "); // Get filename from keyboard
                             ResultDAL resultfilenameextension = FilesTxt.ValidAndSetExtensionFilename(filename); // Check the filename validity and add .txt if need
-                            if (resultfilenameextension.status)
+                            if (resultfilenameextension.PStatus)
                             {
-                                ResultDAL valid = PalindromeDAL.SaveRecords(input, resultfilenameextension.filename); // Save record to file in append mode
-                                if (valid.status)
+                                ResultDAL valid = PalindromeDAL.SaveRecords(input, resultfilenameextension.PFilename); // Save record to file in append mode
+                                if (valid.PStatus)
                                 {
-                                    Display.Result(resultpalindrome.result, input
-                                        ); // Call Result method to diplay result
+                                    if (resultpalindrome.PStatus == Status.ispalindrome)
+                                    {
+                                        Display.Result(true, input); // Call Result method to diplay result
+                                    }
+                                    else
+                                    {
+                                        Display.Result(false, input); // Call Result method to diplay result
+                                    }
                                     choiceDone = true;
                                 }
                                 else
                                 {
-                                    DisplayMessage(valid.message1, ConsoleColor.Red);
-                                    DisplayMessage(valid.message2, ConsoleColor.Red);
+                                    DisplayMessage(valid.PMessageDev, ConsoleColor.Red);
+                                    DisplayMessage(valid.PMessageExc, ConsoleColor.Red);
                                 }
                             } 
                             else
                             {
-                                DisplayMessage(resultfilenameextension.message1, ConsoleColor.Red);
+                                DisplayMessage(resultfilenameextension.PMessageDev, ConsoleColor.Red);
                             }
                         }
                         else
@@ -82,7 +91,7 @@ namespace ConsolePalindrome
                         DisplayFilesList(); // Display files list in the current directory
                         filename = EntryKeyboard("\n    Entrez le nom du fichier à lire : "); // Get filename from keyboard
                         ResultDAL resultfilename = FilesTxt.ValidFilename(filename); // Check if filename is not null and doesn't contains only spaces
-                        if (resultfilename.status)
+                        if (resultfilename.PStatus)
                         {
                             if (FilesTxt.IsFileExist(filename)) // File Exist ?
                             {
@@ -106,7 +115,7 @@ namespace ConsolePalindrome
                         }
                         else
                         {
-                            DisplayMessage(resultfilename.message1, ConsoleColor.Red);
+                            DisplayMessage(resultfilename.PMessageDev, ConsoleColor.Red);
                         }
                         break;
 

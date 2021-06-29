@@ -10,7 +10,6 @@ namespace ProjectPalindromeDAL
     {
         public static ResultDAL SaveRecords(string texttosave, string filename) // Save a text to file in append mode
         {
-            ResultDAL result = new ResultDAL();
             // Test if file exist
             try
             {
@@ -21,6 +20,8 @@ namespace ProjectPalindromeDAL
                     {
                         sw.WriteLine(texttosave); // Write to file
                         sw.Close(); // Close stream
+                        ResultDAL result = new ResultDAL(true, "", "", filename);
+                        return result;
                     }
                 }
                 else
@@ -29,18 +30,16 @@ namespace ProjectPalindromeDAL
                     {
                         sw.WriteLine(texttosave); // Write to file
                         sw.Close(); // Close stream
+                        ResultDAL result = new ResultDAL(true, "", "", filename);
+                        return result;
                     }
                 }
             }
             catch (Exception e)
             {
-                result.status = false;
-                result.message1 = "\n    Le fichier n'a pas pu être écrit.";
-                result.message2 = "\n    Exception: " + e.Message;
+                ResultDAL result = new ResultDAL(false, "\n    Le fichier n'a pas pu être écrit.", "\n    Exception: " + e.Message, "");
                 return result;
             }
-            result.status = true;
-            return result;
         }
 
         public static Records ReadRecords(string filename) // Read all line in the file and test if palindrome

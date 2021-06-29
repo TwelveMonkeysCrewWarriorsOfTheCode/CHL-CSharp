@@ -4,36 +4,44 @@ using System.Text;
 
 namespace ProjectPalindromeBLL
 {
+    public enum Status
+    {
+        error,      // Error in method
+        ispalindrome, // C'est un Palindrome
+        isnotpalindrome // Ce n'est pas un palindrome
+    }
+
+    /// <summary>
+    /// Class To Return The Status
+    /// </summary>
     public class ResultBLL
     {
-        // Object to return a result
-        public bool status; // Status of method
-        public string message1; // Error message from developper
-        public string message2; // Error message from exception
-        public bool result; // Status of palindrome check
-
-        private string message = "toto";
-
-        public string Message
+        public ResultBLL(Status pStatus, string pMessageDev, string pMessageExc)
         {
-            get
-            {
-                return message;
-            }
-            /*private set
-            {
-                message = value;
-            }*/
+            m_status = pStatus;
+            m_messageDev = pMessageDev;
+            m_messageExc = pMessageExc;
         }
-
-        public void SetMessage(String msg)
+        private Status m_status;
+        public Status PStatus
         {
-            //message = msg;
-            this.message = msg;
+            get => m_status;
+            private set => m_status = value;
+        }
+        private string m_messageDev; // Error message from developper
+        private string m_messageExc; // Error message from exception
+        public string PMessageDev
+        {
+            get => m_messageDev;
+            private set => m_messageDev = value;
+        }
+        public string PMessageExc
+        {
+            get => m_messageExc;
+            private set => m_messageExc = value;
         }
     }
 }
-
 /*
 class Person : IPerson
 {

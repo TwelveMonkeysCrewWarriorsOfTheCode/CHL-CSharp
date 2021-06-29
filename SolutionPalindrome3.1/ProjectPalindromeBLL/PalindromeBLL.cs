@@ -47,9 +47,9 @@ namespace ProjectPalindromeBLL
 
             for (int i = 0; i < textConverted.Length; i++)
             {
-                bool isNotLetter = Char.IsLetter(textConverted[i]); // Indicates whether a Unicode character is categorized as a Unicode letter.
+                bool isLetter = Char.IsLetter(textConverted[i]); // Indicates whether a Unicode character is categorized as a Unicode letter.
 
-                if (isNotLetter)
+                if (isLetter)
                 {
                     cleanText += textConverted[i];
                 }
@@ -59,18 +59,28 @@ namespace ProjectPalindromeBLL
 
         public static ResultBLL ValidEntryTextAndCheckPalindrome(string texttocheck) // Check the text validity and palindrome
         {
-            ResultBLL result = new ResultBLL();
             if (!string.IsNullOrWhiteSpace(texttocheck) && texttocheck.Length > 1) // We don't accept null text or only spaces text or 1 char
             {
-                result.result = PalindromeBLL.IsPalindrome(texttocheck); // Palindrome test
-                result.status = true;
+                bool resultpal = PalindromeBLL.IsPalindrome(texttocheck); // Palindrome test
+                if (resultpal)
+                {
+                    ResultBLL result = new ResultBLL(Status.ispalindrome,"","");
+                    return result;
+                }
+                else
+                {
+                    ResultBLL result = new ResultBLL(Status.isnotpalindrome, "", "");
+                    return result;
+                }
+                //result.status = true;
             }
             else
             {
-                result.status = false;
-                result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!";                
+                ResultBLL result = new ResultBLL(Status.error, "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", "");
+                return result;
+                //result.status = false;
+                //result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!";                
             }
-            return result;
         }
     }
 }

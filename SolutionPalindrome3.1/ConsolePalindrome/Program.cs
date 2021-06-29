@@ -12,9 +12,9 @@ namespace ConsolePalindrome
             {                
                 Display.Menu(); // Call Menu method   
             }
-            catch (Exception Exceptiontype)
+            catch (Exception ExceptionMessage)
             {
-                Display.DisplayMessage($"\n    Il y a une Erreur de type {Exceptiontype}, appelez le help desk", ConsoleColor.Red);
+                Display.DisplayMessage($"\n    Il y a une Erreur de type {ExceptionMessage.Message}, appelez le help desk", ConsoleColor.Red);
             }
         }
     }

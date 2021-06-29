@@ -8,9 +8,9 @@ namespace UneHistoire
     {
         private DateTime m_DateNaissance;
 
-        private string m_Nom;
+        protected string m_Nom;
 
-        private string m_prenom;
+        private string m_Prenom;
 
         public DateTime DateNaissance
         {
@@ -34,12 +34,12 @@ namespace UneHistoire
         {
             get
             {
-                return m_prenom;
+                return m_Prenom;
             }
             set
             {
                 // Test de garde pour avoir un prenom correct (A faire)
-                m_prenom = value.Trim();
+                m_Prenom = value.Trim();
             }
         }
 
@@ -47,5 +47,20 @@ namespace UneHistoire
         {
             return this.m_Nom.ToUpper();
         }
+        /*
+        public virtual int WorkCompleted()
+        {
+            return -1;
+        }
+
+        public virtual void WorkProgressing()
+        {
+
+        }
+
+        public virtual void WorkStarted()
+        {
+
+        }*/
     }
 }

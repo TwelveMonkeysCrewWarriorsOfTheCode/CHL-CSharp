@@ -58,3 +58,15 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\D
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.CopyComplete
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.csproj.CopyComplete
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\SolutionPalindrome3.1\ProjectPalindromeBLL\obj\Debug\netcoreapp3.1\ProjectPalindromeBLL.pdb
