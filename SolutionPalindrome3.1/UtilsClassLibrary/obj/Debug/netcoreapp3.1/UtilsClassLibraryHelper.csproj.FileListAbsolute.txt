@@ -35,7 +35,6 @@ D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.0\UtilsClassLibrary\obj\Debu
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.deps.json
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.pdb
-D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.csproj.AssemblyReference.cache
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.AssemblyInfoInputs.cache
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.AssemblyInfo.cs
 D:\Technifutur_repos\CHL-CSharp\SolutionPalindrome3.1\UtilsClassLibrary\obj\Debug\netcoreapp3.1\UtilsClassLibraryHelper.csproj.CoreCompileInputs.cache

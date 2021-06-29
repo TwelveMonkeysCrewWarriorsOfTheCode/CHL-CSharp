@@ -5,6 +5,9 @@ using UtilsClassLibraryHelper;
 
 namespace UnitTestProject
 {
+    /// <summary>
+    /// Tests Unit Class
+    /// </summary>
     [TestClass]
     public class UnitTestPalindrome
     {
@@ -42,7 +45,7 @@ namespace UnitTestProject
         public void TestMethodPalindrome(string ptesttext, bool pExpectedValue) // Check palindrome from string
         {
             string ptesttextlow = ptesttext.ToLower();
-            string strtotest = UtilsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
+            string strtotest = UtilsStringsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
             string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
 
             bool result = PalindromeBLL.IsPalindrome(laststrtotest); // Test if a palindrom
@@ -54,12 +57,12 @@ namespace UnitTestProject
         public void TestMethodPalindromeFromFile(string pfilename, bool pExpectedValue) // Check palindrome from file
         {
             Records records = PalindromeDAL.ReadRecords(pfilename);
-            if (records.status)
+            if (records.PStatus)
             {
-                foreach (string line in records.records)
+                foreach (string line in records.PRecords)
                 {
                     string ptesttextlow = line.ToLower();
-                    string strtotest = UtilsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
+                    string strtotest = UtilsStringsHelper.RemoveAllSpaceFromString(ptesttextlow); // Delete spaces
                     string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
                     bool result = PalindromeBLL.IsPalindrome(laststrtotest); // Palindrome test
                     if (result)

@@ -16,25 +16,29 @@ namespace ProjectPalindromeBLL
     /// </summary>
     public class ResultBLL
     {
+        private Status m_status;
+        private string m_messageDev; // Error message from developper
+        private string m_messageExc; // Error message from exception
+
         public ResultBLL(Status pStatus, string pMessageDev, string pMessageExc)
         {
             m_status = pStatus;
             m_messageDev = pMessageDev;
             m_messageExc = pMessageExc;
         }
-        private Status m_status;
+
         public Status PStatus
         {
             get => m_status;
             private set => m_status = value;
         }
-        private string m_messageDev; // Error message from developper
-        private string m_messageExc; // Error message from exception
+
         public string PMessageDev
         {
             get => m_messageDev;
             private set => m_messageDev = value;
         }
+
         public string PMessageExc
         {
             get => m_messageExc;

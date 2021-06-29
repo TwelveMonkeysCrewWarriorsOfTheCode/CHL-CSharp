@@ -10,7 +10,7 @@ namespace ConsolePalindrome
         {            
             try
             {                
-                Display.Menu(); // Call Menu method   
+                Display.DisplayMenu(); // Call Menu method   
             }
             catch (Exception ExceptionMessage)
             {

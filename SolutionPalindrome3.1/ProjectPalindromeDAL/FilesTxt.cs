@@ -7,6 +7,9 @@ using UtilsClassLibraryHelper;
 
 namespace ProjectPalindromeDAL
 {
+    /// <summary>
+    /// Class to manage th files
+    /// </summary>
     public class FilesTxt
     {
         public static string[] CreateFileList(string path) // Create list files in the current directory

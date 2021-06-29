@@ -6,6 +6,9 @@ using ProjectPalindromeBLL;
 
 namespace ProjectPalindromeDAL
 {
+    /// <summary>
+    /// Class to manage records
+    /// </summary>
     public class PalindromeDAL
     {
         public static ResultDAL SaveRecords(string texttosave, string filename) // Save a text to file in append mode
@@ -44,22 +47,16 @@ namespace ProjectPalindromeDAL
 
         public static Records ReadRecords(string filename) // Read all line in the file and test if palindrome
         {
-            Records records = new Records();
-
             try
             {
-                records.records = System.IO.File.ReadAllLines(filename); // Read the text file by line and return a array of strings
-
+                Records records = new Records(true, "", "", File.ReadLines(filename)); // Read the text file by line and return IEnumerable<string>
+                return records;
             }
             catch (Exception e)
             {
-                records.status = false;
-                records.message1 = "\n    Le fichier n'a pas pu être lu.";
-                records.message2 = "\n    Exception: " + e.Message;
+                Records records = new Records(false, "\n    Le fichier n'a pas pu être lu.", "\n    Exception: " + e.Message, null);
                 return records;
-            }
-            records.status = true;
-            return records;
+            }           
         }
     }
 }

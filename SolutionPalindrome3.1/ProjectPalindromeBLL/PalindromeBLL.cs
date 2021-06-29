@@ -4,6 +4,9 @@ using UtilsClassLibraryHelper;
 
 namespace ProjectPalindromeBLL
 {
+    /// <summary>
+    /// Class to check palindrome
+    /// </summary>
     public class PalindromeBLL
     {
 
@@ -11,7 +14,7 @@ namespace ProjectPalindromeBLL
         {
             if (texttotest.Length < 2) return false;
             string inputlow = texttotest.ToLower(); // Convert minus
-            string strtotest = UtilsHelper.RemoveAllSpaceFromString(inputlow); // Delete spaces
+            string strtotest = UtilsStringsHelper.RemoveAllSpaceFromString(inputlow); // Delete spaces
             string laststrtotest = PalindromeBLL.RemoveSpecificChar(strtotest); // Delete specific char
             char[] chars = laststrtotest.ToCharArray(); // Copies the characters in this instance to a Unicode character array 
             // Boucle a double indices i va du premier vers la fin et j va de la fin vers le premier
@@ -72,14 +75,11 @@ namespace ProjectPalindromeBLL
                     ResultBLL result = new ResultBLL(Status.isnotpalindrome, "", "");
                     return result;
                 }
-                //result.status = true;
             }
             else
             {
                 ResultBLL result = new ResultBLL(Status.error, "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!", "");
                 return result;
-                //result.status = false;
-                //result.message1 = "\n    Un texte ne peut pas être null ou ne contenir que des espaces et doit avoir au moins 2 caractères !!!";                
             }
         }
     }
