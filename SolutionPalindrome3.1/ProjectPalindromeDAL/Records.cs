@@ -14,6 +14,13 @@ namespace ProjectPalindromeDAL
         private string m_messageExc; // Error message from exception
         private IEnumerable<string> m_records; // Records
 
+        /// <summary>
+        /// Constructor To Return Result And Records
+        /// </summary>
+        /// <param name="pStatus"></param>
+        /// <param name="pMessageDev"></param>
+        /// <param name="pMessageExc"></param>
+        /// <param name="pRecords"></param>
         public Records(bool pStatus, string pMessageDev, string pMessageExc, IEnumerable<string> pRecords)
         {
             m_status = pStatus;

@@ -9,7 +9,11 @@ namespace ProjectPalindromeBLL
     /// </summary>
     public class PalindromeBLL
     {
-
+        /// <summary>
+        /// Test If Text Is Palindrome
+        /// </summary>
+        /// <param name="texttotest"></param>
+        /// <returns></returns>
         public static bool IsPalindrome(String texttotest) // A voir la méthode Array.Reverse et comparer les deux
         {
             if (texttotest.Length < 2) return false;
@@ -28,6 +32,11 @@ namespace ProjectPalindromeBLL
             return true;
         }
 
+        /// <summary>
+        /// Remove Accent, Specific Characters From Text
+        /// </summary>
+        /// <param name="textspecific"></param>
+        /// <returns></returns>
         public static string RemoveSpecificChar(string textspecific) // A voir la méthode RemoveDiacritics pour améliorer ou non
         {
             // Returns a new string whose textual value is the same as this string, but whose binary representation is in the specified Unicode normalization form.
@@ -60,6 +69,11 @@ namespace ProjectPalindromeBLL
             return cleanText;
         }
 
+        /// <summary>
+        /// Test If Text Is Compliant And Test Palindrome
+        /// </summary>
+        /// <param name="texttocheck"></param>
+        /// <returns></returns>
         public static ResultBLL ValidEntryTextAndCheckPalindrome(string texttocheck) // Check the text validity and palindrome
         {
             if (!string.IsNullOrWhiteSpace(texttocheck) && texttocheck.Length > 1) // We don't accept null text or only spaces text or 1 char

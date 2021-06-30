@@ -15,6 +15,9 @@ namespace ConsolePalindrome
     {
         const string VERSION = "3.1";
 
+        /// <summary>
+        /// Display Menu
+        /// </summary>
         public static void DisplayMenu() // Display Menu
         {
             bool choiceDone = false;
@@ -30,13 +33,13 @@ namespace ConsolePalindrome
                         Environment.Exit(0); // Exit Program
                         break;
                     case "1":
-                        if (TestPalindromeFromKeyboardAndSaveInFile())
+                        if (TestPalindromeFromKeyboard())
                         {
-                            choiceDone = true;
+                            choiceDone = true; 
                         }
                         break;
                     case "2":
-                        if (TestPalindromeFromKeyboard())
+                        if (TestPalindromeFromKeyboardAndSaveInFile())
                         {
                             choiceDone = true;
                         }
@@ -56,6 +59,9 @@ namespace ConsolePalindrome
             }
         }
 
+        /// <summary>
+        /// Display Menu Header
+        /// </summary>
         private static void DisplayMenuHead() // Header of the menu
         {
             Console.Clear();
@@ -79,6 +85,10 @@ namespace ConsolePalindrome
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Choice 1 : Test Palindrome From Keyboard
+        /// </summary>
+        /// <returns></returns>
         private static bool TestPalindromeFromKeyboard()
         {
             string input = "";
@@ -103,6 +113,10 @@ namespace ConsolePalindrome
             return false;
         }
 
+        /// <summary>
+        /// Choice 2 : Test Palindrome From Keyboard And Save To File
+        /// </summary>
+        /// <returns></returns>
         private static bool TestPalindromeFromKeyboardAndSaveInFile()
         {
             string input = "";
@@ -147,6 +161,10 @@ namespace ConsolePalindrome
             return false;
         }
 
+        /// <summary>
+        /// Choice 3 : Test Palindrome From File
+        /// </summary>
+        /// <returns></returns>
         private static bool TestPalindromeFromFile()
         {
             string filename = "";
@@ -182,6 +200,11 @@ namespace ConsolePalindrome
             return false;
         }
 
+        /// <summary>
+        /// Display Test Palindrome Result
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="strresult"></param>
         private static void DisplayResult(bool result, string strresult) // Display result
         {
 
@@ -197,7 +220,9 @@ namespace ConsolePalindrome
             DisplayMenuReturn(); // Call method to display message
         }
 
-
+        /// <summary>
+        /// Display Message to Return Menu
+        /// </summary>
         private static void DisplayMenuReturn() // Display message and wait enter key
         {
             DisplayMessage("\n    Appuyez sur enter pour continuer\n", ConsoleColor.Cyan);
@@ -205,6 +230,9 @@ namespace ConsolePalindrome
             DisplayMenu(); // Re-call menu method
         }
 
+        /// <summary>
+        /// Display The Files List From Current Directory
+        /// </summary>
         private static void DisplayFilesList() // Display files list in the current directory
         {
             string[] fileList = FilesTxt.CreateFileList(@".\");
@@ -217,6 +245,11 @@ namespace ConsolePalindrome
             }
         }
 
+        /// <summary>
+        /// Display A Message To The Console
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <param name="color"></param>
         public static void DisplayMessage(string msg, ConsoleColor color) // Display a message to the console
         {
             Console.BackgroundColor = ConsoleColor.Black;
@@ -225,6 +258,10 @@ namespace ConsolePalindrome
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Display Test Palindrome Result From Files 
+        /// </summary>
+        /// <param name="records"></param>
         private static void DisplayRecordsAndCheckPalindrome(Records records) // Display all lines (records) and palindrome result
         {
             foreach (string line in records.PRecords)
@@ -254,13 +291,17 @@ namespace ConsolePalindrome
             }
         }
 
+        /// <summary>
+        /// Get A Text From Keyboard
+        /// </summary>
+        /// <param name="Message"></param>
+        /// <returns></returns>
         private static string EntryKeyboard(string Message) // Get text from keyboard
         {
             Console.Write(Message);
             return Console.ReadLine();
         }
-
-
     }
 }
+
 

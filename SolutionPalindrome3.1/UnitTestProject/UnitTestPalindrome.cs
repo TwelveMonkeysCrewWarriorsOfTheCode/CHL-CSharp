@@ -11,6 +11,11 @@ namespace UnitTestProject
     [TestClass]
     public class UnitTestPalindrome
     {
+        /// <summary>
+        /// Check Palindrome From String
+        /// </summary>
+        /// <param name="ptesttext"></param>
+        /// <param name="pExpectedValue"></param>
         [TestMethod]
         [DataRow("radar", true, DisplayName = "radar (palindrome)")]
         [DataRow("a", false, DisplayName = "a (pas palindrome)")]
@@ -52,6 +57,11 @@ namespace UnitTestProject
             Assert.AreEqual(pExpectedValue, result);
         }
 
+        /// <summary>
+        /// Check Palindrome From File
+        /// </summary>
+        /// <param name="pfilename"></param>
+        /// <param name="pExpectedValue"></param>
         [TestMethod]
         [DataRow("palindrome.txt",true, DisplayName = "Test fichier palindrome.txt")]
         public void TestMethodPalindromeFromFile(string pfilename, bool pExpectedValue) // Check palindrome from file

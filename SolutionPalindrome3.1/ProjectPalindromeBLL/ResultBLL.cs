@@ -20,6 +20,12 @@ namespace ProjectPalindromeBLL
         private string m_messageDev; // Error message from developper
         private string m_messageExc; // Error message from exception
 
+        /// <summary>
+        /// Constructor To Return Result
+        /// </summary>
+        /// <param name="pStatus"></param>
+        /// <param name="pMessageDev"></param>
+        /// <param name="pMessageExc"></param>
         public ResultBLL(Status pStatus, string pMessageDev, string pMessageExc)
         {
             m_status = pStatus;

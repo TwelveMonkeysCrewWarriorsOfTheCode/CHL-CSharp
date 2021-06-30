@@ -11,6 +11,12 @@ namespace ProjectPalindromeDAL
     /// </summary>
     public class PalindromeDAL
     {
+        /// <summary>
+        /// Save Records
+        /// </summary>
+        /// <param name="texttosave"></param>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         public static ResultDAL SaveRecords(string texttosave, string filename) // Save a text to file in append mode
         {
             // Test if file exist
@@ -45,6 +51,11 @@ namespace ProjectPalindromeDAL
             }
         }
 
+        /// <summary>
+        /// Read Records
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         public static Records ReadRecords(string filename) // Read all line in the file and test if palindrome
         {
             try

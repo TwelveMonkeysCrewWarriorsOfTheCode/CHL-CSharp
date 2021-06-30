@@ -14,6 +14,13 @@ namespace ProjectPalindromeDAL
         private string m_messageExc; // Error message from exception
         private string m_filename; // Filename
 
+        /// <summary>
+        /// Constructor To Return Result
+        /// </summary>
+        /// <param name="pStatus"></param>
+        /// <param name="pMessageDev"></param>
+        /// <param name="pMessageExc"></param>
+        /// <param name="pFilename"></param>
         public ResultDAL(bool pStatus, string pMessageDev, string pMessageExc, string pFilename)
         {
             m_status = pStatus;
