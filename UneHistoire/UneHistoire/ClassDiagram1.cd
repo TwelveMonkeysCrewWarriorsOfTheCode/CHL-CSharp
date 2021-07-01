@@ -3,7 +3,7 @@
   <Class Name="UneHistoire.Boss">
     <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABA=</HashCode>
+      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Boss.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -11,17 +11,14 @@
   <Class Name="UneHistoire.Worker">
     <Position X="4.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Worker.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="m_Personne" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="UneHistoire.Ami">
     <Position X="4.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABA=</HashCode>
+      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ami.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -43,8 +40,16 @@
   <Class Name="UneHistoire.Wife">
     <Position X="8.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABA=</HashCode>
+      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wife.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UneHistoire.Radiator">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Radiator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

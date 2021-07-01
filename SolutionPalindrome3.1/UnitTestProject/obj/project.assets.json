@@ -6169,25 +6169,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mogwa\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\studentdev12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
+      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
       "projectName": "UnitTestProjectPalindrome",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
-      "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
-      "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\obj\\",
+      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\UnitTestProjectPalindrome.csproj",
+      "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
+      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\UnitTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -6203,14 +6203,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome3.1\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome3.1\\UtilsClassLibrary\\UtilsClassLibraryHelper.csproj"
             }
           }
         }
