@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UneHistoire
 {
-    public class Radiator : IAvertissable
+    public class Radiator //: IAvertissable
     {
         protected string m_Number;
 

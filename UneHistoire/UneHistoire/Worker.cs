@@ -6,28 +6,33 @@ namespace UneHistoire
 {
     class Worker
     {
-        public Worker(IAvertissable pAvertissable)
-        {
-            if (pAvertissable == null) throw new ArgumentNullException();
-            m_Avertissable = pAvertissable;
-        }
-        private IAvertissable m_Avertissable;
-        //private Personne m_Personne;
+        public event WorkStartedDelegate DlgWorkStarted; // Event
+        public event WorkProgressingDelegate DlgWorkProgressing;
+        public event WorkCompletedDelegate DlgWorkCompleted;
+
         public void DoWork()
         {
             //Console.WriteLine($"Worker dit : {Boss.GetNom()} je démarre le travail");
             //Console.WriteLine($"Worker dit : {m_Personne.GetNom()} je démarre le travail");
             Console.WriteLine($"Worker dit : je démarre le travail");
-            m_Avertissable.WorkStarted();
+            if (DlgWorkStarted != null) DlgWorkStarted(); // appel du délégué
+            //DlgWorkStarted?.Invoke(); // Idem que la ligne précédente
 
             //Console.WriteLine($"Worker dit : {m_Personne.FullName} je continue le travail");
             Console.WriteLine($"Worker dit : je continue le travail");
-            m_Avertissable.WorkProgressing();
+            if (DlgWorkProgressing != null) DlgWorkProgressing();
 
             //Console.WriteLine($"Worker dit : {m_Personne.Prenom} je termine le travail");
             Console.WriteLine($"Worker dit : je termine le travail");
-            int grade = m_Avertissable.WorkCompleted();
-            Console.WriteLine($"Le grade est {grade}");
+            foreach (WorkCompletedDelegate methode in DlgWorkCompleted.GetInvocationList())
+            {
+                int grade = 0;
+                if (DlgWorkCompleted != null)
+                {
+                    grade = methode();
+                }
+                Console.WriteLine($"Le grade est {grade}");
+            }
         }
     }
 }

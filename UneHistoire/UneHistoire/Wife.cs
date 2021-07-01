@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UneHistoire
 {
-    public class Wife : Personne, IAvertissable
+    public class Wife : Personne //, IAvertissable
     {
         public Wife(string pNom)
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UneHistoire
 {
-    public class Ami : Personne, IAvertissable
+    public class Ami : Personne //, IAvertissable
     {
         public Ami(string pNom)
         {
@@ -13,16 +13,12 @@ namespace UneHistoire
             this.m_Nom = pNom.Trim();
         }
 
-        public int WorkCompleted()
+        public int BoireUnVerre()
         {
             Console.WriteLine($"Ami {this.GetNom()} dit : viens boire un verre");
             return 7; //grade
         }
-        public void WorkProgressing()
-        {
-
-        }
-
+        
         public void WorkStarted()
         {
             Console.WriteLine($"Ami {this.GetNom()} dit : Bon travail");
