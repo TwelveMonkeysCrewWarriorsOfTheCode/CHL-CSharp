@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProjectPalindromeBLL/1.0.0": {
+        "dependencies": {
+          "ProjectPalindromeDAL": "1.0.0",
+          "ProjectUtilsLibraryHelper": "1.0.0"
+        },
+        "runtime": {
+          "ProjectPalindromeBLL.dll": {}
+        }
+      },
+      "ProjectPalindromeDAL/1.0.0": {
+        "runtime": {
+          "ProjectPalindromeDAL.dll": {}
+        }
+      },
+      "ProjectUtilsLibraryHelper/1.0.0": {
+        "runtime": {
+          "ProjectUtilsLibraryHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectPalindromeBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectPalindromeDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectUtilsLibraryHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

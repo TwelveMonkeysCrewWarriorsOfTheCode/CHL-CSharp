@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Palindrome_Win</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectPalindromeBLL\ProjectPalindromeBLL.csproj" />
+    <ProjectReference Include="..\ProjectPalindromeDAL\ProjectPalindromeDAL.csproj" />
+  </ItemGroup>
+
+</Project>

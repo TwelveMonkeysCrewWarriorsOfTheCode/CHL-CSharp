@@ -1,0 +1,13 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\bin\Debug\netcoreapp3.1\UsingLambdaExpressions.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingLambdaExpressions\UsingLambdaExpressions\obj\Debug\netcoreapp3.1\UsingLambdaExpressions.genruntimeconfig.cache

@@ -34,7 +34,8 @@ namespace UsingParameters
             }
         }
 
-        public static Time AddTime(Time pLeftTime, Time pRightTime)
+        //public static Time AddTime(Time pLeftTime, Time pRightTime)
+        public static Time operator+(Time pLeftTime, Time pRightTime)
         {
             Time result = new Time();
             result.Hour = pLeftTime.Hour + pRightTime.Hour;
@@ -43,7 +44,8 @@ namespace UsingParameters
             return result;
         }
 
-        public static Time SubTime(Time pLeftTime, Time pRightTime)
+        //public static Time SubTime(Time pLeftTime, Time pRightTime)
+        public static Time operator-(Time pLeftTime, Time pRightTime)
         {
             Time result = new Time();
             result.Hour = pLeftTime.Hour - pRightTime.Hour;
@@ -52,7 +54,8 @@ namespace UsingParameters
             return result;
         }
 
-        public static Time MulTime(Time pTime, int pMultiplicator)
+        //public static Time MulTime(Time pTime, int pMultiplicator)
+        public static Time operator*(Time pTime, int pMultiplicator)
         {
             Time result = new Time();
             result.Hour = pTime.Hour * pMultiplicator;
@@ -60,7 +63,8 @@ namespace UsingParameters
             result.AdjustTime();
             return result;
         }
-        public static Time DivTime(Time pTime, int pDivisor)
+        //public static Time DivTime(Time pTime, int pDivisor)
+        public static Time operator/(Time pTime, int pDivisor)
         {
             Time result = new Time();
             result.Hour = 0;

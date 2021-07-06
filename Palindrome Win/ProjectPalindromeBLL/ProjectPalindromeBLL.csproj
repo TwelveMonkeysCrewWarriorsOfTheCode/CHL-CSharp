@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectPalindromeDAL\ProjectPalindromeDAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UtilsClassLibraryHelper">
+      <HintPath>..\..\SolutionPalindrome3.1\UtilsClassLibrary\bin\Debug\netcoreapp3.1\UtilsClassLibraryHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

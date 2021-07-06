@@ -25,7 +25,8 @@ namespace UsingParameters
             time2.Minute = 59;
             Console.WriteLine($"(Add)time1={time1.ToString()}");
             Console.WriteLine($"(Add)time2={time2.ToString()}");
-            Time timeResult = Time.AddTime(time1, time2);
+            //Time timeResult = Time.AddTime(time1, time2);
+            Time timeResult = time1 + time2; // Idem ligne précédente
             Console.WriteLine($"(Add)timeresult={timeResult}");
             time1.Hour = 21;
             time1.Minute = 10;
@@ -33,21 +34,24 @@ namespace UsingParameters
             time2.Minute = 59;
             Console.WriteLine($"(Sub)time1={time1.ToString()}");
             Console.WriteLine($"(Sub)time2={time2.ToString()}");
-            timeResult = Time.SubTime(time1, time2);
+            //timeResult = Time.SubTime(time1, time2);
+            timeResult = time1 - time2; // Idem ligne précédente
             Console.WriteLine($"(Sub)timeresult={timeResult}");
             time1.Hour = 18;
             time1.Minute = 10;
             multiplicator = 6;
             Console.WriteLine($"(Mul)time1={time1.ToString()}");
             Console.WriteLine($"(Mul)multiplicateur={multiplicator}");
-            timeResult = Time.MulTime(time1, multiplicator);
+            //timeResult = Time.MulTime(time1, multiplicator);
+            timeResult = time1 * multiplicator; // Idem ligne précédente
             Console.WriteLine($"(Mul)timeresult={timeResult}");
             time1.Hour = 20;
             time1.Minute = 10;
             divisor = 2;
             Console.WriteLine($"(Div)time1={time1.ToString()}");
             Console.WriteLine($"(Div)diviseur={divisor}");
-            timeResult = Time.DivTime(time1, divisor);
+            //timeResult = Time.DivTime(time1, divisor);
+            timeResult = time1 / divisor; // Idem ligne précédente
             Console.WriteLine($"(Div)timeresult={timeResult}");
         }
 

@@ -1,0 +1,16 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\bin\Debug\netcoreapp3.1\Horloge.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.Form1.resources
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.Properties.Resources.resources
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.csproj.GenerateResource.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Horloge\Horloge\obj\Debug\netcoreapp3.1\Horloge.genruntimeconfig.cache

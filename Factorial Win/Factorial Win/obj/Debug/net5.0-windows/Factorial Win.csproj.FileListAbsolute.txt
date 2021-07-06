@@ -1,0 +1,22 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\ref\Factorial Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\Factorial Win.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\ProjectMathematiqueBLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\bin\Debug\net5.0-windows\ProjectMathematiqueBLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial_Win.Properties.Resources.resources
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.csproj.GenerateResource.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.GeneratedMSBuildEditorConfig.editorconfig
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.csproj.CopyComplete
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\ref\Factorial Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial_Win.FormFactorielle.resources
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Factorial Win\Factorial Win\obj\Debug\net5.0-windows\Factorial Win.csproj.AssemblyReference.cache

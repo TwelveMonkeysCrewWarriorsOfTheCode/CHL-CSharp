@@ -1,0 +1,50 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.exe
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.runtimeconfig.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.runtimeconfig.dev.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ref\Palindrome Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome_Win.Form1.resources
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.GenerateResource.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.GeneratedMSBuildEditorConfig.editorconfig
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\ref\Palindrome Win.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeBLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\UtilsClassLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeBLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\UtilsClassLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.CopyComplete
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeDAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeDAL.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.exe
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.deps.json
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.runtimeconfig.json
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.runtimeconfig.dev.json
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ref\Palindrome Win.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\Palindrome Win.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeBLL.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeDAL.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\UtilsClassLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeBLL.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\ProjectPalindromeDAL.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\bin\Debug\net5.0-windows\UtilsClassLibraryHelper.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.AssemblyReference.cache
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome_Win.Form1.resources
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.GenerateResource.cache
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.GeneratedMSBuildEditorConfig.editorconfig
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.csproj.CopyComplete
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\ref\Palindrome Win.dll
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.pdb
+D:\Technifutur_repos\CHL-CSharp\Palindrome Win\Palindrome Win\obj\Debug\net5.0-windows\Palindrome Win.genruntimeconfig.cache
