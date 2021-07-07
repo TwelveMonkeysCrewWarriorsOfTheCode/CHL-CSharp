@@ -11,13 +11,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SolutionPalindrome4.0")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Company : Gremlins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("SolutionPalindrome4.0")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © : Christian Lambert")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Ce Programme permet de tester si un mot ou une phrase est un palindrome")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("4.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("4.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("Palindrome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolutionPalindrome4.0")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("4.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

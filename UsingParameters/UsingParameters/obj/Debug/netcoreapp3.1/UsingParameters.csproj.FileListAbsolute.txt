@@ -4,7 +4,6 @@ D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\bin\Debug\netcor
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\bin\Debug\netcoreapp3.1\UsingParameters.runtimeconfig.dev.json
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\bin\Debug\netcoreapp3.1\UsingParameters.dll
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\bin\Debug\netcoreapp3.1\UsingParameters.pdb
-D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.csproj.AssemblyReference.cache
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.AssemblyInfoInputs.cache
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.AssemblyInfo.cs
 D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.csproj.CoreCompileInputs.cache
@@ -23,3 +22,4 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingParameters\UsingParameters\obj
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.pdb
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.genruntimeconfig.cache
+D:\Technifutur_repos\CHL-CSharp\UsingParameters\UsingParameters\obj\Debug\netcoreapp3.1\UsingParameters.csproj.AssemblyReference.cache

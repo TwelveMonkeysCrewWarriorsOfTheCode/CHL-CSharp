@@ -1,0 +1,12 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\bin\Debug\net5.0\BLL.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\bin\Debug\net5.0\BLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\bin\Debug\net5.0\ref\BLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\bin\Debug\net5.0\BLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\ref\BLL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\BLL\obj\Debug\net5.0\BLL.csproj.AssemblyReference.cache

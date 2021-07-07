@@ -72,5 +72,35 @@ namespace UsingParameters
             result.AdjustTime();
             return result;
         }
+
+        public static implicit operator Time(float hours)
+        {
+            Time result = new Time();
+            result.Hour = (int)hours;
+            result.Minute = 30;
+            return result;
+        }
+
+        public static implicit operator float(Time t1)
+        {
+            float result;
+            result = 2.5f;
+            return result;
+        }
+
+        public static implicit operator Time(int hours)
+        {
+            Time result = new Time();
+            result.Hour = hours;
+            result.Minute = 0;
+            return result;
+        }
+
+        public static implicit operator int(Time t1)
+        {
+            int result;
+            result = t1.Hour;
+            return result;
+        }
     }
 }

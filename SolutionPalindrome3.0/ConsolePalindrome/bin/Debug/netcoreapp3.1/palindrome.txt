@@ -28,3 +28,16 @@ Elle dira hélas à la sale haridelle
 Et la marine va venir à Malte
 caser vite ce palindrome ne mord ni lape cet ivre sac
 ni palindrome ne mord ni lapin
+
+
+Time 01:30 == 1.5f 
+Faut juste gérer les minutes...
+1min = 100/60 float
+0,01f == 60min/100
+
+1h00 c'est 1.00f
+45min c'est 0.75f
+1/2h c'est 0.5f
+1/4h c'est 0.25f
+0h00 c'est 0.00f
+Et inversement...

@@ -53,6 +53,21 @@ namespace UsingParameters
             //timeResult = Time.DivTime(time1, divisor);
             timeResult = time1 / divisor; // Idem ligne précédente
             Console.WriteLine($"(Div)timeresult={timeResult}");
+            float floatconversion = 2.50f;
+            Time timeconversion;
+            timeconversion = floatconversion;
+            Console.WriteLine($"float={floatconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
+            timeconversion.Hour = 2;
+            timeconversion.Minute = 30;
+            floatconversion = timeconversion;
+            Console.WriteLine($"time={timeconversion.Hour}:{timeconversion.Minute},float={floatconversion}");
+            int intconversion = 2;
+            timeconversion = intconversion;
+            Console.WriteLine($"int={intconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
+            timeconversion.Hour = 2;
+            timeconversion.Minute = 0;
+            intconversion = timeconversion;
+            Console.WriteLine($"time={timeconversion.Hour}:{timeconversion.Minute},int={intconversion}");
         }
 
         private static int Add(ref int pLeftValue, ref int pRightValue)
