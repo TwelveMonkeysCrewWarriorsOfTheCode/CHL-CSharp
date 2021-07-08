@@ -56,18 +56,18 @@ namespace UsingParameters
             float floatconversion = 2.50f;
             Time timeconversion;
             timeconversion = floatconversion;
-            Console.WriteLine($"float={floatconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
+            Console.WriteLine($"(Conv float->Time)float={floatconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
             timeconversion.Hour = 2;
             timeconversion.Minute = 30;
             floatconversion = timeconversion;
-            Console.WriteLine($"time={timeconversion.Hour}:{timeconversion.Minute},float={floatconversion}");
-            int intconversion = 2;
+            Console.WriteLine($"(Conv Time->float)time={timeconversion.Hour}:{timeconversion.Minute},float={floatconversion}");
+            int intconversion = 150;
             timeconversion = intconversion;
-            Console.WriteLine($"int={intconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
+            Console.WriteLine($"(Conv int->time)int={intconversion},time={timeconversion.Hour}:{timeconversion.Minute}");
             timeconversion.Hour = 2;
-            timeconversion.Minute = 0;
+            timeconversion.Minute = 30;
             intconversion = timeconversion;
-            Console.WriteLine($"time={timeconversion.Hour}:{timeconversion.Minute},int={intconversion}");
+            Console.WriteLine($"(Conv time->int)time={timeconversion.Hour}:{timeconversion.Minute},int={intconversion}");
         }
 
         private static int Add(ref int pLeftValue, ref int pRightValue)

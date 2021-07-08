@@ -41,3 +41,32 @@ Faut juste gérer les minutes...
 1/4h c'est 0.25f
 0h00 c'est 0.00f
 Et inversement...
+
+1min == 0.016f soit 1/60100
+0,01f == 0.006H soit 1/10060
+
+0H01min == 0.016f soit 1/60x100
+0,01f == 0.006H soit 1/100x60
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int Hour = 19;
+		int Minute = 47;
+		float resultat = MathF.Round(((float)Minute / 60) + Hour, 4);
+		Console.WriteLine(resultat);
+		
+		Console.WriteLine();
+		
+		float pFloat = 19.7833f;
+		int pHour = (int)pFloat;
+		int pMinute = (int)MathF.Round(MathF.Round(pFloat, 4) % 1 * 60);
+		Console.WriteLine($"{pHour}:{pMinute}");
+	}
+}
+
+Time et float c’est faire passer heure minutes en heure à virgules (2h30 <-> 2,5h)
+ et pour le Time et int c’est la même chose mais en minutes (2h30 <-> 150min) 60+60+30=150

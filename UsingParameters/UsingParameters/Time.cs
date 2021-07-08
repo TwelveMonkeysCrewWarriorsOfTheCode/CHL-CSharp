@@ -73,33 +73,39 @@ namespace UsingParameters
             return result;
         }
 
-        public static implicit operator Time(float hours)
+        public static implicit operator Time(float pFloat)
         {
             Time result = new Time();
-            result.Hour = (int)hours;
-            result.Minute = 30;
+            result.Hour = (int)pFloat;
+            // MathF.Round(pFloat, 4) : 2,5
+            // MathF.Round(pFloat, 4) % 1 : 0,5
+            // MathF.Round(pFloat, 4) % 1 * 60 : 30
+            // MathF.Round(MathF.Round(pFloat, 4) % 1 * 60) : 30
+            // (int)MathF.Round(MathF.Round(pFloat, 4) % 1 * 60) : 30
+            // Console.WriteLine((int)MathF.Round(MathF.Round(pFloat, 4) % 1 * 60));
+            result.Minute = (int)MathF.Round(MathF.Round(pFloat, 4) % 1 * 60);
             return result;
         }
 
-        public static implicit operator float(Time t1)
+        public static implicit operator float(Time pTime)
         {
-            float result;
-            result = 2.5f;
+            float result = MathF.Round(((float)pTime.Minute / 60) + pTime.Hour, 4);
             return result;
         }
 
-        public static implicit operator Time(int hours)
+        public static implicit operator Time(int pInt)
         {
             Time result = new Time();
-            result.Hour = hours;
-            result.Minute = 0;
+            float convinttofloat = (float)pInt / 60;
+            result.Hour = (int)convinttofloat;
+            result.Minute = (int)MathF.Round(MathF.Round(convinttofloat, 4) % 1 * 60);
             return result;
         }
 
-        public static implicit operator int(Time t1)
+        public static implicit operator int(Time pTime)
         {
             int result;
-            result = t1.Hour;
+            result = (pTime.Hour * 60) + pTime.Minute;
             return result;
         }
     }
