@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using UtilsLibraryHelper;
+using ProjectUtilsLibraryHelper;
 using ProjectPalindromeDAL;
 
 namespace ProjectPalindromeBLL

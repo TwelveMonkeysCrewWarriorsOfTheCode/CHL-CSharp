@@ -9,27 +9,19 @@ using System.Windows.Forms;
 
 namespace SolutionPalindrome4._0
 {
-    partial class AboutBox : System.Windows.Forms.Form
+    partial class DlgAbout : Form
     {
-        public AboutBox()
+        public DlgAbout()
         {
             InitializeComponent();
             ///*
-            this.Text = String.Format("About {0}", AssemblyTitle);         
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
-            //*/
-            /*
-            this.Text = String.Format("About {0}", "Palindrome");
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", "4.0");
-            this.labelCopyright.Text = "Copyright ()";
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
-            */
+            //this.Text = String.Format("About {0}", AssemblyTitle);
+            this.Text = String.Format("About");
+            this.LblProductName.Text = AssemblyProduct;
+            this.LblVersion.Text = String.Format("Version {0}", AssemblyVersion);
+            this.LblCopyright.Text = AssemblyCopyright;
+            this.LblCompanyName.Text = AssemblyCompany;
+            this.TxtDescription.Text = AssemblyDescription;
         }
 
         #region Assembly Attribute Accessors
@@ -115,6 +107,11 @@ namespace SolutionPalindrome4._0
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

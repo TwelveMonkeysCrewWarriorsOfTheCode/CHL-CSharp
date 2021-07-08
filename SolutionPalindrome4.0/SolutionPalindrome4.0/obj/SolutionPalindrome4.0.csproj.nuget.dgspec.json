@@ -1,24 +1,211 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj": {}
+    "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj": {}
   },
   "projects": {
-    "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj": {
-      "version": "4.0.0",
+    "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj",
-        "projectName": "Palindrome",
-        "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj",
-        "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
-        "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\obj\\",
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
+        "projectName": "ProjectPalindromeBLL",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
+              },
+              "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
+        "projectName": "ProjectPalindromeDAL",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj",
+        "projectName": "ProjectUtilsLibraryHelper",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj": {
+      "version": "4.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj",
+        "projectName": "Palindrome",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\SolutionPalindrome4.0.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\SolutionPalindrome4.0\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -33,7 +220,14 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+              },
+              "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

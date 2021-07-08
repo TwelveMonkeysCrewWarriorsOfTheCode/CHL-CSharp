@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProjectPalindromeBLL;
 using ProjectPalindromeDAL;
-using UtilsLibraryHelper;
+using ProjectUtilsLibraryHelper;
 
 namespace ProjectUnitTestPalindrome
 {
@@ -63,7 +63,7 @@ namespace ProjectUnitTestPalindrome
         /// <param name="pFilename">File name</param>
         /// <param name="pExpectedValue">Value expected true/false</param>
         [TestMethod]
-        [DataRow("palindrome.txt", true, DisplayName = "Test fichier palindrome.txt")]
+        [DataRow("palindrome.txt", true, DisplayName = "Test file palindrome.txt")]
         public void TestMethodPalindromeFromFile(string pFilename, bool pExpectedValue) // Check palindrome from file
         {
             bool result = false;

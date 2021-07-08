@@ -16,7 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ProjectPalindromeBLL\ProjectPalindromeBLL.csproj" />
     <ProjectReference Include="..\ProjectPalindromeDAL\ProjectPalindromeDAL.csproj" />
-    <ProjectReference Include="..\UtilsLibraryHelper\ProjectUtilsLibraryHelper.csproj" />
+    <ProjectReference Include="..\ProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper.csproj" />
+    <ProjectReference Include="..\ProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper.csproj" />
   </ItemGroup>
 
 </Project>

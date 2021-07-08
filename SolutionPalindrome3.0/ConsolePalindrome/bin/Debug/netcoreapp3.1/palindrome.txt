@@ -70,3 +70,5 @@ public class Program
 
 Time et float c’est faire passer heure minutes en heure à virgules (2h30 <-> 2,5h)
  et pour le Time et int c’est la même chose mais en minutes (2h30 <-> 150min) 60+60+30=150
+ 2*60=120 + min
+150 -> 150/60=2,5

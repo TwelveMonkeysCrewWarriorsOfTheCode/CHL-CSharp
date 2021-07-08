@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Company : Gremlins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © : Christian Lambert")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Ce Programme permet de tester si un mot ou une phrase est un palindrome")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Ce programme permet de tester si un mot ou une phrase est un palindrome")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("4.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("4.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Palindrome")]

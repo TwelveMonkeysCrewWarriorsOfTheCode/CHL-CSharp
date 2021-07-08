@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UtilsLibraryHelper
+namespace ProjectUtilsLibraryHelper
 {
     /// <summary>
     /// Class contains utility methods string

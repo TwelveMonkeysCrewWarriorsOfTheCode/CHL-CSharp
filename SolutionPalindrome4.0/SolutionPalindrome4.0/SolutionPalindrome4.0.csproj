@@ -9,9 +9,11 @@
     <Company>Company : Gremlins</Company>
     <Authors>Authors : Christian Lambert</Authors>
     <Product>Palindrome</Product>
-    <Description>Ce Programme permet de tester si un mot ou une phrase est un palindrome</Description>
+    <Description>Ce programme permet de tester si un mot ou une phrase est un palindrome</Description>
     <Copyright>Copyright © : Christian Lambert</Copyright>
     <PackageId>Palindrome</PackageId>
+    <PackageIcon>Linux-icon.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +29,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Icons\Linux-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectPalindromeBLL\ProjectPalindromeBLL.csproj" />
+    <ProjectReference Include="..\ProjectPalindromeDAL\ProjectPalindromeDAL.csproj" />
   </ItemGroup>
 
 </Project>

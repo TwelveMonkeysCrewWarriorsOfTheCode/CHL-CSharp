@@ -19,7 +19,7 @@ namespace ProjectPalindromeDAL
             }
             catch (Exception e)
             {
-                Records records = new Records(false, "Le fichier n'a pas pu être lu.", "Exception: " + e.Message, null);
+                Records records = new Records(false, "The file could not be read", "Exception: " + e.Message, null);
                 return records;
             }
         }
@@ -44,7 +44,7 @@ namespace ProjectPalindromeDAL
             }
             catch (Exception e)
             {
-                ResultDAL result = new ResultDAL(false, "Le fichier n'a pas pu être écrit.", "Exception: " + e.Message, "");
+                ResultDAL result = new ResultDAL(false, "The file could not be written", "Exception: " + e.Message, "");
                 return result;
             }
         }

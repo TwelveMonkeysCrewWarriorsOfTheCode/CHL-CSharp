@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj": {}
+    "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj": {}
   },
   "projects": {
-    "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj": {
+    "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
-        "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\obj\\",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -64,21 +64,21 @@
         }
       }
     },
-    "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj": {
+    "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj",
+        "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj",
         "projectName": "UsingDispose",
-        "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj",
-        "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
-        "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\obj\\",
+        "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\UsingDispose.csproj",
+        "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\UsingDispose\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -94,8 +94,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj"
+              "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj"
               }
             }
           }
