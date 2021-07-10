@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace UsingDispose
 {
@@ -17,6 +18,8 @@ namespace UsingDispose
         RadioButton selectedGenderRadioButton;
         RadioButton selectedAccountRadioButton;
 
+        public BankAccountBLL CreatedAccount { get; private set; }
+
         public FrmCreateAccount()
         {
             InitializeComponent();
@@ -24,7 +27,57 @@ namespace UsingDispose
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            BankAccount myAccount = new BLL.BankAccount(TxtOwnerName.Text);
+            /*
+            Gender selectedGender;
+            switch (selectedGenderRadioButton.Tag)
+            {
+                case Gender.Male:
+                    selectedGender = Gender.Male;
+                    break;
+                case Gender.Female:
+                    selectedGender = Gender.Female;
+                    break;
+                default:
+                    selectedGender = Gender.Unknown;
+                    break;
+            }*/
+            /*
+            Gender selectedGender = Gender.Unknown;
+            if (RdbMasculin.Checked)
+            {
+                selectedGender = Gender.Male;
+            }
+            if (RdbFeminin.Checked)
+            {
+                selectedGender = Gender.Female;
+            }*/
+            /*
+            Gender selectedGender;
+            switch (selectedGenderRadioButton.Text.ToLower())
+            {
+                case "masculin":
+                    selectedGender = Gender.Male;
+                    break;
+                case "feminin":
+                    selectedGender = Gender.Female;
+                    break;
+                default:
+                    selectedGender = Gender.Unknown;
+                    break;
+            }*/
+            /*
+            AccountType selectedAccountType;
+            switch (selectedAccountRadioButton.Text.ToLower())
+            {
+                case "compte courant":
+                    selectedAccountType = AccountType.Current;
+                    break;
+                default:
+                    selectedAccountType = AccountType.Saving;
+                    break;
+            }*/
+            //this.CreatedAccount = new BLL.BankAccount(TxtOwnerName.Text, selectedGender, selectedAccountType);
+            this.CreatedAccount = new BLL.BankAccountBLL(TxtOwnerName.Text, (Gender)selectedGenderRadioButton.Tag, (AccountType)selectedAccountRadioButton.Tag);
             this.Close();
         }
 
@@ -45,7 +98,7 @@ namespace UsingDispose
             if (rdb != null && rdb.Checked)
             {
                 selectedGenderRadioButton = rdb;
-                MessageBox.Show(selectedGenderRadioButton.Text);
+                //MessageBox.Show(selectedGenderRadioButton.Text);
             }
             EnableBtnOK();
         }
@@ -57,7 +110,7 @@ namespace UsingDispose
             if (rdb != null && rdb.Checked)
             {
                 selectedAccountRadioButton = rdb;
-                MessageBox.Show(selectedAccountRadioButton.Text);
+                //MessageBox.Show(selectedAccountRadioButton.Text);
             }
             EnableBtnOK();
         }
@@ -79,6 +132,15 @@ namespace UsingDispose
             {
                 BtnOK.Enabled = false;
             }
+        }
+
+        private void FrmCreateAccount_Load(object sender, EventArgs e)
+        {
+            this.RdbMasculin.Tag = Gender.Male;
+            this.RdbFeminin.Tag = Gender.Female;
+            this.RdbInconnu.Tag = Gender.Unknown;
+            this.RdbCurrent.Tag = AccountType.Current;
+            this.RdbSaving.Tag = AccountType.Saving;
         }
     }
 }

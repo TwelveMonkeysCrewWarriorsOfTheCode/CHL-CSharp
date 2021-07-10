@@ -1,32 +1,70 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DAL >= 1.0.0",
+      "DTO >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\mogwa\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\studentdev12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
-      "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\UsingDispose\\BLL\\obj\\",
+      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
+      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -41,7 +79,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\DAL\\DAL.csproj"
+            },
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\UsingDispose\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

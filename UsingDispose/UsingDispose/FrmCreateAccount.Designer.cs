@@ -71,6 +71,7 @@ namespace UsingDispose
             this.RdbMasculin.Size = new System.Drawing.Size(73, 19);
             this.RdbMasculin.TabIndex = 2;
             this.RdbMasculin.TabStop = true;
+            this.RdbMasculin.Tag = "male";
             this.RdbMasculin.Text = "Masculin";
             this.RdbMasculin.UseVisualStyleBackColor = true;
             this.RdbMasculin.CheckedChanged += new System.EventHandler(this.RdbGender_CheckedChanged);
@@ -92,6 +93,7 @@ namespace UsingDispose
             this.RdbFeminin.Size = new System.Drawing.Size(68, 19);
             this.RdbFeminin.TabIndex = 4;
             this.RdbFeminin.TabStop = true;
+            this.RdbFeminin.Tag = "female";
             this.RdbFeminin.Text = "Féminin";
             this.RdbFeminin.UseVisualStyleBackColor = true;
             this.RdbFeminin.CheckedChanged += new System.EventHandler(this.RdbGender_CheckedChanged);
@@ -169,6 +171,7 @@ namespace UsingDispose
             this.RdbInconnu.Size = new System.Drawing.Size(69, 19);
             this.RdbInconnu.TabIndex = 0;
             this.RdbInconnu.TabStop = true;
+            this.RdbInconnu.Tag = "unknown";
             this.RdbInconnu.Text = "Inconnu";
             this.RdbInconnu.UseVisualStyleBackColor = true;
             this.RdbInconnu.CheckedChanged += new System.EventHandler(this.RdbGender_CheckedChanged);
@@ -198,6 +201,7 @@ namespace UsingDispose
             this.Controls.Add(this.label1);
             this.Name = "FrmCreateAccount";
             this.Text = "Création d\'un compte bancaire";
+            this.Load += new System.EventHandler(this.FrmCreateAccount_Load);
             this.GrpGender.ResumeLayout(false);
             this.GrpGender.PerformLayout();
             this.GrpAccountType.ResumeLayout(false);

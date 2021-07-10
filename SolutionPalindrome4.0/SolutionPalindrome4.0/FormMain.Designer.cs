@@ -81,10 +81,11 @@ namespace SolutionPalindrome4._0
             // 
             // MnsItemFileSave
             // 
+            this.MnsItemFileSave.Enabled = false;
             this.MnsItemFileSave.Name = "MnsItemFileSave";
             this.MnsItemFileSave.ShortcutKeyDisplayString = "Ctrl+S";
             this.MnsItemFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.MnsItemFileSave.Size = new System.Drawing.Size(138, 22);
+            this.MnsItemFileSave.Size = new System.Drawing.Size(180, 22);
             this.MnsItemFileSave.Text = "Save";
             this.MnsItemFileSave.ToolTipText = "Save Palindrome To File";
             this.MnsItemFileSave.Click += new System.EventHandler(this.MnsItemFileSave_Click);
@@ -92,14 +93,14 @@ namespace SolutionPalindrome4._0
             // MnsItemSeparator
             // 
             this.MnsItemSeparator.Name = "MnsItemSeparator";
-            this.MnsItemSeparator.Size = new System.Drawing.Size(135, 6);
+            this.MnsItemSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // MnsItemFileExit
             // 
             this.MnsItemFileExit.Name = "MnsItemFileExit";
             this.MnsItemFileExit.ShortcutKeyDisplayString = "Alt+F4";
             this.MnsItemFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.MnsItemFileExit.Size = new System.Drawing.Size(138, 22);
+            this.MnsItemFileExit.Size = new System.Drawing.Size(180, 22);
             this.MnsItemFileExit.Text = "Exit";
             this.MnsItemFileExit.ToolTipText = "Exit Program";
             this.MnsItemFileExit.Click += new System.EventHandler(this.MnsItemFileExit_Click);

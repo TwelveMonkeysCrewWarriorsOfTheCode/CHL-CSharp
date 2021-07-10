@@ -1,0 +1,12 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ref\ProjectUtilsLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ref\ProjectUtilsLibraryHelper.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.pdb

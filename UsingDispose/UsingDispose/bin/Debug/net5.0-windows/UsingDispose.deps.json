@@ -8,15 +8,33 @@
     ".NETCoreApp,Version=v5.0": {
       "UsingDispose/1.0.0": {
         "dependencies": {
-          "BLL": "1.0.0"
+          "BLL": "1.0.0",
+          "DTO": "1.0.0"
         },
         "runtime": {
           "UsingDispose.dll": {}
         }
       },
       "BLL/1.0.0": {
+        "dependencies": {
+          "DAL": "1.0.0",
+          "DTO": "1.0.0"
+        },
         "runtime": {
           "BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "dependencies": {
+          "DTO": "1.0.0"
+        },
+        "runtime": {
+          "DAL.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "runtime": {
+          "DTO.dll": {}
         }
       }
     }
@@ -28,6 +46,16 @@
       "sha512": ""
     },
     "BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6166,25 +6166,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mogwa\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\studentdev12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\ProjectUnitTestPalindrome.csproj",
+      "projectUniqueName": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\ProjectUnitTestPalindrome.csproj",
       "projectName": "ProjectUnitTestPalindrome",
-      "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\ProjectUnitTestPalindrome.csproj",
-      "packagesPath": "C:\\Users\\mogwa\\.nuget\\packages\\",
-      "outputPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\obj\\",
+      "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\ProjectUnitTestPalindrome.csproj",
+      "packagesPath": "C:\\Users\\studentdev12\\.nuget\\packages\\",
+      "outputPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUnitTestPalindrome\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mogwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\studentdev12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -6200,14 +6200,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeBLL\\ProjectPalindromeBLL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectPalindromeDAL\\ProjectPalindromeDAL.csproj"
             },
-            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj": {
-              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj"
+            "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj": {
+              "projectPath": "C:\\Technifutur\\VusualStudio\\Repos\\CHL-CSharp\\SolutionPalindrome4.0\\ProjectUtilsLibraryHelper\\ProjectUtilsLibraryHelper.csproj"
             }
           }
         }

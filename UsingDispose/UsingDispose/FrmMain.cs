@@ -22,7 +22,23 @@ namespace UsingDispose
             using (FrmCreateAccount myFrm = new FrmCreateAccount())
             {
                 myFrm.ShowDialog();
+                if (myFrm != null)
+                { 
+                    TxtOwnerName.Text = myFrm.CreatedAccount.OwnerName;
+                    TxtGender.Text = myFrm.CreatedAccount.Sex.ToString();
+                    TxtAccountType.Text = myFrm.CreatedAccount.Type.ToString();
+                    BtnSave.Tag = myFrm.CreatedAccount;
+                }
+                //myFrm.ShowDialog();
+                //MessageBox.Show($"{myFrm.CreatedAccount.OwnerName},{myFrm.CreatedAccount.Sex},{myFrm.CreatedAccount.Type}");
             }
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            BLL.BankAccountBLL accountToSave = BtnSave.Tag as BLL.BankAccountBLL;
+            bool result = accountToSave.SaveAccount();
+            MessageBox.Show($"Résultat du save {result}");
         }
     }
 }

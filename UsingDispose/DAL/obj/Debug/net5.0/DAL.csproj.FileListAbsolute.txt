@@ -1,0 +1,15 @@
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\DAL.deps.json
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\DAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\ref\DAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\DAL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\ref\DAL.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\DTO.dll
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\bin\Debug\net5.0\DTO.pdb
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\DAL\obj\Debug\net5.0\DAL.csproj.CopyComplete

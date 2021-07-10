@@ -29,6 +29,7 @@ namespace SolutionPalindrome4._0
         {
             using (SaveFileDialog ofd = new SaveFileDialog())
             {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
                 ofd.InitialDirectory = ".";
                 ofd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -37,21 +38,36 @@ namespace SolutionPalindrome4._0
                     {
                         if (TbcMain.SelectedTab == TbpText)
                         {
-                            MessageBoxButtons buttons = MessageBoxButtons.OK;
-                            MessageBox.Show($"Save {ofd.FileName} Text", "", buttons, MessageBoxIcon.Error);
+                            SaveToFileTabText(ofd.FileName);
                         }
                         else
                         {
-                            MessageBoxButtons buttons = MessageBoxButtons.OK;
                             MessageBox.Show($"Save {ofd.FileName} File", "", buttons, MessageBoxIcon.Error);
                         }
                     }
                 }
             }
-            //ResultDAL valid = PalindromeDAL.SaveRecords(input, resultfilenameextension.PFilename); // Save record to file in append mode
+        }
 
-            //MessageBoxButtons buttons = MessageBoxButtons.OK;
-            //MessageBox.Show("Save", "", buttons, MessageBoxIcon.Error);
+        private void SaveToFileTabText(string pFilename)
+        {
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            if (TxtResult.Text.Trim().Length > 1)
+            {
+                ResultDAL valid = PalindromeDAL.SaveRecords(TxtText.Text, pFilename);
+                if (valid.PStatus)
+                {
+                    MessageBox.Show("the text has been saved successfully", "", buttons, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(valid.PMessageDev, "", buttons, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("The text must be > 1 character", "", buttons, MessageBoxIcon.Error);
+            }
         }
 
         private void MnsItemAbout_Click(object sender, EventArgs e)
@@ -84,6 +100,7 @@ namespace SolutionPalindrome4._0
                     TxtResult.ForeColor = Color.Red;
                     TxtResult.Text = messageresultat;
                 }
+                MnsItemFileSave.Enabled = true;
             }
             else
             {
@@ -97,6 +114,7 @@ namespace SolutionPalindrome4._0
             if (TxtText.Text.Trim().Length < 2)
             {
                 BtnCheckText.Enabled = false;
+                MnsItemFileSave.Enabled = false;
             }
             else
             {
