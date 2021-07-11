@@ -10,3 +10,14 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\P
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ref\ProjectUtilsLibraryHelper.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.pdb
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.deps.json
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ref\ProjectUtilsLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\bin\Debug\net5.0\ProjectUtilsLibraryHelper.pdb
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ref\ProjectUtilsLibraryHelper.dll
+D:\Technifutur_repos\CHL-CSharp\WinFormsProjectUtilsLibraryHelper\ProjectUtilsLibraryHelper\obj\Debug\net5.0\ProjectUtilsLibraryHelper.pdb

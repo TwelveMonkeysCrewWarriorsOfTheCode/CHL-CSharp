@@ -2,6 +2,7 @@
 using System.Text;
 using ProjectUtilsLibraryHelper;
 using ProjectPalindromeDAL;
+using System.Collections.Generic;
 
 namespace ProjectPalindromeBLL
 {
@@ -108,5 +109,46 @@ namespace ProjectPalindromeBLL
             Records records = PalindromeDAL.ReadRecords(pFilename);
             return records;
         }
+
+        /// <summary>
+        /// Fill the liste with text
+        /// </summary>
+        public static List<string> FillListPalindrome()
+        {
+           List<string> textsToCheck = new List<string>()
+           {
+               "radar",
+               "palindrome",
+               "rotor",
+               "kayak",
+               "été",
+               "ici",
+               "tôt",
+               "rêver",
+               "réifier",
+               "ressasser",
+               "La mariée ira mal",
+               "À révéler mon nom, mon nom relèvera",
+               "Eh ! ça va, la vache ?",
+               "L'ami naturel ? Le rut animal.",
+               "Ta bête te bat.",
+               "Engage le jeu que je le gagne",
+               "Noël a trop par rapport à Léon",
+               "À l'étape, épate-la !",
+               "La mère Gide digère mal",
+               "Léon, émir cornu, d'un roc rime Noël",
+               "Élu par cette crapule",
+               "Ésope reste ici et se repose",
+               "Luc notre valet alla te laver ton cul",
+               "Tâte l'État ! ",
+               "rue Verlaine gela le génial rêveur",
+               "Elle dira hélas à la sale haridelle",
+               "Et la marine va venir à Malte",
+               "caser vite ce palindrome ne mord ni lape cet ivre sac",
+               "ni palindrome ne mord ni lapin"
+           };
+           return textsToCheck;
+        }
     }
 }
+

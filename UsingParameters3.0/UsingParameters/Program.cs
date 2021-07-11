@@ -93,17 +93,17 @@ namespace UsingParameters
             Console.WriteLine($"(Time->float)    {time1} = {floatValue}f");
 
             // int -> Time
-            intValue = 150;
+            intValue = 9000;
             time1 = (Time)intValue;
             Console.WriteLine($"(int->Time)      {intValue} = {time1}");
 
             // Time -> int
             time1 = new Time(3, 15);
             intValue = (int)time1;
-            Console.WriteLine($"(Time->int)      {time1} => {intValue}");
+            Console.WriteLine($"(Time->int)      {time1} = {intValue}");
             time1 = new Time(2, 30);
             intValue = (int)time1;
-            Console.WriteLine($"(Time->int)      {time1} => {intValue}");
+            Console.WriteLine($"(Time->int)      {time1} = {intValue}");
 
             // Time < Time
             time1 = new Time(2, 15);
@@ -129,29 +129,29 @@ namespace UsingParameters
             time1 = new Time(2, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 <= time2;
-            Console.WriteLine($"(Time<=Time)      {time1} <= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
             time1 = new Time(4, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 <= time2;
-            Console.WriteLine($"(Time<=Time)      {time1} <= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
             time1 = new Time(3, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 <= time2;
-            Console.WriteLine($"(Time<=Time)      {time1} <= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
 
             // Time >= Time
             time1 = new Time(4, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 >= time2;
-            Console.WriteLine($"(Time>=Time)      {time1} >= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
             time1 = new Time(2, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 >= time2;
-            Console.WriteLine($"(Time>=Time)      {time1} >= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
             time1 = new Time(3, 15);
             time2 = new Time(3, 15);
             resultcomparison = time1 >= time2;
-            Console.WriteLine($"(Time>=Time)      {time1} >= {time2} = {resultcomparison}");
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
 
 
             // Essai
@@ -209,6 +209,64 @@ namespace UsingParameters
             time1 = new Time(2, 34, 12);
             floatValue = (float)time1;
             Console.WriteLine($"(Time->float)    {time1} = {floatValue}f");
+
+            // int -> Time
+            intValue = 9012;
+            time1 = (Time)intValue;
+            Console.WriteLine($"(int->Time)      {intValue} = {time1}");
+
+            // Time -> int
+            time1 = new Time(2, 30, 12);
+            intValue = (int)time1;
+            Console.WriteLine($"(Time->int)      {time1} = {intValue}");
+
+            // Time < Time
+            time1 = new Time(2, 15, 44);
+            time2 = new Time(2, 15, 45);
+            resultcomparison = time1 < time2;
+            Console.WriteLine($"(Time<Time)      {time1} < {time2} = {resultcomparison}");
+            time1 = new Time(4, 15, 37);
+            time2 = new Time(3, 15, 12);
+            resultcomparison = time1 < time2;
+            Console.WriteLine($"(Time<Time)      {time1} < {time2} = {resultcomparison}");
+
+            // Time > Time
+            time1 = new Time(3, 15, 45);
+            time2 = new Time(3, 15, 44);
+            resultcomparison = time1 > time2;
+            Console.WriteLine($"(Time>Time)      {time1} > {time2} = {resultcomparison}");
+            time1 = new Time(2, 15, 12);
+            time2 = new Time(3, 15, 8);
+            resultcomparison = time1 > time2;
+            Console.WriteLine($"(Time>Time)      {time1} > {time2} = {resultcomparison}");
+
+            // Time <= Time
+            time1 = new Time(2, 15, 44);
+            time2 = new Time(2, 15, 45);
+            resultcomparison = time1 <= time2;
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
+            time1 = new Time(4, 15, 32);
+            time2 = new Time(3, 15, 14);
+            resultcomparison = time1 <= time2;
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
+            time1 = new Time(3, 15, 12);
+            time2 = new Time(3, 15, 12);
+            resultcomparison = time1 <= time2;
+            Console.WriteLine($"(Time<=Time)     {time1} <= {time2} = {resultcomparison}");
+
+            // Time >= Time
+            time1 = new Time(4, 15, 12);
+            time2 = new Time(4, 15, 11);
+            resultcomparison = time1 >= time2;
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
+            time1 = new Time(3, 15, 11);
+            time2 = new Time(3, 15, 12);
+            resultcomparison = time1 >= time2;
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
+            time1 = new Time(3, 15, 12);
+            time2 = new Time(3, 15, 12);
+            resultcomparison = time1 >= time2;
+            Console.WriteLine($"(Time>=Time)     {time1} >= {time2} = {resultcomparison}");
         }
 
         private static int Add(ref int pLeftValue, ref int pRightValue)

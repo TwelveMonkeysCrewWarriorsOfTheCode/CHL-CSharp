@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "WinFormsProjectUtilsLibraryHelper/1.0.0": {
+        "dependencies": {
+          "ProjectUtilsLibraryHelper": "1.0.0"
+        },
         "runtime": {
           "WinFormsProjectUtilsLibraryHelper.dll": {}
+        }
+      },
+      "ProjectUtilsLibraryHelper/1.0.0": {
+        "runtime": {
+          "ProjectUtilsLibraryHelper.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WinFormsProjectUtilsLibraryHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectUtilsLibraryHelper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

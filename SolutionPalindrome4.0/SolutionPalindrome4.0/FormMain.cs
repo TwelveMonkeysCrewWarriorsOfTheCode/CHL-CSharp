@@ -16,13 +16,12 @@ namespace SolutionPalindrome4._0
     {
         const string VERSION = "4.0";
         DlgAbout aboutWindow;
+        List<string> textsToCheck;
 
         public FormMain()
         {
             InitializeComponent();
             this.Text = $"Palindrome {VERSION}";
-            aboutWindow = new DlgAbout();
-
         }
 
         private void MnsItemFileSave_Click(object sender, EventArgs e)
@@ -177,6 +176,27 @@ namespace SolutionPalindrome4._0
         private void TxtNameSelectedFile_TextChanged(object sender, EventArgs e)
         {
             BtnGetFile.Enabled = true;
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            aboutWindow = new DlgAbout();
+            textsToCheck = PalindromeBLL.FillListPalindrome();
+            foreach (string line in textsToCheck)
+            {
+                LstText.Items.Add(line);
+            }
+        }
+
+        private void LstText_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TxtText.Text = LstText.SelectedItem.ToString();
+        }
+
+        private void TmrTime_Tick(object sender, EventArgs e)
+        {
+            RchTxtTimeText.Text = DateTime.Now.ToLongTimeString();
+            RchTxtTimeFile.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

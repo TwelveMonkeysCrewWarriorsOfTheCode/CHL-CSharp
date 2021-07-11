@@ -29,6 +29,7 @@ namespace SolutionPalindrome4._0
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.MnsMain = new System.Windows.Forms.MenuStrip();
             this.MnsItemFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,12 +39,15 @@ namespace SolutionPalindrome4._0
             this.MnsItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.TbcMain = new System.Windows.Forms.TabControl();
             this.TbpText = new System.Windows.Forms.TabPage();
+            this.RchTxtTimeText = new System.Windows.Forms.RichTextBox();
+            this.LstText = new System.Windows.Forms.ListBox();
             this.LblResult = new System.Windows.Forms.Label();
             this.TxtResult = new System.Windows.Forms.TextBox();
             this.BtnCheckText = new System.Windows.Forms.Button();
             this.TxtText = new System.Windows.Forms.TextBox();
             this.LblText = new System.Windows.Forms.Label();
             this.TbpFile = new System.Windows.Forms.TabPage();
+            this.RchTxtTimeFile = new System.Windows.Forms.RichTextBox();
             this.RchTxtNotPalindrome = new System.Windows.Forms.RichTextBox();
             this.LblNotPalindrome = new System.Windows.Forms.Label();
             this.RchTxtPalindrome = new System.Windows.Forms.RichTextBox();
@@ -52,6 +56,7 @@ namespace SolutionPalindrome4._0
             this.TxtNameSelectedFile = new System.Windows.Forms.TextBox();
             this.LblSelectedFile = new System.Windows.Forms.Label();
             this.BtnFile = new System.Windows.Forms.Button();
+            this.TmrTime = new System.Windows.Forms.Timer(this.components);
             this.MnsMain.SuspendLayout();
             this.TbcMain.SuspendLayout();
             this.TbpText.SuspendLayout();
@@ -85,7 +90,7 @@ namespace SolutionPalindrome4._0
             this.MnsItemFileSave.Name = "MnsItemFileSave";
             this.MnsItemFileSave.ShortcutKeyDisplayString = "Ctrl+S";
             this.MnsItemFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.MnsItemFileSave.Size = new System.Drawing.Size(180, 22);
+            this.MnsItemFileSave.Size = new System.Drawing.Size(138, 22);
             this.MnsItemFileSave.Text = "Save";
             this.MnsItemFileSave.ToolTipText = "Save Palindrome To File";
             this.MnsItemFileSave.Click += new System.EventHandler(this.MnsItemFileSave_Click);
@@ -93,14 +98,14 @@ namespace SolutionPalindrome4._0
             // MnsItemSeparator
             // 
             this.MnsItemSeparator.Name = "MnsItemSeparator";
-            this.MnsItemSeparator.Size = new System.Drawing.Size(177, 6);
+            this.MnsItemSeparator.Size = new System.Drawing.Size(135, 6);
             // 
             // MnsItemFileExit
             // 
             this.MnsItemFileExit.Name = "MnsItemFileExit";
             this.MnsItemFileExit.ShortcutKeyDisplayString = "Alt+F4";
             this.MnsItemFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.MnsItemFileExit.Size = new System.Drawing.Size(180, 22);
+            this.MnsItemFileExit.Size = new System.Drawing.Size(138, 22);
             this.MnsItemFileExit.Text = "Exit";
             this.MnsItemFileExit.ToolTipText = "Exit Program";
             this.MnsItemFileExit.Click += new System.EventHandler(this.MnsItemFileExit_Click);
@@ -126,6 +131,8 @@ namespace SolutionPalindrome4._0
             // TbpText
             // 
             this.TbpText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.TbpText.Controls.Add(this.RchTxtTimeText);
+            this.TbpText.Controls.Add(this.LstText);
             this.TbpText.Controls.Add(this.LblResult);
             this.TbpText.Controls.Add(this.TxtResult);
             this.TbpText.Controls.Add(this.BtnCheckText);
@@ -137,14 +144,36 @@ namespace SolutionPalindrome4._0
             this.TbpText.Size = new System.Drawing.Size(792, 522);
             this.TbpText.TabIndex = 0;
             this.TbpText.Text = "Check Text";
-            this.TbpText.UseVisualStyleBackColor = true;
+            // 
+            // RchTxtTimeText
+            // 
+            this.RchTxtTimeText.BackColor = System.Drawing.Color.Black;
+            this.RchTxtTimeText.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RchTxtTimeText.ForeColor = System.Drawing.Color.Red;
+            this.RchTxtTimeText.Location = new System.Drawing.Point(640, 30);
+            this.RchTxtTimeText.Name = "RchTxtTimeText";
+            this.RchTxtTimeText.ReadOnly = true;
+            this.RchTxtTimeText.Size = new System.Drawing.Size(114, 38);
+            this.RchTxtTimeText.TabIndex = 6;
+            this.RchTxtTimeText.TabStop = false;
+            this.RchTxtTimeText.Text = "";
+            // 
+            // LstText
+            // 
+            this.LstText.FormattingEnabled = true;
+            this.LstText.ItemHeight = 15;
+            this.LstText.Location = new System.Drawing.Point(32, 30);
+            this.LstText.Name = "LstText";
+            this.LstText.Size = new System.Drawing.Size(362, 124);
+            this.LstText.TabIndex = 5;
+            this.LstText.SelectedIndexChanged += new System.EventHandler(this.LstText_SelectedIndexChanged);
             // 
             // LblResult
             // 
             this.LblResult.AutoSize = true;
             this.LblResult.BackColor = System.Drawing.Color.LightGray;
             this.LblResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblResult.Location = new System.Drawing.Point(32, 257);
+            this.LblResult.Location = new System.Drawing.Point(32, 395);
             this.LblResult.Name = "LblResult";
             this.LblResult.Size = new System.Drawing.Size(53, 21);
             this.LblResult.TabIndex = 3;
@@ -154,7 +183,7 @@ namespace SolutionPalindrome4._0
             // 
             this.TxtResult.BackColor = System.Drawing.Color.Black;
             this.TxtResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtResult.Location = new System.Drawing.Point(32, 275);
+            this.TxtResult.Location = new System.Drawing.Point(32, 419);
             this.TxtResult.Name = "TxtResult";
             this.TxtResult.ReadOnly = true;
             this.TxtResult.Size = new System.Drawing.Size(722, 29);
@@ -162,20 +191,23 @@ namespace SolutionPalindrome4._0
             // 
             // BtnCheckText
             // 
+            this.BtnCheckText.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnCheckText.Cursor = System.Windows.Forms.Cursors.Default;
             this.BtnCheckText.Enabled = false;
             this.BtnCheckText.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnCheckText.Location = new System.Drawing.Point(32, 130);
+            this.BtnCheckText.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnCheckText.Location = new System.Drawing.Point(32, 278);
             this.BtnCheckText.Name = "BtnCheckText";
             this.BtnCheckText.Size = new System.Drawing.Size(722, 67);
             this.BtnCheckText.TabIndex = 2;
             this.BtnCheckText.Text = "Check Text";
-            this.BtnCheckText.UseVisualStyleBackColor = true;
+            this.BtnCheckText.UseVisualStyleBackColor = false;
             this.BtnCheckText.Click += new System.EventHandler(this.BtnCheckText_Click);
             // 
             // TxtText
             // 
             this.TxtText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtText.Location = new System.Drawing.Point(32, 51);
+            this.TxtText.Location = new System.Drawing.Point(32, 197);
             this.TxtText.Name = "TxtText";
             this.TxtText.Size = new System.Drawing.Size(722, 29);
             this.TxtText.TabIndex = 1;
@@ -186,7 +218,7 @@ namespace SolutionPalindrome4._0
             this.LblText.AutoSize = true;
             this.LblText.BackColor = System.Drawing.Color.LightGray;
             this.LblText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblText.Location = new System.Drawing.Point(32, 33);
+            this.LblText.Location = new System.Drawing.Point(32, 173);
             this.LblText.Name = "LblText";
             this.LblText.Size = new System.Drawing.Size(36, 21);
             this.LblText.TabIndex = 0;
@@ -194,6 +226,7 @@ namespace SolutionPalindrome4._0
             // 
             // TbpFile
             // 
+            this.TbpFile.Controls.Add(this.RchTxtTimeFile);
             this.TbpFile.Controls.Add(this.RchTxtNotPalindrome);
             this.TbpFile.Controls.Add(this.LblNotPalindrome);
             this.TbpFile.Controls.Add(this.RchTxtPalindrome);
@@ -209,6 +242,19 @@ namespace SolutionPalindrome4._0
             this.TbpFile.TabIndex = 1;
             this.TbpFile.Text = "Check File";
             this.TbpFile.UseVisualStyleBackColor = true;
+            // 
+            // RchTxtTimeFile
+            // 
+            this.RchTxtTimeFile.BackColor = System.Drawing.Color.Black;
+            this.RchTxtTimeFile.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RchTxtTimeFile.ForeColor = System.Drawing.Color.Red;
+            this.RchTxtTimeFile.Location = new System.Drawing.Point(650, 31);
+            this.RchTxtTimeFile.Name = "RchTxtTimeFile";
+            this.RchTxtTimeFile.ReadOnly = true;
+            this.RchTxtTimeFile.Size = new System.Drawing.Size(114, 38);
+            this.RchTxtTimeFile.TabIndex = 8;
+            this.RchTxtTimeFile.TabStop = false;
+            this.RchTxtTimeFile.Text = "";
             // 
             // RchTxtNotPalindrome
             // 
@@ -297,22 +343,30 @@ namespace SolutionPalindrome4._0
             this.BtnFile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnFile.Location = new System.Drawing.Point(26, 31);
             this.BtnFile.Name = "BtnFile";
-            this.BtnFile.Size = new System.Drawing.Size(738, 31);
+            this.BtnFile.Size = new System.Drawing.Size(492, 31);
             this.BtnFile.TabIndex = 0;
             this.BtnFile.Text = "Choose the desired file";
             this.BtnFile.UseVisualStyleBackColor = true;
             this.BtnFile.Click += new System.EventHandler(this.BtnFile_Click);
             // 
+            // TmrTime
+            // 
+            this.TmrTime.Enabled = true;
+            this.TmrTime.Interval = 1000;
+            this.TmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 574);
             this.Controls.Add(this.TbcMain);
             this.Controls.Add(this.MnsMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.MnsMain.ResumeLayout(false);
             this.MnsMain.PerformLayout();
             this.TbcMain.ResumeLayout(false);
@@ -349,6 +403,10 @@ namespace SolutionPalindrome4._0
         private System.Windows.Forms.RichTextBox RchTxtPalindrome;
         private System.Windows.Forms.Label LblNotPalindrome;
         private System.Windows.Forms.RichTextBox RchTxtNotPalindrome;
+        private System.Windows.Forms.ListBox LstText;
+        private System.Windows.Forms.RichTextBox RchTxtTimeText;
+        private System.Windows.Forms.Timer TmrTime;
+        private System.Windows.Forms.RichTextBox RchTxtTimeFile;
     }
 }
 
