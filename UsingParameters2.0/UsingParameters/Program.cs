@@ -1,4 +1,6 @@
 ﻿using System;
+using UsingGenerics;
+
 
 namespace UsingParameters
 {
@@ -6,6 +8,38 @@ namespace UsingParameters
     {
         static void Main(string[] args)
         {
+            Time t1 = new Time(2, 50);
+            Time t2 = new Time(2, 59);
+            Console.WriteLine(t1.Equals(t2));
+            Time t3 = t1;
+            Console.WriteLine(t1.Equals(t3));
+            Time t4 = null;
+            Console.WriteLine(t1.Equals(t4));
+            Console.WriteLine("**********");
+            Console.WriteLine(t1.CompareTo(t2));
+            Console.WriteLine(t1.CompareTo(t3));
+            Console.WriteLine(t1.CompareTo(t4));
+
+            Time[] times = 
+            {
+                new Time(125), new Time(185), new Time(3), new Time(42), null, new Time(-125)
+            };
+            try
+            {
+                Array.Sort(times);
+            }
+            catch(InvalidOperationException exc)
+            {
+                Console.WriteLine(exc.ToString());
+            }
+            foreach (var item in times)
+            {
+                Console.WriteLine(item);
+            }
+
+            UsingGenerics.Range<Time> r = new UsingGenerics.Range<Time>(new Time(8, 30), new Time(17, 30));
+            Console.WriteLine(r.IsIncluded(new Time(9,30)));
+
             // Exemple de passage de paramètres avec des variables de type valeurs
             int value1, value2;
             value1 = 8;

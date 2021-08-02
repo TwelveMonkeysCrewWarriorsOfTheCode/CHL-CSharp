@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SolutionFraction/1.0.0": {
+        "dependencies": {
+          "ProjectFractionBLL": "1.0.0",
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "runtime": {
+          "SolutionFraction.dll": {}
+        }
+      },
+      "ProjectFractionBLL/1.0.0": {
+        "dependencies": {
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "runtime": {
+          "ProjectFractionBLL.dll": {}
+        }
+      },
+      "ProjectFractionDTO/1.0.0": {
+        "runtime": {
+          "ProjectFractionDTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolutionFraction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectFractionBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectFractionDTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

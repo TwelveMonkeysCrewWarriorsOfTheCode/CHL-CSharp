@@ -25,3 +25,4 @@ C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\UsingDispose\obj\Debug
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\UsingDispose\obj\Debug\net5.0-windows\ref\UsingDispose.dll
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\UsingDispose\obj\Debug\net5.0-windows\UsingDispose.pdb
 C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\UsingDispose\obj\Debug\net5.0-windows\UsingDispose.genruntimeconfig.cache
+C:\Technifutur\VusualStudio\Repos\CHL-CSharp\UsingDispose\UsingDispose\obj\Debug\net5.0-windows\UsingDispose.FrmListOwner.resources

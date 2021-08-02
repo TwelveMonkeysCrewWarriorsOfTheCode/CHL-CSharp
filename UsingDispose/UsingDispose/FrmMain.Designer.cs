@@ -37,21 +37,27 @@ namespace UsingDispose
             this.TxtGender = new System.Windows.Forms.TextBox();
             this.TxtOwnerName = new System.Windows.Forms.TextBox();
             this.BtnSave = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeDesPropriétaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpDetailAccount.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LstMouvements
             // 
             this.LstMouvements.FormattingEnabled = true;
             this.LstMouvements.ItemHeight = 15;
-            this.LstMouvements.Location = new System.Drawing.Point(432, 16);
+            this.LstMouvements.Location = new System.Drawing.Point(432, 48);
             this.LstMouvements.Name = "LstMouvements";
-            this.LstMouvements.Size = new System.Drawing.Size(344, 409);
+            this.LstMouvements.Size = new System.Drawing.Size(344, 364);
             this.LstMouvements.TabIndex = 0;
             // 
             // BtnCreateAccount
             // 
-            this.BtnCreateAccount.Location = new System.Drawing.Point(64, 24);
+            this.BtnCreateAccount.Location = new System.Drawing.Point(64, 32);
             this.BtnCreateAccount.Name = "BtnCreateAccount";
             this.BtnCreateAccount.Size = new System.Drawing.Size(304, 23);
             this.BtnCreateAccount.TabIndex = 1;
@@ -111,6 +117,46 @@ namespace UsingDispose
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.displayToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // displayToolStripMenuItem
+            // 
+            this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listeDesPropriétaireToolStripMenuItem});
+            this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.displayToolStripMenuItem.Text = "View";
+            this.displayToolStripMenuItem.Click += new System.EventHandler(this.displayToolStripMenuItem_Click);
+            // 
+            // listeDesPropriétaireToolStripMenuItem
+            // 
+            this.listeDesPropriétaireToolStripMenuItem.Name = "listeDesPropriétaireToolStripMenuItem";
+            this.listeDesPropriétaireToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.listeDesPropriétaireToolStripMenuItem.Text = "Liste des propriétaire";
+            this.listeDesPropriétaireToolStripMenuItem.Click += new System.EventHandler(this.listeDesPropriétaireToolStripMenuItem_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -120,11 +166,16 @@ namespace UsingDispose
             this.Controls.Add(this.GrpDetailAccount);
             this.Controls.Add(this.BtnCreateAccount);
             this.Controls.Add(this.LstMouvements);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
             this.Text = "Comptes Bancaire";
             this.GrpDetailAccount.ResumeLayout(false);
             this.GrpDetailAccount.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -138,6 +189,11 @@ namespace UsingDispose
         private System.Windows.Forms.TextBox TxtGender;
         private System.Windows.Forms.TextBox TxtOwnerName;
         private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeDesPropriétaireToolStripMenuItem;
     }
 }
 

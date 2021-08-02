@@ -1,0 +1,16 @@
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.exe
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.deps.json
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.runtimeconfig.json
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.runtimeconfig.dev.json
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.dll
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\ref\Fractions.dll
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\bin\Debug\net5.0\Fractions.pdb
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.csproj.AssemblyReference.cache
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.dll
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\ref\Fractions.dll
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.pdb
+D:\Technifutur_repos\CHL-CSharp\Fractions\Fractions\obj\Debug\net5.0\Fractions.genruntimeconfig.cache

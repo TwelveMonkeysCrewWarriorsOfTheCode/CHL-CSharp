@@ -1,0 +1,10 @@
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\bin\Debug\howto_fraction_class.exe.config
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\bin\Debug\howto_fraction_class.exe
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\bin\Debug\howto_fraction_class.pdb
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.csproj.AssemblyReference.cache
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.Form1.resources
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.Properties.Resources.resources
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.csproj.GenerateResource.cache
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.exe
+D:\Technifutur_repos\CHL-CSharp\howto_fraction_class\obj\Debug\howto_fraction_class.pdb

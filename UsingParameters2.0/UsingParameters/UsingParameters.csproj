@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="UsingGenerics">
+      <HintPath>..\..\UsingGenerics\UsingGenerics\bin\Debug\netcoreapp3.1\UsingGenerics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

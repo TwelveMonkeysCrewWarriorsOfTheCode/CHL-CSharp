@@ -40,5 +40,18 @@ namespace UsingDispose
             bool result = accountToSave.SaveAccount();
             MessageBox.Show($"Résultat du save {result}");
         }
+
+        private void displayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listeDesPropriétaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FrmListOwner myFrm = new FrmListOwner())
+            {
+                myFrm.ShowDialog();
+            }
+        }
     }
 }

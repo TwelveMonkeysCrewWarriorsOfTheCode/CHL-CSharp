@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "howto_fraction_class", "howto_fraction_class.csproj", "{6B77C8BB-C770-4359-8336-32C452C4286C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B77C8BB-C770-4359-8336-32C452C4286C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B77C8BB-C770-4359-8336-32C452C4286C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B77C8BB-C770-4359-8336-32C452C4286C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B77C8BB-C770-4359-8336-32C452C4286C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

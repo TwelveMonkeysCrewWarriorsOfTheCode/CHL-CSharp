@@ -4,6 +4,9 @@
     <Compile Update="AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmListOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>

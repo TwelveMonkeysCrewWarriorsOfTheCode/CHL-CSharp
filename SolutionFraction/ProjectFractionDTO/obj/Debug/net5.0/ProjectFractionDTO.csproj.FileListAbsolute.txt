@@ -1,0 +1,12 @@
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\bin\Debug\net5.0\ProjectFractionDTO.deps.json
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\bin\Debug\net5.0\ProjectFractionDTO.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\bin\Debug\net5.0\ref\ProjectFractionDTO.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\bin\Debug\net5.0\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ref\ProjectFractionDTO.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.csproj.AssemblyReference.cache

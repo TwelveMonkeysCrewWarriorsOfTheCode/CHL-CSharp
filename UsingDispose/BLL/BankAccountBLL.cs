@@ -6,6 +6,7 @@ namespace BLL
 {
     public class BankAccountBLL
     {
+        private long m_LastAccountNumber = 123;
         #region Properties
         private string m_OwnerName;
 
@@ -24,6 +25,7 @@ namespace BLL
         public AccountType Type { get; private set; }
 
         public decimal Balance { get; private set; }
+        public long AccountNumber { get; }
         #endregion
 
         #region Constructors
@@ -45,6 +47,7 @@ namespace BLL
             this.Type = pType;
             this.Sex = pSex;
             this.Balance = 0;
+            this.AccountNumber = ++m_LastAccountNumber;
 
         } 
         #endregion
@@ -67,8 +70,8 @@ namespace BLL
         {
             // Vérifier que les données du compte sont correctes
             // ...
-            BankAccountDAL myDal = new BankAccountDAL();
-            myDal.SaveToFile(new BankAccountDTO {OwnerName = this.OwnerName, Type = this.Type, Gender = this.Sex }); // Instanciation d'un objey avec initializer
+            DatFilesManagerDAL myDal = new DatFilesManagerDAL();
+            myDal.SaveToFile(new BankAccountDTO {OwnerName = this.OwnerName, Type = this.Type, Gender = this.Sex, AccountNumber = this.AccountNumber }); // Instanciation d'un objey avec initializer
             return true;
         }
     }
