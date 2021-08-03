@@ -75,5 +75,30 @@ namespace SolutionFraction
         {
             BtnCalculate.Enabled = true;            
         }
+
+        private void BtnCompare_Click(object sender, EventArgs e)
+        {
+            TxtResult2.Clear();
+            try
+            {
+                Fraction a = new Fraction(TxtFraction3.Text);
+                Fraction b = new Fraction(TxtFraction4.Text);
+                string result;
+                if (a < b) result = "<";
+                else if (a > b) result = ">";
+                else result = "=";
+                TxtResult2.Text = result; 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void MnsItemAbout_Click(object sender, EventArgs e)
+        {
+            DlgAbout aboutWindow = new DlgAbout();
+            aboutWindow.Show();
+        }
     }
 }

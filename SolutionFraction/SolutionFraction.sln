@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectUnitTestFactions", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectFractionBLL", "ProjectFractionBLL\ProjectFractionBLL.csproj", "{81956AC4-549B-4E55-BDCA-80DC1B606567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectFractionDTO", "ProjectFractionDTO\ProjectFractionDTO.csproj", "{4E199836-DCD8-43C6-A77D-14970A02755D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectFractionDTO", "ProjectFractionDTO\ProjectFractionDTO.csproj", "{4E199836-DCD8-43C6-A77D-14970A02755D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectFractionDAL", "ProjectFractionDAL\ProjectFractionDAL.csproj", "{2F6768E7-CB04-472D-A2F6-53F41397A0BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4E199836-DCD8-43C6-A77D-14970A02755D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E199836-DCD8-43C6-A77D-14970A02755D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E199836-DCD8-43C6-A77D-14970A02755D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6768E7-CB04-472D-A2F6-53F41397A0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6768E7-CB04-472D-A2F6-53F41397A0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6768E7-CB04-472D-A2F6-53F41397A0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6768E7-CB04-472D-A2F6-53F41397A0BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

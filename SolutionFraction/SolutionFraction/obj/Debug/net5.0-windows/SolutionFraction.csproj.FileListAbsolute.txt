@@ -21,3 +21,5 @@ D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\bin\Debug\net5
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\obj\Debug\net5.0-windows\SolutionFraction.csproj.CopyComplete
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\bin\Debug\net5.0-windows\ProjectFractionDTO.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\bin\Debug\net5.0-windows\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\obj\Debug\net5.0-windows\SolutionFraction.DlgAbout.resources
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\SolutionFraction\obj\Debug\net5.0-windows\SolutionFraction.Properties.Resources.resources

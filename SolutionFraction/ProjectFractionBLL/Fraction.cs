@@ -6,15 +6,16 @@ namespace ProjectFractionBLL
 {
     public class Fraction : IEquatable<Fraction>, IComparable<Fraction>
     {
+        const int VAL1 = 1;
         #region Properties
         private long m_numerator;
         private long m_denominator;
-        private long Numerator
+        public long Numerator
         {
             get => m_numerator;
             set => m_numerator = value;
         }
-        private long Denominator
+        public long Denominator
         {
             get
             {
@@ -42,6 +43,13 @@ namespace ProjectFractionBLL
         {
             Numerator = pNumerator;
             Denominator = pDenominator;
+            Simplify();
+        }
+        // Initialize the fraction from a long
+        public Fraction(long pNumber)
+        {
+            Numerator = pNumber;
+            Denominator = 1;
             Simplify();
         }
         #endregion
@@ -86,9 +94,6 @@ namespace ProjectFractionBLL
         {
             return pFraction1 * new Fraction(pFraction2.Denominator, pFraction2.Numerator);
         }
-
-
-
         // Compare 2 fractions <
         public static bool operator <(Fraction pFraction1, Fraction pFraction2)
         {
@@ -102,8 +107,8 @@ namespace ProjectFractionBLL
         public static bool operator ==(Fraction pFraction1, Fraction pFraction2)
         {
 
-            //return (pFraction1.Numerator == pFraction2.Numerator && pFraction1.Denominator == pFraction2.Denominator);
-            return EqualityComparer<Fraction>.Default.Equals(pFraction1, pFraction2);
+            return (pFraction1.Numerator == pFraction2.Numerator && pFraction1.Denominator == pFraction2.Denominator);
+            //return EqualityComparer<Fraction>.Default.Equals(pFraction1, pFraction2);
         }
         public static bool operator !=(Fraction pFraction1, Fraction pFraction2)
         {
@@ -116,12 +121,40 @@ namespace ProjectFractionBLL
 
         public int CompareTo([AllowNull] Fraction other) => (other == null) ? 1 : (int)this - (int)other;
 
-
-
-        // Convert a to a decimal
+        // Convert a fraction to a decimal
         public static implicit operator decimal(Fraction pFraction1)
         {
             return (decimal)pFraction1.Numerator / pFraction1.Denominator;
+        }
+        // Convert a decimal to a fraction
+        public static implicit operator Fraction(decimal pNumber)
+        {
+            decimal accuracy = 4;
+            int sign = pNumber < 0 ? -1 : 1;
+            pNumber = pNumber < 0 ? -pNumber : pNumber;
+            int integerpart = (int)pNumber;
+            pNumber -= integerpart;
+            decimal minimalvalue = pNumber - accuracy;
+            if (minimalvalue < (decimal)0.0) return new Fraction(sign * integerpart, 1);
+            decimal maximumvalue = pNumber + accuracy;
+            if (maximumvalue > (decimal)1.0) return new Fraction(sign * (integerpart + 1), 1);
+            int a = 0;
+            int b = 1;
+            int c = 1;
+            int d = (int)(1 / maximumvalue);
+            while (true)
+                {
+                    int n = (int)((b * minimalvalue - a) / (c - d * minimalvalue));
+                    if (n == 0) break;
+                    a += n * c;
+                    b += n * d;
+                    n = (int)((c - d * maximumvalue) / (b * maximumvalue - a));
+                    if (n == 0) break;
+                    c += n * a;
+                    d += n * b;
+                }
+            int denominator = b + d;
+            return new Fraction(sign * (integerpart * denominator + (a + c)), denominator);           
         }
         #endregion
 
@@ -173,9 +206,30 @@ namespace ProjectFractionBLL
 
         #region Public Methods
         // Return the fraction's value as a string.
-        public override string ToString()
+        /*public override string ToString()
         {
             return Numerator.ToString() + "/" + Denominator.ToString();
+        }*/
+        public override string ToString()
+        {
+            if (Denominator < Numerator)
+            {
+                long resultlong = Numerator / Denominator;
+                long resultrest = Numerator % Denominator;
+                return resultlong.ToString() + " " + resultrest.ToString() + "/" + Denominator.ToString();
+            }
+            else if (Denominator == VAL1)
+            {
+                return Numerator.ToString();
+            }
+            else if (Numerator == Denominator)
+            {
+                return VAL1.ToString();
+            }
+            else
+            { 
+                return Numerator.ToString() + "/" + Denominator.ToString();
+            }
         }
         /// <summary>
         /// Fill the liste with text

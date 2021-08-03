@@ -44,9 +44,16 @@ namespace SolutionFraction
             this.TxtFraction1 = new System.Windows.Forms.TextBox();
             this.LblFraction1 = new System.Windows.Forms.Label();
             this.TbpCompare = new System.Windows.Forms.TabPage();
+            this.TxtResult2 = new System.Windows.Forms.TextBox();
+            this.BtnCompare = new System.Windows.Forms.Button();
+            this.TxtFraction4 = new System.Windows.Forms.TextBox();
+            this.LblFraction4 = new System.Windows.Forms.Label();
+            this.TxtFraction3 = new System.Windows.Forms.TextBox();
+            this.LblFraction3 = new System.Windows.Forms.Label();
             this.MnsMain.SuspendLayout();
             this.TbcMain.SuspendLayout();
             this.TbpCalculate.SuspendLayout();
+            this.TbpCompare.SuspendLayout();
             this.SuspendLayout();
             // 
             // MnsMain
@@ -82,6 +89,7 @@ namespace SolutionFraction
             this.MnsItemAbout.Name = "MnsItemAbout";
             this.MnsItemAbout.Size = new System.Drawing.Size(52, 20);
             this.MnsItemAbout.Text = "About";
+            this.MnsItemAbout.Click += new System.EventHandler(this.MnsItemAbout_Click);
             // 
             // TbcMain
             // 
@@ -176,6 +184,12 @@ namespace SolutionFraction
             // 
             // TbpCompare
             // 
+            this.TbpCompare.Controls.Add(this.TxtResult2);
+            this.TbpCompare.Controls.Add(this.BtnCompare);
+            this.TbpCompare.Controls.Add(this.TxtFraction4);
+            this.TbpCompare.Controls.Add(this.LblFraction4);
+            this.TbpCompare.Controls.Add(this.TxtFraction3);
+            this.TbpCompare.Controls.Add(this.LblFraction3);
             this.TbpCompare.Location = new System.Drawing.Point(4, 24);
             this.TbpCompare.Name = "TbpCompare";
             this.TbpCompare.Padding = new System.Windows.Forms.Padding(3);
@@ -183,6 +197,62 @@ namespace SolutionFraction
             this.TbpCompare.TabIndex = 1;
             this.TbpCompare.Text = "Compare";
             this.TbpCompare.UseVisualStyleBackColor = true;
+            // 
+            // TxtResult2
+            // 
+            this.TxtResult2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TxtResult2.Location = new System.Drawing.Point(351, 52);
+            this.TxtResult2.Name = "TxtResult2";
+            this.TxtResult2.ReadOnly = true;
+            this.TxtResult2.Size = new System.Drawing.Size(79, 39);
+            this.TxtResult2.TabIndex = 5;
+            this.TxtResult2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BtnCompare
+            // 
+            this.BtnCompare.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnCompare.Location = new System.Drawing.Point(31, 172);
+            this.BtnCompare.Name = "BtnCompare";
+            this.BtnCompare.Size = new System.Drawing.Size(722, 46);
+            this.BtnCompare.TabIndex = 4;
+            this.BtnCompare.Text = "Compare";
+            this.BtnCompare.UseVisualStyleBackColor = true;
+            this.BtnCompare.Click += new System.EventHandler(this.BtnCompare_Click);
+            // 
+            // TxtFraction4
+            // 
+            this.TxtFraction4.Location = new System.Drawing.Point(653, 52);
+            this.TxtFraction4.Name = "TxtFraction4";
+            this.TxtFraction4.Size = new System.Drawing.Size(100, 23);
+            this.TxtFraction4.TabIndex = 3;
+            this.TxtFraction4.Text = "21/10";
+            this.TxtFraction4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // LblFraction4
+            // 
+            this.LblFraction4.AutoSize = true;
+            this.LblFraction4.Location = new System.Drawing.Point(697, 34);
+            this.LblFraction4.Name = "LblFraction4";
+            this.LblFraction4.Size = new System.Drawing.Size(56, 15);
+            this.LblFraction4.TabIndex = 2;
+            this.LblFraction4.Text = "Fraction2";
+            // 
+            // TxtFraction3
+            // 
+            this.TxtFraction3.Location = new System.Drawing.Point(31, 52);
+            this.TxtFraction3.Name = "TxtFraction3";
+            this.TxtFraction3.Size = new System.Drawing.Size(100, 23);
+            this.TxtFraction3.TabIndex = 1;
+            this.TxtFraction3.Text = "4/15";
+            // 
+            // LblFraction3
+            // 
+            this.LblFraction3.AutoSize = true;
+            this.LblFraction3.Location = new System.Drawing.Point(31, 34);
+            this.LblFraction3.Name = "LblFraction3";
+            this.LblFraction3.Size = new System.Drawing.Size(56, 15);
+            this.LblFraction3.TabIndex = 0;
+            this.LblFraction3.Text = "Fraction1";
             // 
             // FormMain
             // 
@@ -201,6 +271,8 @@ namespace SolutionFraction
             this.TbcMain.ResumeLayout(false);
             this.TbpCalculate.ResumeLayout(false);
             this.TbpCalculate.PerformLayout();
+            this.TbpCompare.ResumeLayout(false);
+            this.TbpCompare.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,6 +294,12 @@ namespace SolutionFraction
         private System.Windows.Forms.ListBox LstOperator;
         internal System.Windows.Forms.TextBox TxtFraction2;
         internal System.Windows.Forms.TextBox TxtFraction1;
+        private System.Windows.Forms.TextBox TxtFraction4;
+        private System.Windows.Forms.Label LblFraction4;
+        private System.Windows.Forms.TextBox TxtFraction3;
+        private System.Windows.Forms.Label LblFraction3;
+        private System.Windows.Forms.Button BtnCompare;
+        private System.Windows.Forms.TextBox TxtResult2;
     }
 }
 

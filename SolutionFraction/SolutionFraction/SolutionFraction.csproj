@@ -4,11 +4,42 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <PackageId>Fraction</PackageId>
+    <Version>1.0</Version>
+    <Authors>Authors : Christian Lambert</Authors>
+    <Company>Company : Gremlins</Company>
+    <Product>Fraction</Product>
+    <Description>This program allows you to perform operations on fractions</Description>
+    <Copyright>Copyright © : Christian Lambert</Copyright>
+    <PackageIcon>Linux-icon.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ProjectFractionBLL\ProjectFractionBLL.csproj" />
     <ProjectReference Include="..\ProjectFractionDTO\ProjectFractionDTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Icons\Linux-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
