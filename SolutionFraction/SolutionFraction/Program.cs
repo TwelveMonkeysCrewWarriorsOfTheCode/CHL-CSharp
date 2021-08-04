@@ -6,10 +6,13 @@ using System.Windows.Forms;
 
 namespace SolutionFraction
 {
+    /// <summary>
+    /// Class Program
+    /// </summary>
     static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        ///  The Main Entry Point For The Application.
         /// </summary>
         [STAThread]
         static void Main()

@@ -4,6 +4,9 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace ProjectFractionBLL
 {
+    /// <summary>
+    /// Class To Manage Fractions
+    /// </summary>
     public class Fraction : IEquatable<Fraction>, IComparable<Fraction>
     {
         const int VAL1 = 1;
@@ -30,7 +33,10 @@ namespace ProjectFractionBLL
         #endregion
 
         #region Constructors
-        // Initialize the fraction from a string numerator/denominator
+        /// <summary>
+        /// Constructor To Build a Fraction From A String Numerator/Denominator
+        /// </summary>
+        /// <param name="pFraction"></param>
         public Fraction(string pFraction)
         {
             string[] fractionElements = pFraction.Split('/');
@@ -38,14 +44,21 @@ namespace ProjectFractionBLL
             Denominator = long.Parse(fractionElements[1]);
             Simplify();
         }
-        // Initialize the fraction from long numerator and denominator.
+        /// <summary>
+        /// Constructor To Build a Fraction From Long Numerator And Denominator
+        /// </summary>
+        /// <param name="pNumerator">Numerator</param>
+        /// <param name="pDenominator">Denominator</param>
         public Fraction(long pNumerator, long pDenominator)
         {
             Numerator = pNumerator;
             Denominator = pDenominator;
             Simplify();
         }
-        // Initialize the fraction from a long
+        /// <summary>
+        /// Constructor To Build a Fraction From Long Number
+        /// </summary>
+        /// <param name="pNumerator">Number</param>
         public Fraction(long pNumber)
         {
             Numerator = pNumber;
@@ -55,7 +68,12 @@ namespace ProjectFractionBLL
         #endregion
 
         #region Operators
-        // Return fraction1 + fraction2
+        /// <summary>
+        /// Overload Operator + For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static Fraction operator +(Fraction pFraction1, Fraction pFraction2)
         {
             // Get the denominators' greatest common divisor.
@@ -68,17 +86,31 @@ namespace ProjectFractionBLL
                 pFraction1.Denominator * (pFraction2.Denominator / greatestCommonDivisor);
             return new Fraction(numererator, denominator);
         }
-        // Return -Fraction1
+        /// <summary>
+        /// Overload Operator - For Fraction (Negative)
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static Fraction operator -(Fraction pFraction1)
         {
             return new Fraction(-pFraction1.Numerator, pFraction1.Denominator);
         }
-        // Return Fraction1 - Fraction2
+        /// <summary>
+        /// Overload Operator - For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static Fraction operator -(Fraction pFraction1, Fraction pFraction2)
         {
             return pFraction1 + -pFraction2;
         }
-        // Return Fraction1 * Fraction2
+        /// <summary>
+        /// Overload Operator * For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static Fraction operator *(Fraction pFraction1, Fraction pFraction2)
         {
             // Swap numerators and denominators to simplify.
@@ -89,44 +121,93 @@ namespace ProjectFractionBLL
                 result1.Numerator * result2.Numerator,
                 result1.Denominator * result2.Denominator);
         }
-        // Return Fraction1 / Fraction2
+        /// <summary>
+        /// Overload Operator / For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static Fraction operator /(Fraction pFraction1, Fraction pFraction2)
         {
             return pFraction1 * new Fraction(pFraction2.Denominator, pFraction2.Numerator);
         }
-        // Compare 2 fractions <
+        /// <summary>
+        /// Overload Compare < For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static bool operator <(Fraction pFraction1, Fraction pFraction2)
         {
             return pFraction1.Numerator * pFraction2.Denominator < pFraction1.Denominator * pFraction2.Numerator;
         }
-        // Compare 2 fractions >
+        /// <summary>
+        /// Overload Compare > For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static bool operator >(Fraction pFraction1, Fraction pFraction2)
         {
             return pFraction1.Numerator * pFraction2.Denominator > pFraction1.Denominator * pFraction2.Numerator;
         }
+        /// <summary>
+        /// Overload Compare = For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static bool operator ==(Fraction pFraction1, Fraction pFraction2)
         {
 
             return (pFraction1.Numerator == pFraction2.Numerator && pFraction1.Denominator == pFraction2.Denominator);
             //return EqualityComparer<Fraction>.Default.Equals(pFraction1, pFraction2);
         }
+        /// <summary>
+        /// Overload Compare != For Fraction
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <param name="pFraction2">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static bool operator !=(Fraction pFraction1, Fraction pFraction2)
         {
             return !(pFraction1 == pFraction2);
         }
+        /// <summary>
+        /// Overload Compare != For Fraction
+        /// </summary>
+        /// <param name="pFraction">Fraction</param>
+        /// <returns>Return Result</returns>
         public override bool Equals(object other) => this.Equals(other as Fraction);
-
+        /// <summary>
+        /// Overload GetHashCode For Fraction
+        /// </summary>
+        /// <returns>Return HashCode</returns>
         public override int GetHashCode() => (int)this;
+        /// <summary>
+        /// Equals For Fraction
+        /// </summary>
+        /// <returns>Return Result</returns>
         public bool Equals(Fraction other) => (other != null) && (int)this == (int)other;
-
+        /// <summary>
+        /// CompareTo For Fraction
+        /// </summary>
+        /// <returns>Return Result</returns>
         public int CompareTo([AllowNull] Fraction other) => (other == null) ? 1 : (int)this - (int)other;
-
-        // Convert a fraction to a decimal
+        /// <summary>
+        /// Overload Conversion A Fraction To Decimal
+        /// </summary>
+        /// <param name="pFraction1">Fraction1</param>
+        /// <returns>Return Decimal</returns>
         public static implicit operator decimal(Fraction pFraction1)
         {
             return (decimal)pFraction1.Numerator / pFraction1.Denominator;
         }
-        // Convert a decimal to a fraction
+        /// <summary>
+        /// Overload Conversion A Decimal To Fraction
+        /// </summary>
+        /// <param name="pNumber">Fraction1</param>
+        /// <returns>Return Fraction</returns>
         public static implicit operator Fraction(decimal pNumber)
         {
             decimal accuracy = 4;
@@ -159,7 +240,9 @@ namespace ProjectFractionBLL
         #endregion
 
         #region Private Methods
-        // Simplify the fraction.
+        /// <summary>
+        /// Simplify The Fraction
+        /// </summary>
         private void Simplify()
         {
             // Simplify the sign.
@@ -174,7 +257,12 @@ namespace ProjectFractionBLL
             Numerator = Numerator / greatestCommonDivisor;
             Denominator = Denominator / greatestCommonDivisor;
         }
-        // Return the greatest common divisor (GCD) of denominator1 and denominator1
+        /// <summary>
+        /// Get The Greatest Common Divisor (GCD)
+        /// </summary>
+        /// <param name="pDenominator1">Denominator1</param>
+        /// <param name="pDenominator2">Denominator2</param>
+        /// <returns>Return Greatest Common Divisor</returns>
         private static long GetGreatestCommonDivisor(long pDenominator1, long pDenominator2)
         {
             // Make pDenominator1 >= pDenominator2.
@@ -196,11 +284,16 @@ namespace ProjectFractionBLL
                 pDenominator2 = remainder;
             }
         }
-        // Return the least common multiple of a and b.
-        private static long LeastCommonMultiple(long a, long b)
+        /// <summary>
+        /// Get The Least Common Multiple Of pA And pB
+        /// </summary>
+        /// <param name="pA">Number1</param>
+        /// <param name="pB">Number2</param>
+        /// <returns>Return Least Common Multiple</returns>
+        private static long LeastCommonMultiple(long pA, long pB)
         {
-            long greatestCommonDivisor = GetGreatestCommonDivisor(a, b);
-            return ((a / greatestCommonDivisor) * (b / greatestCommonDivisor)) * greatestCommonDivisor;
+            long greatestCommonDivisor = GetGreatestCommonDivisor(pA, pB);
+            return ((pA / greatestCommonDivisor) * (pB / greatestCommonDivisor)) * greatestCommonDivisor;
         }
         #endregion
 
@@ -210,6 +303,10 @@ namespace ProjectFractionBLL
         {
             return Numerator.ToString() + "/" + Denominator.ToString();
         }*/
+        /// <summary>
+        /// Overload Of ToString For Fraction
+        /// </summary>
+        /// <returns>Return Result</returns>
         public override string ToString()
         {
             if (Denominator < Numerator)
@@ -234,6 +331,7 @@ namespace ProjectFractionBLL
         /// <summary>
         /// Fill the liste with text
         /// </summary>
+        /// <returns>Return List</returns>
         public static List<string> FillListOperator()
         {
             List<string> lstOperator = new List<string>()

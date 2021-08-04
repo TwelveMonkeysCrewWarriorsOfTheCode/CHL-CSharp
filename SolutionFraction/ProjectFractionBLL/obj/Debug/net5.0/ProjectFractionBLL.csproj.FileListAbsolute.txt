@@ -13,3 +13,5 @@ D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\bin\Debug\ne
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\bin\Debug\net5.0\ProjectFractionDTO.pdb
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\obj\Debug\net5.0\ProjectFractionBLL.csproj.AssemblyReference.cache
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\obj\Debug\net5.0\ProjectFractionBLL.csproj.CopyComplete
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\bin\Debug\net5.0\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionBLL\bin\Debug\net5.0\ProjectFractionDAL.pdb

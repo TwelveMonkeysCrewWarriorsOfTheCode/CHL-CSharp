@@ -102,3 +102,5 @@ D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Deb
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Debug\net5.0\ProjectFractionDTO.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Debug\net5.0\ProjectFractionBLL.pdb
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Debug\net5.0\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Debug\net5.0\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectUnitTestFactions\bin\Debug\net5.0\ProjectFractionDAL.pdb

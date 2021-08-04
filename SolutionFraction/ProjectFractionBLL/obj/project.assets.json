@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "ProjectFractionDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectFractionDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectFractionDAL.dll": {}
+        }
+      },
       "ProjectFractionDTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "ProjectFractionDAL/1.0.0": {
+      "type": "project",
+      "path": "../ProjectFractionDAL/ProjectFractionDAL.csproj",
+      "msbuildProject": "../ProjectFractionDAL/ProjectFractionDAL.csproj"
+    },
     "ProjectFractionDTO/1.0.0": {
       "type": "project",
       "path": "../ProjectFractionDTO/ProjectFractionDTO.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ProjectFractionDAL >= 1.0.0",
       "ProjectFractionDTO >= 1.0.0"
     ]
   },
@@ -61,6 +80,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDAL\\ProjectFractionDAL.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDAL\\ProjectFractionDAL.csproj"
+            },
             "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDTO\\ProjectFractionDTO.csproj": {
               "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDTO\\ProjectFractionDTO.csproj"
             }

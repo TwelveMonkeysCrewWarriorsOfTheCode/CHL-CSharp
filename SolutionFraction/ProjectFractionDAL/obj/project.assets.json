@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ProjectFractionDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProjectFractionDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectFractionDTO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProjectFractionDTO/1.0.0": {
+      "type": "project",
+      "path": "../ProjectFractionDTO/ProjectFractionDTO.csproj",
+      "msbuildProject": "../ProjectFractionDTO/ProjectFractionDTO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ProjectFractionDTO >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mogwa\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDTO\\ProjectFractionDTO.csproj": {
+              "projectPath": "D:\\Technifutur_repos\\CHL-CSharp\\SolutionFraction\\ProjectFractionDTO\\ProjectFractionDTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

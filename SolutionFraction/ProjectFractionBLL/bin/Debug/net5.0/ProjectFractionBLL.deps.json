@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v5.0": {
       "ProjectFractionBLL/1.0.0": {
         "dependencies": {
+          "ProjectFractionDAL": "1.0.0",
           "ProjectFractionDTO": "1.0.0"
         },
         "runtime": {
           "ProjectFractionBLL.dll": {}
+        }
+      },
+      "ProjectFractionDAL/1.0.0": {
+        "dependencies": {
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "runtime": {
+          "ProjectFractionDAL.dll": {}
         }
       },
       "ProjectFractionDTO/1.0.0": {
@@ -23,6 +32,11 @@
   },
   "libraries": {
     "ProjectFractionBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectFractionDAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

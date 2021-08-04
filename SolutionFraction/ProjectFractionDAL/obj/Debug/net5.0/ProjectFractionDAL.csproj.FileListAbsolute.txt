@@ -1,0 +1,15 @@
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ProjectFractionDAL.deps.json
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ref\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ProjectFractionDAL.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ProjectFractionDTO.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\bin\Debug\net5.0\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.csproj.AssemblyReference.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.AssemblyInfoInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.AssemblyInfo.cs
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.csproj.CoreCompileInputs.cache
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.csproj.CopyComplete
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ref\ProjectFractionDAL.dll
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDAL\obj\Debug\net5.0\ProjectFractionDAL.pdb

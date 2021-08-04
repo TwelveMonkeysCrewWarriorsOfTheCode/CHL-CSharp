@@ -29,6 +29,7 @@ namespace SolutionFraction
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.MnsMain = new System.Windows.Forms.MenuStrip();
             this.MnsItemFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,8 @@ namespace SolutionFraction
             this.MnsItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.TbcMain = new System.Windows.Forms.TabControl();
             this.TbpCalculate = new System.Windows.Forms.TabPage();
+            this.RchTxtBoxCalculate = new System.Windows.Forms.RichTextBox();
+            this.ChkBoxSaveToFile1 = new System.Windows.Forms.CheckBox();
             this.TxtResult = new System.Windows.Forms.TextBox();
             this.BtnCalculate = new System.Windows.Forms.Button();
             this.LstOperator = new System.Windows.Forms.ListBox();
@@ -44,12 +47,15 @@ namespace SolutionFraction
             this.TxtFraction1 = new System.Windows.Forms.TextBox();
             this.LblFraction1 = new System.Windows.Forms.Label();
             this.TbpCompare = new System.Windows.Forms.TabPage();
+            this.RchTxtBoxCompare = new System.Windows.Forms.RichTextBox();
+            this.ChkBoxSaveToFile2 = new System.Windows.Forms.CheckBox();
             this.TxtResult2 = new System.Windows.Forms.TextBox();
             this.BtnCompare = new System.Windows.Forms.Button();
             this.TxtFraction4 = new System.Windows.Forms.TextBox();
             this.LblFraction4 = new System.Windows.Forms.Label();
             this.TxtFraction3 = new System.Windows.Forms.TextBox();
             this.LblFraction3 = new System.Windows.Forms.Label();
+            this.TmrTime = new System.Windows.Forms.Timer(this.components);
             this.MnsMain.SuspendLayout();
             this.TbcMain.SuspendLayout();
             this.TbpCalculate.SuspendLayout();
@@ -104,6 +110,8 @@ namespace SolutionFraction
             // 
             // TbpCalculate
             // 
+            this.TbpCalculate.Controls.Add(this.RchTxtBoxCalculate);
+            this.TbpCalculate.Controls.Add(this.ChkBoxSaveToFile1);
             this.TbpCalculate.Controls.Add(this.TxtResult);
             this.TbpCalculate.Controls.Add(this.BtnCalculate);
             this.TbpCalculate.Controls.Add(this.LstOperator);
@@ -118,6 +126,29 @@ namespace SolutionFraction
             this.TbpCalculate.TabIndex = 0;
             this.TbpCalculate.Text = "Calculate";
             this.TbpCalculate.UseVisualStyleBackColor = true;
+            // 
+            // RchTxtBoxCalculate
+            // 
+            this.RchTxtBoxCalculate.BackColor = System.Drawing.Color.Black;
+            this.RchTxtBoxCalculate.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RchTxtBoxCalculate.ForeColor = System.Drawing.Color.Red;
+            this.RchTxtBoxCalculate.Location = new System.Drawing.Point(635, 352);
+            this.RchTxtBoxCalculate.Name = "RchTxtBoxCalculate";
+            this.RchTxtBoxCalculate.ReadOnly = true;
+            this.RchTxtBoxCalculate.Size = new System.Drawing.Size(114, 38);
+            this.RchTxtBoxCalculate.TabIndex = 9;
+            this.RchTxtBoxCalculate.TabStop = false;
+            this.RchTxtBoxCalculate.Text = "";
+            // 
+            // ChkBoxSaveToFile1
+            // 
+            this.ChkBoxSaveToFile1.AutoSize = true;
+            this.ChkBoxSaveToFile1.Location = new System.Drawing.Point(327, 330);
+            this.ChkBoxSaveToFile1.Name = "ChkBoxSaveToFile1";
+            this.ChkBoxSaveToFile1.Size = new System.Drawing.Size(135, 19);
+            this.ChkBoxSaveToFile1.TabIndex = 8;
+            this.ChkBoxSaveToFile1.Text = "Select To Save To File";
+            this.ChkBoxSaveToFile1.UseVisualStyleBackColor = true;
             // 
             // TxtResult
             // 
@@ -184,6 +215,8 @@ namespace SolutionFraction
             // 
             // TbpCompare
             // 
+            this.TbpCompare.Controls.Add(this.RchTxtBoxCompare);
+            this.TbpCompare.Controls.Add(this.ChkBoxSaveToFile2);
             this.TbpCompare.Controls.Add(this.TxtResult2);
             this.TbpCompare.Controls.Add(this.BtnCompare);
             this.TbpCompare.Controls.Add(this.TxtFraction4);
@@ -197,6 +230,29 @@ namespace SolutionFraction
             this.TbpCompare.TabIndex = 1;
             this.TbpCompare.Text = "Compare";
             this.TbpCompare.UseVisualStyleBackColor = true;
+            // 
+            // RchTxtBoxCompare
+            // 
+            this.RchTxtBoxCompare.BackColor = System.Drawing.Color.Black;
+            this.RchTxtBoxCompare.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RchTxtBoxCompare.ForeColor = System.Drawing.Color.Red;
+            this.RchTxtBoxCompare.Location = new System.Drawing.Point(639, 352);
+            this.RchTxtBoxCompare.Name = "RchTxtBoxCompare";
+            this.RchTxtBoxCompare.ReadOnly = true;
+            this.RchTxtBoxCompare.Size = new System.Drawing.Size(114, 38);
+            this.RchTxtBoxCompare.TabIndex = 10;
+            this.RchTxtBoxCompare.TabStop = false;
+            this.RchTxtBoxCompare.Text = "";
+            // 
+            // ChkBoxSaveToFile2
+            // 
+            this.ChkBoxSaveToFile2.AutoSize = true;
+            this.ChkBoxSaveToFile2.Location = new System.Drawing.Point(325, 282);
+            this.ChkBoxSaveToFile2.Name = "ChkBoxSaveToFile2";
+            this.ChkBoxSaveToFile2.Size = new System.Drawing.Size(135, 19);
+            this.ChkBoxSaveToFile2.TabIndex = 6;
+            this.ChkBoxSaveToFile2.Text = "Select To Save To File";
+            this.ChkBoxSaveToFile2.UseVisualStyleBackColor = true;
             // 
             // TxtResult2
             // 
@@ -254,6 +310,12 @@ namespace SolutionFraction
             this.LblFraction3.TabIndex = 0;
             this.LblFraction3.Text = "Fraction1";
             // 
+            // TmrTime
+            // 
+            this.TmrTime.Enabled = true;
+            this.TmrTime.Interval = 1000;
+            this.TmrTime.Tick += new System.EventHandler(this.TmrTime_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -300,6 +362,11 @@ namespace SolutionFraction
         private System.Windows.Forms.Label LblFraction3;
         private System.Windows.Forms.Button BtnCompare;
         private System.Windows.Forms.TextBox TxtResult2;
+        private System.Windows.Forms.CheckBox ChkBoxSaveToFile1;
+        private System.Windows.Forms.CheckBox ChkBoxSaveToFile2;
+        private System.Windows.Forms.Timer TmrTime;
+        private System.Windows.Forms.RichTextBox RchTxtBoxCalculate;
+        private System.Windows.Forms.RichTextBox RchTxtBoxCompare;
     }
 }
 

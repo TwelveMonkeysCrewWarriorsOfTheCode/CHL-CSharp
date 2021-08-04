@@ -9,8 +9,14 @@ using System.Windows.Forms;
 
 namespace SolutionFraction
 {
+    /// <summary>
+    /// Class To Display About Box
+    /// </summary>
     partial class DlgAbout : Form
     {
+        /// <summary>
+        /// Display About Box
+        /// </summary>
         public DlgAbout()
         {
             InitializeComponent();
@@ -103,6 +109,9 @@ namespace SolutionFraction
         }
         #endregion
 
+        /// <summary>
+        /// Close About Box
+        /// </summary>
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();

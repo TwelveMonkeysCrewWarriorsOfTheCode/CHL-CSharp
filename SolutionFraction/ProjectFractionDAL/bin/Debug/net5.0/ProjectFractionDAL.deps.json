@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProjectFractionDAL/1.0.0": {
+        "dependencies": {
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "runtime": {
+          "ProjectFractionDAL.dll": {}
+        }
+      },
+      "ProjectFractionDTO/1.0.0": {
+        "runtime": {
+          "ProjectFractionDTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectFractionDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectFractionDTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

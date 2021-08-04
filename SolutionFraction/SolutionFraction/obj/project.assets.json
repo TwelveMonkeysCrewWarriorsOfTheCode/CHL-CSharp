@@ -6,6 +6,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "ProjectFractionDAL": "1.0.0",
           "ProjectFractionDTO": "1.0.0"
         },
         "compile": {
@@ -13,6 +14,19 @@
         },
         "runtime": {
           "bin/placeholder/ProjectFractionBLL.dll": {}
+        }
+      },
+      "ProjectFractionDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProjectFractionDTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectFractionDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectFractionDAL.dll": {}
         }
       },
       "ProjectFractionDTO/1.0.0": {
@@ -32,6 +46,11 @@
       "type": "project",
       "path": "../ProjectFractionBLL/ProjectFractionBLL.csproj",
       "msbuildProject": "../ProjectFractionBLL/ProjectFractionBLL.csproj"
+    },
+    "ProjectFractionDAL/1.0.0": {
+      "type": "project",
+      "path": "../ProjectFractionDAL/ProjectFractionDAL.csproj",
+      "msbuildProject": "../ProjectFractionDAL/ProjectFractionDAL.csproj"
     },
     "ProjectFractionDTO/1.0.0": {
       "type": "project",
