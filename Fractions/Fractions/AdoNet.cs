@@ -23,10 +23,9 @@ namespace Fractions
             {
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
+                    //if (i==0) Console.WriteLine((string)dt.ColumnName);
                     Console.WriteLine((string)row[i]);
-                    //Console.Write("{0}\t", row[i].ToString());
                 }
-                //Console.WriteLine((string)row[0]);
             }
         }
     }

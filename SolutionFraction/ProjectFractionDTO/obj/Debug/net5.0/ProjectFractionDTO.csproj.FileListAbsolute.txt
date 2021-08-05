@@ -9,3 +9,4 @@ D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\ne
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ref\ProjectFractionDTO.dll
 D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.pdb
+D:\Technifutur_repos\CHL-CSharp\SolutionFraction\ProjectFractionDTO\obj\Debug\net5.0\ProjectFractionDTO.csproj.AssemblyReference.cache
