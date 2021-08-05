@@ -19,6 +19,8 @@ namespace SolutionFraction
     {
         const string VERSION = "1.0";
         const int FILES = 0;
+        const string HEADERCALCULATE = "Date;Time;Fraction1;Operation;Fraction2;Result";
+        const string HEADERCOMPARAISON = "Date;Time;Fraction1;Result;Fraction2";
 
         /// <summary>
         /// Constructor
@@ -27,8 +29,7 @@ namespace SolutionFraction
         {
             InitializeComponent();
             this.Text = $"Fraction {VERSION}";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;           
         }
         /// <summary>
         /// Exit Program
@@ -79,53 +80,62 @@ namespace SolutionFraction
                         TxtResult.Text = (a + b).ToString();
                         break;
                 }
-                if (ChkBoxSaveToFile1.Checked)
-                {
-                    using (SaveFileDialog ofd = new SaveFileDialog())
-                    {
-                        MessageBoxButtons buttons = MessageBoxButtons.OK;
-                        ofd.InitialDirectory = ".";
-                        ofd.FileName = "FractionCalculateLogs.csv";
-                        ofd.OverwritePrompt = false;
-                        ofd.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-                        if (ofd.ShowDialog() == DialogResult.OK)
-                        {
-                            if (ofd.FileName != "")
-                            {
-                                ResultDTO resultSave = new ResultDTO(false, "", "");
-                                IEnumerable<string> record = new string[] 
-                                {
-                                    DateTime.Now.ToString("dd/MM/yyyy") +
-                                    "; " +
-                                    DateTime.Now.ToString("HH:mm:ss") +
-                                    "; " +
-                                    TxtFraction1.Text +
-                                    "; " +
-                                    selectedOperator +
-                                    "; " +
-                                    TxtFraction2.Text +
-                                    "; " +
-                                    TxtResult.Text
-                                };
-                                DataDTO datatransfert = new DataDTO(record, FILES, ofd.FileName);
-                                resultSave = DataTransfertToDAL.SaveData(datatransfert);
-                                if (resultSave.PStatus)
-                                {
-                                    MessageBox.Show($"The {ofd.FileName} has been saved successfully", "", buttons, MessageBoxIcon.Information);
-                                }
-                                else
-                                {
-                                    MessageBox.Show(resultSave.PMessageDev, "", buttons, MessageBoxIcon.Error);
-                                }
-                                ChkBoxSaveToFile1.Checked = false;
-                            }
-                        }
-                    }
-                }
+                SaveDataCalculate(selectedOperator);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Save Data Calculate
+        /// </summary>
+        /// <param name="pSelectedOperator">Operator</param>
+        private void SaveDataCalculate(string pSelectedOperator)
+        {
+            if (ChkBoxSaveToFile1.Checked)
+            {
+                using (SaveFileDialog ofd = new SaveFileDialog())
+                {
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    ofd.InitialDirectory = ".";
+                    ofd.FileName = "FractionCalculateLogs.csv";
+                    ofd.OverwritePrompt = false;
+                    ofd.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        if (ofd.FileName != "")
+                        {
+                            ResultDTO resultSave = new ResultDTO(false, "", "");
+                            string separator = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ListSeparator;
+                            IEnumerable<string> record = new string[]
+                            {
+                                    DateTime.Now.ToString("dd/MM/yyyy") +
+                                    $"{separator} " +
+                                    DateTime.Now.ToString("HH:mm:ss") +
+                                    $"{separator} " +
+                                    TxtFraction1.Text +
+                                    $"{separator} " +
+                                    pSelectedOperator +
+                                    $"{separator} " +
+                                    TxtFraction2.Text +
+                                    $"{separator} " +
+                                    TxtResult.Text
+                            };
+                            DataDTO datatransfert = new DataDTO(record, FILES, ofd.FileName, HEADERCALCULATE);
+                            resultSave = DataTransfertToDAL.SaveData(datatransfert);
+                            if (resultSave.PStatus)
+                            {
+                                MessageBox.Show($"The {ofd.FileName} has been saved successfully", "", buttons, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show(resultSave.PMessageDev, "", buttons, MessageBoxIcon.Error);
+                            }
+                            ChkBoxSaveToFile1.Checked = false;
+                        }
+                    }
+                }
             }
         }
         /// <summary>
@@ -150,51 +160,59 @@ namespace SolutionFraction
                 else if (a > b) result = ">";
                 else result = "=";
                 TxtResult2.Text = result;
-                if (ChkBoxSaveToFile2.Checked)
-                {
-                    using (SaveFileDialog ofd = new SaveFileDialog())
-                    {
-                        MessageBoxButtons buttons = MessageBoxButtons.OK;
-                        ofd.InitialDirectory = ".";
-                        ofd.FileName = "FractionCompareLogs.csv";
-                        ofd.OverwritePrompt = false;
-                        ofd.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-                        if (ofd.ShowDialog() == DialogResult.OK)
-                        {
-                            if (ofd.FileName != "")
-                            {
-                                ResultDTO resultSave = new ResultDTO(false, "", "");
-                                IEnumerable<string> record = new string[]
-                                {
-                                    DateTime.Now.ToString("dd/MM/yyyy") +
-                                    "; " +
-                                    DateTime.Now.ToString("HH:mm:ss") +
-                                    "; " +
-                                    TxtFraction3.Text +
-                                    "; " +
-                                    TxtResult2.Text +
-                                    "; " +
-                                    TxtFraction4.Text                                 
-                                };
-                                DataDTO datatransfert = new DataDTO(record, FILES, ofd.FileName);
-                                resultSave = DataTransfertToDAL.SaveData(datatransfert);
-                                if (resultSave.PStatus)
-                                {
-                                    MessageBox.Show($"The {ofd.FileName} has been saved successfully", "", buttons, MessageBoxIcon.Information);
-                                }
-                                else
-                                {
-                                    MessageBox.Show(resultSave.PMessageDev, "", buttons, MessageBoxIcon.Error);
-                                }
-                                ChkBoxSaveToFile2.Checked = false;
-                            }
-                        }
-                    }
-                }
+                SaveDataCompare();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Save Data Compare
+        /// </summary>
+        private void SaveDataCompare()
+        {
+            if (ChkBoxSaveToFile2.Checked)
+            {
+                using (SaveFileDialog ofd = new SaveFileDialog())
+                {
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    ofd.InitialDirectory = ".";
+                    ofd.FileName = "FractionCompareLogs.csv";
+                    ofd.OverwritePrompt = false;
+                    ofd.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        if (ofd.FileName != "")
+                        {
+                            ResultDTO resultSave = new ResultDTO(false, "", "");
+                            string separator = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ListSeparator;
+                            IEnumerable<string> record = new string[]
+                            {
+                                    DateTime.Now.ToString("dd/MM/yyyy") +
+                                    $"{separator} " +
+                                    DateTime.Now.ToString("HH:mm:ss") +
+                                    $"{separator} " +
+                                    TxtFraction3.Text +
+                                    $"{separator} " +
+                                    TxtResult2.Text +
+                                    $"{separator} " +
+                                    TxtFraction4.Text
+                            };
+                            DataDTO datatransfert = new DataDTO(record, FILES, ofd.FileName, HEADERCOMPARAISON);
+                            resultSave = DataTransfertToDAL.SaveData(datatransfert);
+                            if (resultSave.PStatus)
+                            {
+                                MessageBox.Show($"The {ofd.FileName} has been saved successfully", "", buttons, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show(resultSave.PMessageDev, "", buttons, MessageBoxIcon.Error);
+                            }
+                            ChkBoxSaveToFile2.Checked = false;
+                        }
+                    }
+                }
             }
         }
         /// <summary>
